@@ -1,0 +1,26 @@
+inst	instrument	subcluster	obs_value
+Begleitung von Start-ups	Start-up Core Coaching	Engineering	0.14
+Förderung für Schweizer Innovationsprojekte	BRIDGE: Proof of Concept	Engineering	0.31
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Engineering	0.13
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Engineering	0.32
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Engineering	0.37
+Begleitung von Start-ups	Start-up Core Coaching	Life sciences	0.38
+Förderung für Schweizer Innovationsprojekte	BRIDGE: Proof of Concept	Life sciences	0.34
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Life sciences	0.66
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Life sciences	0.14
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Life sciences	0.18
+Begleitung von Start-ups	Start-up Core Coaching	Energy & environment	0.14
+Förderung für Schweizer Innovationsprojekte	BRIDGE: Proof of Concept	Energy & environment	0.12
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Energy & environment	0.09
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Energy & environment	0.15
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Energy & environment	0.17
+Begleitung von Start-ups	Start-up Core Coaching	ICT	0.3
+Förderung für Schweizer Innovationsprojekte	BRIDGE: Proof of Concept	ICT	0.17
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	ICT	0.09
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	ICT	0.18
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	ICT	0.18
+Begleitung von Start-ups	Start-up Core Coaching	Social sciences & business mgmt	0.04
+Förderung für Schweizer Innovationsprojekte	BRIDGE: Proof of Concept	Social sciences & business mgmt	0.06
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Social sciences & business mgmt	0.03
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Social sciences & business mgmt	0.21
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Social sciences & business mgmt	0.1
