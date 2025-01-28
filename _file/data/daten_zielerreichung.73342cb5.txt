@@ -1,0 +1,58 @@
+category	type	instrument	respondant	result_type	pct	comment
+Zielerreichung	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	vollständig erreicht oder übertroffen	0.56	
+Zielerreichung	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	eher erreicht	0.29	
+Zielerreichung	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	eher nicht erreicht	0.1	
+Zielerreichung	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	nicht oder nur in geringem Ausmass erreicht	0.05	
+Zielerreichung	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	vollständig erreicht oder übertroffen	0.77	
+Zielerreichung	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher erreicht	0.2	
+Zielerreichung	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher nicht erreicht	0.03	
+Zielerreichung	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	nicht oder nur in geringem Ausmass erreicht	0	
+Zielerreichung	Innovationsschecks	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	vollständig erreicht oder übertroffen	0.68	
+Zielerreichung	Innovationsschecks	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	eher erreicht	0.17	
+Zielerreichung	Innovationsschecks	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	eher nicht erreicht	0.08	
+Zielerreichung	Innovationsschecks	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	nicht oder nur in geringem Ausmass erreicht	0.07	
+Zielerreichung	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	vollständig erreicht oder übertroffen	0.58	
+Zielerreichung	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher erreicht	0.33	
+Zielerreichung	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher nicht erreicht	0.06	
+Zielerreichung	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	nicht oder nur in geringem Ausmass erreicht	0.03	
+Zielerreichung	Innovation Booster	Starthilfe für Projekte und Vernetzung	Teilnehmende			
+Zielerreichung	Start-up Core Coaching	Begleitung von Start-ups	Start-up	vollständig erreicht oder übertroffen	0.42	
+Zielerreichung	Start-up Core Coaching	Begleitung von Start-ups	Start-up	eher erreicht	0.39	
+Zielerreichung	Start-up Core Coaching	Begleitung von Start-ups	Start-up	eher nicht erreicht	0.12	
+Zielerreichung	Start-up Core Coaching	Begleitung von Start-ups	Start-up	nicht oder nur in geringem Ausmass erreicht	0.07	
+Zufriedenheit	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	zufrieden bis sehr zufrieden	0.8	
+Zufriedenheit	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	eher nicht bis eher zufrieden	0.19	
+Zufriedenheit	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	überhaupt nicht zufrieden bis nicht zufrieden	0.01	
+Zufriedenheit	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	zufrieden bis sehr zufrieden	0.91	
+Zufriedenheit	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher nicht bis eher zufrieden	0.08	
+Zufriedenheit	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	überhaupt nicht zufrieden bis nicht zufrieden	0.01	
+Zufriedenheit	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	zufrieden bis sehr zufrieden	0.92	
+Zufriedenheit	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher nicht bis eher zufrieden	0.08	
+Zufriedenheit	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	überhaupt nicht zufrieden bis nicht zufrieden	0	
+Zufriedenheit	Innovationsschecks	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	zufrieden bis sehr zufrieden	0.86	
+Zufriedenheit	Innovationsschecks	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	eher nicht bis eher zufrieden	0.13	
+Zufriedenheit	Innovationsschecks	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	überhaupt nicht zufrieden bis nicht zufrieden	0.01	
+Zufriedenheit	Innovation Booster	Starthilfe für Projekte und Vernetzung	Teilnehmende	zufrieden bis sehr zufrieden	0.89	
+Zufriedenheit	Innovation Booster	Starthilfe für Projekte und Vernetzung	Teilnehmende	eher nicht bis eher zufrieden	0.10	
+Zufriedenheit	Innovation Booster	Starthilfe für Projekte und Vernetzung	Teilnehmende	überhaupt nicht zufrieden bis nicht zufrieden	0.01	
+Zufriedenheit	Start-up Core Coaching	Begleitung von Start-ups	Start-up	zufrieden bis sehr zufrieden	0.68	
+Zufriedenheit	Start-up Core Coaching	Begleitung von Start-ups	Start-up	eher nicht bis eher zufrieden	0.31	
+Zufriedenheit	Start-up Core Coaching	Begleitung von Start-ups	Start-up	überhaupt nicht zufrieden bis nicht zufrieden	0.01	
+Erfolg	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	hoher oder sehr hoher Erfolg	0.406666667	Projekt
+Erfolg	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	eher hoher Erfolg	0.3	Projekt
+Erfolg	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	eher geringer Erfolg	0.203333333	Projekt
+Erfolg	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner	kein Erfolg oder geringer Erfolg	0.09	Projekt
+Erfolg	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	hoher oder sehr hoher Erfolg	0.73	Projekt
+Erfolg	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher hoher Erfolg	0.21	Projekt
+Erfolg	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher geringer Erfolg	0.06	Projekt
+Erfolg	Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	kein Erfolg oder geringer Erfolg	0	Projekt
+Erfolg	Innovationsschecks	Förderung für Schweizer Innovationsprojekte	Umsetzungspartner
+Erfolg	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	hoher oder sehr hoher Erfolg	0.53	Projekt
+Erfolg	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher hoher Erfolg	0.35	Projekt
+Erfolg	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	eher geringer Erfolg	0.12	Projekt
+Erfolg	Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	Forschungspartner	kein Erfolg oder geringer Erfolg	0	Projekt
+Erfolg	Innovation Booster	Starthilfe für Projekte und Vernetzung	Teilnehmende
+Erfolg	Start-up Core Coaching	Begleitung von Start-ups	Start-up	hoher oder sehr hoher Erfolg	0.61	Unterstützung
+Erfolg	Start-up Core Coaching	Begleitung von Start-ups	Start-up	eher hoher Erfolg	0.13	Unterstützung
+Erfolg	Start-up Core Coaching	Begleitung von Start-ups	Start-up	eher geringer Erfolg	0.17	Unterstützung
+Erfolg	Start-up Core Coaching	Begleitung von Start-ups	Start-up	kein Erfolg oder geringer Erfolg	0.09	Unterstützung

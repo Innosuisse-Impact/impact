@@ -7,18 +7,18 @@
 <title>Projekte von Forschenden | Wirkungen der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles-ch-projekte.ab0559a4.css">
+<link rel="preload" as="style" href="./_import/styles-ch-projekte.b1688268.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles-ch-projekte.ab0559a4.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles-ch-projekte.b1688268.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.b5e821a4.js">
-<link rel="modulepreload" href="./_import/functions.df539b0c.js">
+<link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
+<link rel="modulepreload" href="./_import/functions.17818ed2.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.047c070c.js">
+<link rel="modulepreload" href="./_import/data.3b95228e.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -65,12 +65,17 @@ import {define} from "./_observablehq/client.6c3b6f8d.js";
 import {registerFile} from "./_observablehq/stdlib.86572394.js";
 
 registerFile("./data/daten_controlling.txt", {"name":"./data/daten_controlling.txt","mimeType":"text/plain","path":"./_file/data/daten_controlling.e80418ee.txt","lastModified":1737579114417,"size":6281});
+registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.1d5dbf16.txt","lastModified":1737987307862,"size":14702});
+registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.f8110b7b.txt","lastModified":1737985976737,"size":10623});
+registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.487a7b2e.txt","lastModified":1737986233163,"size":19093});
+registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 
-define({id: "2f6889dc", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.b5e821a4.js"), import("./_import/functions.df539b0c.js")]);
+define({id: "39893348", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","leverage","kof_did_plot"], body: async () => {
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.17818ed2.js")]);
 
-return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3};
+return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,leverage,kof_did_plot};
 }});
 
 define({id: "26d78559", mode: "inline", inputs: ["drawMiniPlot","display"], body: async (drawMiniPlot,display) => {
@@ -173,16 +178,8 @@ draw_waffle("br_spinoffs", -90)
 <header id="observablehq-header">
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Schweizerische Agentur für Innovationsförderung</a>
 </header>
-<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
-<nav>
-<div>Contents</div>
-<ol>
-<li class="observablehq-secondary-link"><a href="#bridge-proof-of-concept">BRIDGE: Proof of Concept</a></li>
-</ol>
-</nav>
-</aside>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:2f6889dc:--></div>
+<div class="observablehq observablehq--block"><!--:39893348:--></div>
 <h1 id="projekte-von-forschenden" tabindex="-1"><a class="observablehq-header-anchor" href="#projekte-von-forschenden">Projekte von Forschenden</a></h1>
 <h2 id="innovationsprojekte-ohne-umsetzungspartner" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationsprojekte-ohne-umsetzungspartner">Innovationsprojekte ohne Umsetzungspartner</a></h2>
 <div style="display: flex; gap: 10px;">
@@ -215,13 +212,12 @@ Gegenüber den Innovationsprojekten mit Umsetzungspartner ist – wie zu erwarte
   <div><observablehq-loading></observablehq-loading><!--:0ab5fd16:--></div><div><observablehq-loading></observablehq-loading><!--:df46260d:--></div></div>
 <p>BRIDGE ist das gemeinsame Förderprogramm von Innosuisse und dem Schweizerischen Nationalfonds (SNF) und verbindet Grundlagenforschung und anwendungsorientierte Forschung mit der Umsetzung. Das Förderangebot richtet sich an Nachwuchsforschende, die an der Schnittstelle von Grundlagenforschung und wissenschaftsbasierter Innovation arbeiten. Das Programm bietet ein Jahr lang Unterstützung, um Forschungsergebnisse anwendungsorientiert weiterzuentwickeln, mit dem Ziel, diese zur Marktreife zu führen und eine Karriere ausserhalb der Akademie vorzubereiten.</p>
 <h3 id="bridge-proof-of-concept-fuehrt-zu-start-ups-und-spin-offs" tabindex="-1"><a class="observablehq-header-anchor" href="#bridge-proof-of-concept-fuehrt-zu-start-ups-und-spin-offs">BRIDGE Proof of Concept führt zu Start-ups und Spin-offs</a></h3>
-<div style="display: grid; grid-template-columns: 40% 40%; column-gap: 10px; row-gap: 5px;">
-<div>BRIDGE Proof of Concept zeigt seine Wirkung am Anteil der Unterstützungen, die zu einer Ausgründung führen. Mehr als zwei von drei unterstützten Forschenden gründen in der Folge ein Start-up oder ein Spin-off (Start-up mit formeller IP-Lizenzierung). Das ist beinahe doppelt so hoch wie bei den Innovationsprojekten ohne Umsetzungspartner. Allerdings ist zu beachten, dass die Erhebung unterschiedlich ist. Bei den Innovationsprojekten ohne Umsetzungspartner findet die Befragung bei Projektabschluss, bei BRIDGE Proof of Concept wurde eine eigene Erhebung gemacht, welche einen sehr aktuellen Stand hat (2024) und somit einen längeren Zeitraum abdeckt.</div>
+<p>BRIDGE Proof of Concept zeigt seine Wirkung am Anteil der Unterstützungen, die zu einer Ausgründung führen. Mehr als zwei von drei unterstützten Forschenden gründen in der Folge ein Start-up oder ein Spin-off (Start-up mit formeller IP-Lizenzierung). Das ist beinahe doppelt so hoch wie bei den Innovationsprojekten ohne Umsetzungspartner. Allerdings ist zu beachten, dass die Erhebung unterschiedlich ist. Bei den Innovationsprojekten ohne Umsetzungspartner findet die Befragung bei Projektabschluss, bei BRIDGE Proof of Concept wurde eine eigene Erhebung gemacht, welche einen sehr aktuellen Stand hat (2024) und somit einen längeren Zeitraum abdeckt.</p>
 <p><observablehq-loading></observablehq-loading><!--:af4670b0:--></p>
-</div></main>
+</main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./projekte-unternehmen-forschende#projekte-von-unternehmen-mit-forschenden"><span>Innovationsprojekte mit Umsetzungspartner</span></a><a rel="next" href="./starthilfe-projekte-vernetzung"><span>Innovation Booster</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-28T15:26:43">Jan 28, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-28T22:03:26">Jan 28, 2025</a>.</div>
 </footer>
 </div>
 </body>
