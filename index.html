@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.0">
-<title>Wirkung der Innosuisse-Förderung | Wirkungen der Innosuisse-Förderung</title>
+<title>Wirkung der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles.577434ab.css">
+<link rel="preload" as="style" href="./_import/styles.66eb0029.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles.577434ab.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles.66eb0029.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.17818ed2.js">
+<link rel="modulepreload" href="./_import/functions.212c61ec.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.3b95228e.js">
+<link rel="modulepreload" href="./_import/data.62b5ddd6.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -65,15 +65,15 @@ import {define} from "./_observablehq/client.6c3b6f8d.js";
 import {registerFile} from "./_observablehq/stdlib.86572394.js";
 
 registerFile("./data/daten_controlling.txt", {"name":"./data/daten_controlling.txt","mimeType":"text/plain","path":"./_file/data/daten_controlling.e80418ee.txt","lastModified":1737579114417,"size":6281});
-registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.1d5dbf16.txt","lastModified":1737987307862,"size":14702});
-registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.f8110b7b.txt","lastModified":1737985976737,"size":10623});
+registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.b22d4c6c.txt","lastModified":1738164191706,"size":14674});
+registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.6e85d407.txt","lastModified":1738162532704,"size":10493});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.487a7b2e.txt","lastModified":1737986233163,"size":19093});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.7ba28c05.txt","lastModified":1738165989266,"size":19170});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 
 define({id: "68e5ce68", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","draw_fin_plot","n_subcluster"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.17818ed2.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.212c61ec.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subcluster};
 }});
@@ -86,7 +86,7 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link observablehq-link-active"><a href="./">Wirkungen der Innosuisse-Förderung</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./">Wirkung der Innosuisse-Förderung</a></li>
   </ol>
   <ol>
     <li class="observablehq-link observablehq-link-active"><a href="./">Einleitung</a></li>
@@ -114,15 +114,11 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 </header>
 <main id="observablehq-main" class="observablehq">
 <div class="observablehq observablehq--block"><!--:68e5ce68:--></div>
-<div style="background: transparent linear-gradient(284deg, rgb(6, 247, 218) 0%, #FCE300 100%) no-repeat padding-box; height: 100px; padding: 25px;">
+<div style="background: transparent linear-gradient(284deg, rgb(6, 247, 218) 0%, #FCE300 100%) no-repeat padding-box; height: 60px; width: 650px; padding-left: 40px; padding-top: 24px; padding-bottom: 30px;  margin-left: -40px; margin-top: -31px;">
 <h1>Wirkung der Innosuisse-Förderung</h1>
 </div>
 <h2 id="ergebnisse-des-wirkungsmonitoring-2021-2023" tabindex="-1"><a class="observablehq-header-anchor" href="#ergebnisse-des-wirkungsmonitoring-2021-2023">Ergebnisse des Wirkungsmonitoring 2021–2023</a></h2>
-<div class="grid grid-cols-2" style="column-gap: 10px; row-gap: 0px; font-size: 10px;">
-  <div>Version 1.0, letzte Änderungen: 30. Januar 2025</div>
-  <div>Französische Version folgt.</div>
-</div>
-<br>
+<p class="comment" style="margin-bottom: 30px">Version 1.0, letzte Änderungen: 30. Januar 2025</p>
 <p>Innosuisse legt grosses Gewicht darauf die Wirksamkeit der Innovationsförderung gegenüber den Stakeholdern, den politischen Entscheidungsträgern und der Öffentlichkeit transparent darzulegen. Folgende zwei Fragen stehen im Vordergrund:</p>
 <ul>
 <li>Welche Wirkungen erzielen die eingesetzten öffentlichen Mittel bei den Fördernehmerinnen und Fördernehmer (Unternehmen, Organisationen und Start-ups)?</li>
@@ -131,7 +127,7 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <p>Die Auswahl der hier vorgestellten und kommentierten Ergebnisse basiert auf den bis 2023 in das Wirkungsmonitoring integrierten Förderangebote und Instrumente und umfasst erst einen Teil der Förderangebote von Innosuisse.</p>
 <p>Im ersten Halbjahr 2025 folgt eine Aktualisierung der Ergebnisse basierend auf dem Monitoring 2024.
 <br></p>
-<hr>
+<hr style="max-width: 640px;">
 <div class="card" style="max-width: 600px;">
 <h4 id="wichtige-ergebnisse-der-foerderung-auf-einen-blick" tabindex="-1"><a class="observablehq-header-anchor" href="#wichtige-ergebnisse-der-foerderung-auf-einen-blick">Wichtige Ergebnisse der Förderung auf einen Blick</a></h4>
 <p>Die wichtigsten Ergebnisse aus dem Wirkungsmonitoring sind nachfolgend kurz zusammengefasst und können mit einem Klick nach einzelnen Instrumenten aufgeklappt werden.</p>
@@ -217,7 +213,7 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 </div></main>
 <footer id="observablehq-footer">
 <nav><a rel="next" href="./editorial"><span>Editorial</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-28T22:19:24">Jan 28, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-29T17:26:46">Jan 29, 2025</a>.</div>
 </footer>
 </div>
 </body>

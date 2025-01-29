@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.0">
-<title>Begleitung von Start-ups | Wirkungen der Innosuisse-Förderung</title>
+<title>Begleitung von Start-ups | Wirkung der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles-ch-startup.ca2ff9d0.css">
+<link rel="preload" as="style" href="./_import/styles-ch-startup.4177831d.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles-ch-startup.ca2ff9d0.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles-ch-startup.4177831d.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.17818ed2.js">
+<link rel="modulepreload" href="./_import/functions.212c61ec.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.3b95228e.js">
+<link rel="modulepreload" href="./_import/data.62b5ddd6.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -65,17 +65,17 @@ import {define} from "./_observablehq/client.6c3b6f8d.js";
 import {registerFile} from "./_observablehq/stdlib.86572394.js";
 
 registerFile("./data/daten_controlling.txt", {"name":"./data/daten_controlling.txt","mimeType":"text/plain","path":"./_file/data/daten_controlling.e80418ee.txt","lastModified":1737579114417,"size":6281});
-registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.1d5dbf16.txt","lastModified":1737987307862,"size":14702});
-registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.f8110b7b.txt","lastModified":1737985976737,"size":10623});
+registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.b22d4c6c.txt","lastModified":1738164191706,"size":14674});
+registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.6e85d407.txt","lastModified":1738162532704,"size":10493});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.487a7b2e.txt","lastModified":1737986233163,"size":19093});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.7ba28c05.txt","lastModified":1738165989266,"size":19170});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 
-define({id: "165cee6d", outputs: ["html","color_inst","grey_innosuisse","color_su","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","drawMiniPlot1","su_vza"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse, color_su}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, drawMiniPlot1, su_vza}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.17818ed2.js")]);
+define({id: "464ae37e", outputs: ["html","color_inst","grey_innosuisse","color_su","black_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","drawMiniPlot1","su_vza"], body: async () => {
+const [{html}, {color_inst, grey_innosuisse, color_su, black_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, drawMiniPlot1, su_vza}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.212c61ec.js")]);
 
-return {html,color_inst,grey_innosuisse,color_su,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,drawMiniPlot1,su_vza};
+return {html,color_inst,grey_innosuisse,color_su,black_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,drawMiniPlot1,su_vza};
 }});
 
 define({id: "d14d9121", mode: "inline", inputs: ["drawMiniPlot","display"], body: async (drawMiniPlot,display) => {
@@ -96,51 +96,51 @@ drawMiniPlot("Start-up Coaching", false)
 ))
 }});
 
-define({id: "25173f1d", mode: "inline", inputs: ["draw_results","display"], body: async (draw_results,display) => {
+define({id: "84ee8fb0", mode: "inline", inputs: ["draw_results","display"], body: async (draw_results,display) => {
 display(await(
-draw_results("Start-up Core Coaching", true)
+draw_results("Start-up Core Coaching", true, 225)
 ))
 }});
 
-define({id: "15bcb142", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "e451c1c4", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_support", -90)
+draw_waffle("scc_support", -100)
 ))
 }});
 
-define({id: "402f592d", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "eaabfd3b", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_expection", -90)
+draw_waffle("scc_expection", -100)
 ))
 }});
 
-define({id: "8db8083e", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "6599834b", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_radikal_inkr", -75)
+draw_waffle("scc_radikal_inkr", -85)
 ))
 }});
 
-define({id: "f23b8096", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "53443d7c", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_new_to_market", -75)
+draw_waffle("scc_new_to_market", -85)
 ))
 }});
 
-define({id: "1eb36cb8", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "b784dd9e", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_market", -75)
+draw_waffle("scc_market", -85)
 ))
 }});
 
-define({id: "e9be8bc9", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "6837bff0", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_profitable", -75)
+draw_waffle("scc_profitable", -85)
 ))
 }});
 
-define({id: "2ce97cb5", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "599a63b2", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_capital")
+draw_waffle("scc_capital", -70)
 ))
 }});
 
@@ -150,33 +150,33 @@ su_vza
 ))
 }});
 
-define({id: "0705ce20", mode: "inline", inputs: ["Plot","color_su","display"], body: async (Plot,color_su,display) => {
+define({id: "af9dfec8", mode: "inline", inputs: ["Plot","color_su","black_innosuisse","display"], body: async (Plot,color_su,black_innosuisse,display) => {
 display(await(
-Plot.legend({ color: color_su })
+Plot.legend({ color: color_su, style:{fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse}})
 ))
 }});
 
-define({id: "da63cb0c", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "81168f13", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_gender", -90)
+draw_waffle("scc_gender", -100)
 ))
 }});
 
-define({id: "c27d3310", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "19570f64", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_foreign", -90)
+draw_waffle("scc_foreign", -100)
 ))
 }});
 
-define({id: "b0697bc7", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "b62665e8", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_start_spin", -75)
+draw_waffle("scc_start_spin", -70)
 ))
 }});
 
-define({id: "ea12a8a7", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "42d3f088", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("scc_patent", -75)
+draw_waffle("scc_patent", -70)
 ))
 }});
 
@@ -188,7 +188,7 @@ draw_waffle("scc_patent", -75)
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link"><a href="./">Wirkungen der Innosuisse-Förderung</a></li>
+    <li class="observablehq-link"><a href="./">Wirkung der Innosuisse-Förderung</a></li>
   </ol>
   <ol>
     <li class="observablehq-link"><a href="./">Einleitung</a></li>
@@ -215,10 +215,10 @@ draw_waffle("scc_patent", -75)
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Schweizerische Agentur für Innovationsförderung</a>
 </header>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:165cee6d:--></div>
+<div class="observablehq observablehq--block"><!--:464ae37e:--></div>
 <h1 id="begleitung-von-start-ups" tabindex="-1"><a class="observablehq-header-anchor" href="#begleitung-von-start-ups">Begleitung von Start-ups</a></h1>
 <h2 id="start-up-coaching" tabindex="-1"><a class="observablehq-header-anchor" href="#start-up-coaching">Start-up Coaching</a></h2>
-<div style="display: flex; gap: 10px;">
+<div style="display: flex;">
   <div><observablehq-loading></observablehq-loading><!--:d14d9121:--></div>
   <div><observablehq-loading></observablehq-loading><!--:9d50e930:--></div>
   <div><observablehq-loading></observablehq-loading><!--:a810c687:--></div>
@@ -247,49 +247,51 @@ draw_waffle("scc_patent", -75)
 <h3 id="start-ups-beurteilen-das-core-coaching-als-hilfreich-fuer-ihre-weiterentwicklung" tabindex="-1"><a class="observablehq-header-anchor" href="#start-ups-beurteilen-das-core-coaching-als-hilfreich-fuer-ihre-weiterentwicklung">Start-ups beurteilen das Core Coaching als hilfreich für Ihre Weiterentwicklung</a></h3>
 <p>Das Core Coaching deckt ein breites Spektrum an Themen ab, die gezielt auf die spezifischen Anliegen der Start-ups ausgerichtet sind. In der untenstehenden Abbildung sind die Themenbereiche absteigend nach der Relevanz für die Start-ups sortiert (siehe Prozentangaben in hellgrau). Die Darstellung zeigt, welche Anteile der unterstützten Start-ups das Core Coaching in den relevanten Themenfeldern als hilfreich oder sehr hilfreich einschätzen.</p>
 <p>Der für das Coaching wichtigste Themenbereich, «Entwicklung des Geschäftsmodells» (91 %), zeigt auch den höchsten Anteil an Start-ups, die die Unterstützung als hilfreich beurteilen (81 %). Die Unterstützung bei der Kapitalakquisition, die ebenfalls eine hohe Relevanz hat (85 %), wurde von zwei Dritteln der Start-ups (66 %) als hilfreich empfunden. Die Hilfe beim Markteintritt wurde ähnlich bewertet (65 %). Etwas niedriger fiel die Bewertung der Unterstützung bei der Skalierung des Geschäftsmodells aus (55 %), was vermutlich darauf hinweist, dass sich viele Start-ups beim Coachingabschluss noch nicht in der Phase der tatsächlichen Skalierung befinden.</p>
-<p><observablehq-loading></observablehq-loading><!--:25173f1d:--></p>
+<div><observablehq-loading></observablehq-loading><!--:84ee8fb0:--></div>
 <h3 id="erwartungen-der-start-ups-an-das-coaching-werden-erfuellt" tabindex="-1"><a class="observablehq-header-anchor" href="#erwartungen-der-start-ups-an-das-coaching-werden-erfuellt">Erwartungen der Start-ups an das Coaching werden erfüllt</a></h3>
 <p>Rund vier von fünf gecoachten Start-ups bestätigen, dass das Core Coaching in mindestens einem relevanten Bereich einen wichtigen Beitrag geleistet hat (78 %), wobei dies als «unterstützend» oder «sehr unterstützend» bewertet wurde. Der Anteil der Start-ups, deren Erwartungen mehrheitlich erfüllt wurden, liegt mit 84 % ähnlich hoch.</p>
 <p>Für rund die Hälfte der Start-ups hat das Coaching in mindestens drei wichtigen Gründungsthemen einen wesentlichen Beitrag geleistet (54 %). Fast ebenso hoch ist der Anteil der Start-ups, bei denen die Erwartungen vollständig erfüllt oder sogar noch übertroffen wurden (48 %).</p>
 <div style="display: flex; gap: 15px;">
-    <observablehq-loading></observablehq-loading><!--:15bcb142:-->
-    <observablehq-loading></observablehq-loading><!--:402f592d:-->
+    <observablehq-loading></observablehq-loading><!--:e451c1c4:-->
+    <observablehq-loading></observablehq-loading><!--:eaabfd3b:-->
 </div>
 <h3 id="start-ups-verfolgen-radikale-und-disruptive-geschaeftsideen-mit-wirkungen-auf-internationalen-maerkten" tabindex="-1"><a class="observablehq-header-anchor" href="#start-ups-verfolgen-radikale-und-disruptive-geschaeftsideen-mit-wirkungen-auf-internationalen-maerkten">Start-ups verfolgen radikale und disruptive Geschäftsideen mit Wirkungen auf internationalen Märkten</a></h3>
 <p>Im Vergleich zu Innovationsprojekten verfolgen die Start-ups in der Regel radikalere Innovationen und Geschäftsmodelle. Nur wenige setzen klar inkrementelle Innovationen und Geschäftsmodelle um. Die Mehrheit zielt zudem darauf ab, disruptive Innovationen zu realisieren und mit ihren Neuheiten den Markt erheblich zu verändern oder sogar neue Märkte zu schaffen. Entsprechend hoch ist der Anteil der Start-ups, die eine Weltmarktneuheit oder eine Neuheit für internationale Märkte entwickeln (77 %).</p>
 <div style="display: flex; gap: 10px;">
-    <observablehq-loading></observablehq-loading><!--:8db8083e:-->
-    <observablehq-loading></observablehq-loading><!--:f23b8096:-->
+    <observablehq-loading></observablehq-loading><!--:6599834b:-->
+    <observablehq-loading></observablehq-loading><!--:53443d7c:-->
 </div>
 <h3 id="start-ups-schaffen-markteintritt-profitabilitaet-braucht-mehr-zeit" tabindex="-1"><a class="observablehq-header-anchor" href="#start-ups-schaffen-markteintritt-profitabilitaet-braucht-mehr-zeit">Start-ups schaffen Markteintritt – Profitabilität braucht mehr Zeit</a></h3>
 <p>Ein entscheidender Faktor für das Überleben und das Wachstum der Start-ups ist der konkrete Markteintritt, um später das Geschäftsmodell weiter zu skalieren. Bis zum Abschluss des Coachings konnten rund 80 % der Jungunternehmen ihre Innovation  auf dem Markt lancieren. Der nächste Meilenstein ist die Profitabilität, wenn das Start-up beginnt, Gewinne zu erzielen. Bei etwa jedem zehnten Start-up ist dies bereits zum Zeitpunkt des Coaching-Abschlusses der Fall. Drei Jahre später trifft dies bereits auf nahezu jedes dritte Start-up zu.</p>
   <div style="display: flex; gap: 40px;">
- <observablehq-loading></observablehq-loading><!--:1eb36cb8:-->
-  <observablehq-loading></observablehq-loading><!--:e9be8bc9:-->
+ <observablehq-loading></observablehq-loading><!--:b784dd9e:-->
+  <observablehq-loading></observablehq-loading><!--:6837bff0:-->
 </div>
 <h3 id="start-ups-im-coaching-beschaffen-erfolgreich-kapital" tabindex="-1"><a class="observablehq-header-anchor" href="#start-ups-im-coaching-beschaffen-erfolgreich-kapital">Start-ups im Coaching beschaffen erfolgreich Kapital</a></h3>
 <p>Für Start-ups ist die Kapitalbeschaffung eine entscheidende Voraussetzung, um ihre Geschäftsidee weiterzuführen und die Skalierung auf den Märkten voranzutreiben. Forschung und Entwicklung sowie die Markteinführung einer Innovation erfordern hohe Investitionen, weshalb die Kapitalakquise ein zentrales Thema im Coaching-Programm von Innosuisse darstellt. Bis zum Abschluss des Programms haben 22 % der gecoachten Start-ups jeweils mehr als 5 Millionen Franken an neuem Kapital akquiriert. Bei zwei Dritteln der Start-ups hat das Coaching die Kapitalbeschaffung direkt unterstützt. (<a href="./begleitung-start-ups#start-ups-beurteilen-das-core-coaching-als-hilfreich-fuer-ihre-weiterentwicklung">Link</a>).</p>
-<div><observablehq-loading></observablehq-loading><!--:2ce97cb5:--></div>
+<div><observablehq-loading></observablehq-loading><!--:599a63b2:--></div>
 <h3 id="drei-jahre-nach-dem-coaching-werden-bei-den-start-ups-ueber-elf-vollzeitstellen-geschaffen" tabindex="-1"><a class="observablehq-header-anchor" href="#drei-jahre-nach-dem-coaching-werden-bei-den-start-ups-ueber-elf-vollzeitstellen-geschaffen">Drei Jahre nach dem Coaching werden bei den Start-ups über elf Vollzeitstellen geschaffen</a></h3>
 <p>Für Start-ups ist das Wachstum ein zentraler Indikator für den Erfolg. Drei Jahre nach dem Abschluss des Coaching-Programms haben die Start-ups im Durchschnitt über elf zusätzliche Vollzeitstellen in der Schweiz geschaffen. Besonders bei Start-ups im Bereich „Life Sciences“ und solchen mit hochriskanten Innovationen zeigt sich, dass der Markteintritt und ein tragendes Wachstum häufig erst später einsetzt.</p>
-<p><observablehq-loading></observablehq-loading><!--:3b93d978:-->
-<observablehq-loading></observablehq-loading><!--:0705ce20:--></p>
+<div>
+<observablehq-loading></observablehq-loading><!--:3b93d978:-->
+<observablehq-loading></observablehq-loading><!--:af9dfec8:-->
+</div>
 <h3 id="coaching-widerspiegelt-und-staerkt-die-vielfalt-des-oekosystems" tabindex="-1"><a class="observablehq-header-anchor" href="#coaching-widerspiegelt-und-staerkt-die-vielfalt-des-oekosystems">Coaching widerspiegelt und stärkt die Vielfalt des Ökosystems</a></h3>
 <p>Der Anteil von Gründerinnen bei den Start-ups mit Coachingabschluss liegt bei 17 %. In 35 % der Gründungsteams sind weibliche Mitglieder vertreten, Tendenz zunehmend. Zudem weisen die Gründungsteams eine hohe Internationalität auf: 67&nbsp;% der Start-ups haben mindestens ein Gründungsmitglied mit ausländischem Bürgerrecht, und insgesamt sind durchschnittlich 43 % der Gründungsteams ausländische Mitglieder. Dies unterstreicht den internationalen Charakter der Schweizer Start-up-Szene.</p>
 <p>Thematisch liegt im Start-up Bereich ein starker Fokus auf dem Themenbereich «Life Sciences», inklusive Medtech und Healthcare (38 %) und ICT (20 %), siehe <a href="./foerderangebote-und-inhalte#verteilung-der-bewilligten-innovationsvorhaben-2021-2023-nach-themenbereichen-der-foerderung">Förderangebote und Inhalte</a>. Gleichzeitig sind auch die übrigen Technologie- und Innovationsbereiche vielfältig und breit vertreten. Die nachfolgenden Ausführungen zeigen zudem, dass den Spin-offs und direkten Ausgründungen aus der Forschungslandschaft und den Hochschulen eine hohe Bedeutung zukommt. Die Internationalität spielt dabei eine wesentliche Rolle.</p>
 <p>Diese Diversität der geförderten Start-ups  trägt wesentlich zur wirtschaftlichen und technologischen Dynamik des Start-up-Ökosystems und der Stärkung in der schweizerischen Volkswirtschaft bei.</p>
 <div style="display: flex; gap: 10px;">
-    <observablehq-loading></observablehq-loading><!--:da63cb0c:-->
-    <observablehq-loading></observablehq-loading><!--:c27d3310:-->
+    <observablehq-loading></observablehq-loading><!--:81168f13:-->
+    <observablehq-loading></observablehq-loading><!--:19570f64:-->
     </div>
 <h3 id="viele-start-ups-haben-ihren-ursprung-in-der-forschung" tabindex="-1"><a class="observablehq-header-anchor" href="#viele-start-ups-haben-ihren-ursprung-in-der-forschung">Viele Start-ups haben ihren Ursprung in der Forschung</a></h3>
 <p>Die Hälfte der Start-ups, die das Core Coaching von Innosuisse in Anspruch nehmen, haben ihren Ursprung an einer Hochschule oder einem Forschungsinstitut. Rund jedes dritte Start-up ist ein Spin-off, das geistiges Eigentum aus der Forschungsarbeit wirtschaftlich nutzen möchte und dies vertraglich geregelt hat. Zwei von drei Start-ups geben an, dass sie ihr geistiges Eigentum bereits mit einem Patent geschützt haben oder dies in naher Zukunft planen.</p>
   <div style="display: flex; gap: 10px;">
-    <observablehq-loading></observablehq-loading><!--:b0697bc7:-->
-    <observablehq-loading></observablehq-loading><!--:ea12a8a7:--></div></main>
+    <observablehq-loading></observablehq-loading><!--:b62665e8:-->
+    <observablehq-loading></observablehq-loading><!--:42d3f088:--></div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./starthilfe-projekte-vernetzung"><span>Innovation Booster</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-28T22:19:24">Jan 28, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-29T17:26:46">Jan 29, 2025</a>.</div>
 </footer>
 </div>
 </body>

@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.0">
-<title>Überblick Förderangebote und Inhalte des Wirkungsmonitorings | Wirkungen der Innosuisse-Förderung</title>
+<title>Überblick Förderangebote und Inhalte des Wirkungsmonitorings | Wirkung der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles.577434ab.css">
+<link rel="preload" as="style" href="./_import/styles.66eb0029.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles.577434ab.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles.66eb0029.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.17818ed2.js">
+<link rel="modulepreload" href="./_import/functions.212c61ec.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.3b95228e.js">
+<link rel="modulepreload" href="./_import/data.62b5ddd6.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -65,40 +65,40 @@ import {define} from "./_observablehq/client.6c3b6f8d.js";
 import {registerFile} from "./_observablehq/stdlib.86572394.js";
 
 registerFile("./data/daten_controlling.txt", {"name":"./data/daten_controlling.txt","mimeType":"text/plain","path":"./_file/data/daten_controlling.e80418ee.txt","lastModified":1737579114417,"size":6281});
-registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.1d5dbf16.txt","lastModified":1737987307862,"size":14702});
-registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.f8110b7b.txt","lastModified":1737985976737,"size":10623});
+registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.b22d4c6c.txt","lastModified":1738164191706,"size":14674});
+registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.6e85d407.txt","lastModified":1738162532704,"size":10493});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.487a7b2e.txt","lastModified":1737986233163,"size":19093});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.7ba28c05.txt","lastModified":1738165989266,"size":19170});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 
-define({id: "68e5ce68", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","draw_fin_plot","n_subcluster"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.17818ed2.js")]);
+define({id: "21f0fa03", outputs: ["html","color_inst","grey_innosuisse","black_innosuisse","grey_comment","coloredUnderline","draw_fin_plot","n_subcluster"], body: async () => {
+const [{html}, {color_inst, grey_innosuisse, black_innosuisse, grey_comment}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.212c61ec.js")]);
 
-return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subcluster};
+return {html,color_inst,grey_innosuisse,black_innosuisse,grey_comment,coloredUnderline,draw_fin_plot,n_subcluster};
 }});
 
-define({id: "91352348", inputs: ["Plot","color_inst","display"], body: async (Plot,color_inst,display) => {
+define({id: "9581070a", inputs: ["Plot","color_inst","black_innosuisse","display"], body: async (Plot,color_inst,black_innosuisse,display) => {
 display(await(
-Plot.legend({ color: color_inst, columns: 1, swatchSize: 12 })
+Plot.legend({ color: color_inst, columns: 1, swatchSize: 12, style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse}})
 ))
 }});
 
-define({id: "5cc68ea5", mode: "inline", inputs: ["draw_fin_plot","display"], body: async (draw_fin_plot,display) => {
+define({id: "1a4ee608", mode: "inline", inputs: ["draw_fin_plot","display"], body: async (draw_fin_plot,display) => {
 display(await(
-draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",125,true)
+draw_fin_plot("Förderung","Projekte von Unternehmen mit Forschenden",135,true)
 ))
 }});
 
-define({id: "2b1f21fa", mode: "inline", inputs: ["draw_fin_plot","display"], body: async (draw_fin_plot,display) => {
+define({id: "c8d8a3ee", mode: "inline", inputs: ["draw_fin_plot","display"], body: async (draw_fin_plot,display) => {
 display(await(
-draw_fin_plot("Förderung","Projekte von Unternehmen", 32, false)
+draw_fin_plot("Förderung","Projekte von Unternehmen", 25, false)
 ))
 }});
 
-define({id: "dca48a2d", mode: "inline", inputs: ["draw_fin_plot","display"], body: async (draw_fin_plot,display) => {
+define({id: "36e83bf5", mode: "inline", inputs: ["draw_fin_plot","display"], body: async (draw_fin_plot,display) => {
 display(await(
-draw_fin_plot("Förderung","Projekte von Forschenden", 75, false)
+draw_fin_plot("Förderung","Projekte von Forschenden", 68, false)
 ))
 }});
 
@@ -108,9 +108,9 @@ draw_fin_plot("Starthilfe für Projekte und Vernetzung",undefined, 95,false)
 ))
 }});
 
-define({id: "55edc894", mode: "inline", inputs: ["draw_fin_plot","display"], body: async (draw_fin_plot,display) => {
+define({id: "53cca6de", mode: "inline", inputs: ["draw_fin_plot","display"], body: async (draw_fin_plot,display) => {
 display(await(
-draw_fin_plot("Begleitung von Start-ups",undefined,80, false, true)
+draw_fin_plot("Begleitung von Start-ups",undefined,80, false)
 ))
 }});
 
@@ -164,7 +164,7 @@ n_subcluster
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link"><a href="./">Wirkungen der Innosuisse-Förderung</a></li>
+    <li class="observablehq-link"><a href="./">Wirkung der Innosuisse-Förderung</a></li>
   </ol>
   <ol>
     <li class="observablehq-link"><a href="./">Einleitung</a></li>
@@ -191,38 +191,38 @@ n_subcluster
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Schweizerische Agentur für Innovationsförderung</a>
 </header>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:68e5ce68:--></div>
+<div class="observablehq observablehq--block"><!--:21f0fa03:--></div>
 <h2 id="ueberblick-foerderangebote-und-inhalte-des-wirkungsmonitorings" tabindex="-1"><a class="observablehq-header-anchor" href="#ueberblick-foerderangebote-und-inhalte-des-wirkungsmonitorings">Überblick Förderangebote und Inhalte des Wirkungsmonitorings</a></h2>
 <p>Der gegenwärtige Stand des Wirkungsmonitorings ist so aufgebaut, dass in allen Förderangebotskategorien mindestens zum jeweils finanziell gewichtigsten Förderangebot Aussagen zur Wirksamkeit und zu ausgewählten Vergleichen gemacht werden können. Bei den Start-up Innovationsprojekten liegen gegenwärtig noch keine abgeschlossenen Projekte vor. Die gegenwärtigen Lücken (in aufgehellter Farbe) werden schrittweise geschlossen werden.</p>
 <h3 id="innosuisse-foerderangebote" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-foerderangebote">Innosuisse Förderangebote</a></h3>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:91352348:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:9581070a:--></div>
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style="margin-bottom: 0;">Projekte von Unternehmen mit Forschenden</h5>
-  <observablehq-loading></observablehq-loading><!--:5cc68ea5:-->
+  <observablehq-loading></observablehq-loading><!--:1a4ee608:-->
   <h5 style="margin-bottom: 0;">Projekte von Unternehmen</h5>
-  <observablehq-loading></observablehq-loading><!--:2b1f21fa:-->
+  <observablehq-loading></observablehq-loading><!--:c8d8a3ee:-->
   <h5 style="margin-bottom: 0;">Projekte von Forschenden</h5>
-  <observablehq-loading></observablehq-loading><!--:dca48a2d:-->
+  <observablehq-loading></observablehq-loading><!--:36e83bf5:-->
   <h5 style="margin-bottom: 0;">Starthilfe für Projekte und Vernetzung</h5>
   <observablehq-loading></observablehq-loading><!--:e1183644:-->
   <h5 style="margin-bottom: 0;">Begleitung von Start-ups</h5>
-  <observablehq-loading></observablehq-loading><!--:55edc894:-->
+  <observablehq-loading></observablehq-loading><!--:53cca6de:-->
 </div>
-<p style="font-size: 10px; color: #828282;">
-* Für die markierten Instrumente werden in der Folge die Ergebnisse aus dem Wirkungsmonitoring erläutert. Das Förderangebot «Swiss Accelerator» (2023-2024) wird nicht aufgeführt (Fördervolumen 2023: 111.8 Mio. Fr.). Es war eine zeitlich beschränkte Ersatzmassnahme in Reaktion auf die Nichtassoziation an Horizon Europe.</p>
+<p class="comment">Quelle: Cockpit/PowerBI Innosuisse (2025)
+<br>* Für die markierten Instrumente werden in der Folge die Ergebnisse aus dem Wirkungsmonitoring erläutert. Das Förderangebot «Swiss Accelerator» (2023-2024) wird nicht aufgeführt (Fördervolumen 2023: 111.8 Mio. Fr.). Es war eine zeitlich beschränkte Ersatzmassnahme in Reaktion auf die Nichtassoziation an Horizon Europe.</p>
 <p>Der Grossteil der Förderung von Innosuisse fliesst in die <observablehq-loading></observablehq-loading><!--:fb2f0e37:--> und <observablehq-loading></observablehq-loading><!--:98d196e7:-->. Die höchste Bedeutung kommt hier den Standard-Innovationsprojekten zwischen Unternehmen¹ und Forschenden zu, in welchen die Forschungsinstitutionen primär für die Entlohnung des Forschungspersonals entgolten werden. Die beteiligten Unternehmen und Organisationen tragen Ihrerseits mindestens 50% an die gesamten Projektkosten bei.</p>
 <p>Flankierend dazu werden Unternehmen mittels <observablehq-loading></observablehq-loading><!--:d3c4b8e3:-->, <observablehq-loading></observablehq-loading><!--:ac786f81:-->, <observablehq-loading></observablehq-loading><!--:c9fd2e9d:--> und weiteren Veranstaltung in der Initierung von Innovationsprojekten unterstützt. Start-ups können von <observablehq-loading></observablehq-loading><!--:d4f68db8:--> profitieren. Hier werden die Ergebnisse des Wirkungsmonitoring der Innovation Booster und des Start-up Core Coaching präsentiert.</p>
 <p>Bei den Innovationsprojekten von Forschenden ohne Umsetzungspartner können ebenfalls Ergebnisse präsentiert werden.</p>
 <p>Die Aufnahme der internationalen Innovationsprojekte in das Wirkungsmonitoring ist für das Berichtsjahr 2025 vorgesehen.
 Die Projekte, in welchen die Start-ups und KMUs direkt unterstützt werden (Start-up Innovationsprojekte und Swiss Accelerator) werden zu einem späteren Zeitpunkt in das Monitoring integriert, da die Projekte noch nicht abgeschlossen sind. Dies gilt in gleicher Form für die Flagship-Projekte.</p>
-<p style="font-size: 10px; color: #828282;">¹ In der Folge wird «Unternehmen» vielfach als Synonym für «Umsetzungspartner» verwendet. Das ist nicht ganz präzise, weil die Umsetzungspartner sowohl KMU, Grossunternehmen und Start-ups, wie auch Verwaltungen, Non-Profit-Organisationen und andere private oder öffentliche Institutionen umfassen können. Allerdings besteht die grosse Mehrheit der Umsetzungspartner aus Unternehmen (KMU, Grossunternehmen und Start-ups), darum erlauben wir uns diese Vereinfachung hier, um damit die Texte einfacher verständlich zu machen.</p><p>
+<p class="comment">¹ In der Folge wird «Unternehmen» vielfach als Synonym für «Umsetzungspartner» verwendet. Das ist nicht ganz präzise, weil die Umsetzungspartner sowohl KMU, Grossunternehmen und Start-ups, wie auch Verwaltungen, Non-Profit-Organisationen und andere private oder öffentliche Institutionen umfassen können. Allerdings besteht die grosse Mehrheit der Umsetzungspartner aus Unternehmen (KMU, Grossunternehmen und Start-ups), darum erlauben wir uns diese Vereinfachung hier, um damit die Texte einfacher verständlich zu machen.</p><p>
 </p><h3 id="verteilung-der-bewilligten-innovationsvorhaben-2021-2023-nach-themenbereichen-der-foerderung" tabindex="-1"><a class="observablehq-header-anchor" href="#verteilung-der-bewilligten-innovationsvorhaben-2021-2023-nach-themenbereichen-der-foerderung">Verteilung der bewilligten Innovationsvorhaben 2021–2023 nach Themenbereichen der Förderung</a></h3>
 <p>Die bewilligten Innovationsvorhaben lassen sich in fünf verschiedene Themenbereiche gliedern, welche in der nachfolgenden Abbildung zusätzlich nach Instrumenten bzw. Förderangeboten dargestellt sind. Die Abbildung zeigt den prozentualen Anteil der Themenbereiche an den bewilligten Innovationsvorhaben im Durchschnitt der Jahre 2021-2023. Die prozentualen Anteile nach Instrumenten unterscheiden sich zum Teil deutlich.</p>
 <p>«Engineering» weist bei den Innovationsprojekten mit Umsetzungspartnern (37 %), den Innovationsschecks (32 %) und bei BRIDGE Proof of Concept (31 %) höhere und vergleichbare Anteile auf. «Life Sciences» hingegen zeigen einen sehr hohen Anteil bei den Innovationsprojekten ohne Umsetzungspartner (66 %) und einen überdurchschnittlichen Anteil bei den Start-ups im Coaching (38 %). Bei BRIDGE Proof of Concept ist es der wichtigste Themenbereich (34 %).  Dem Bereich «Information and communication technologies ICT» kommt bei den Start-ups im Coaching das grösste Gewicht zu (30 %). Die Unterschiede bei «Energy &amp; environment» sind geringer und bewegen sich zwischen 9 % bei den Innovationsprojekten ohne Umsetzungspartner und 17 % bei den Innovationsprojekten mit Umsetzungspartner (17 %). «Social sciences &amp; business management» sind bei den Innovationsschecks (21 %) am stärksten vertreten, ansonsten sind die Anteile vergleichsweise geringer.</p>
 <div><observablehq-loading></observablehq-loading><!--:0219af3d:--></div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./methodische-grundlagen"><span>Methodische Grundlagen</span></a><a rel="next" href="./vergleichende-ergebnisse"><span>Vergleichende Ergebnisse</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-28T22:19:24">Jan 28, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-29T17:26:46">Jan 29, 2025</a>.</div>
 </footer>
 </div>
 </body>

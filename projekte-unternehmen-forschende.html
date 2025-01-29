@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.0">
-<title>Projekte von Forschenden mit Unternehmen | Wirkungen der Innosuisse-Förderung</title>
+<title>Projekte von Forschenden mit Unternehmen | Wirkung der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles-ch-projekte.4f0c1891.css">
+<link rel="preload" as="style" href="./_import/styles-ch-projekte.b1318eca.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles-ch-projekte.4f0c1891.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles-ch-projekte.b1318eca.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.17818ed2.js">
+<link rel="modulepreload" href="./_import/functions.212c61ec.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.3b95228e.js">
+<link rel="modulepreload" href="./_import/data.62b5ddd6.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -65,15 +65,15 @@ import {define} from "./_observablehq/client.6c3b6f8d.js";
 import {registerFile} from "./_observablehq/stdlib.86572394.js";
 
 registerFile("./data/daten_controlling.txt", {"name":"./data/daten_controlling.txt","mimeType":"text/plain","path":"./_file/data/daten_controlling.e80418ee.txt","lastModified":1737579114417,"size":6281});
-registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.1d5dbf16.txt","lastModified":1737987307862,"size":14702});
-registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.f8110b7b.txt","lastModified":1737985976737,"size":10623});
+registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.b22d4c6c.txt","lastModified":1738164191706,"size":14674});
+registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.6e85d407.txt","lastModified":1738162532704,"size":10493});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.487a7b2e.txt","lastModified":1737986233163,"size":19093});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.7ba28c05.txt","lastModified":1738165989266,"size":19170});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 
 define({id: "39893348", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","leverage","kof_did_plot"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.17818ed2.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.212c61ec.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,leverage,kof_did_plot};
 }});
@@ -126,57 +126,57 @@ draw_waffle("ip_disruptive", -85)
 ))
 }});
 
-define({id: "eb8ed1c4", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "32a40ad8", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_project_goals",-75)
+draw_waffle("ip_project_goals",-85)
 ))
 }});
 
-define({id: "e71db4f7", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "f4dc727c", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_mitnahme",-75,10)
+draw_waffle("ip_mitnahme",-85,10)
 ))
 }});
 
-define({id: "9e50de69", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "d56dcc71", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_wtt",-105)
+draw_waffle("ip_wtt",-115)
 ))
 }});
 
-define({id: "135f2d73", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "c804aa5a", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_researchpartner",-105)
+draw_waffle("ip_researchpartner",-115)
 ))
 }});
 
-define({id: "8b6b3426", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "22970307", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_peer_pub")
+draw_waffle("ip_peer_pub", -100)
 ))
 }});
 
-define({id: "78e6aa89", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "d531c47f", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_inter_trans", -60)
+draw_waffle("ip_inter_trans", -70)
 ))
 }});
 
-define({id: "6ede5c4a", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "2aaad6b8", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_radikal_inkr", -60)
+draw_waffle("ip_radikal_inkr", -70)
 ))
 }});
 
-define({id: "7cba4850", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "d982bc28", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_impuls",-100)
+draw_waffle("ip_impuls",-115)
 ))
 }});
 
-define({id: "3ad88c7e", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "f4518cd8", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_success", -60)
+draw_waffle("ip_success", -70)
 ))
 }});
 
@@ -192,39 +192,39 @@ drawMiniPlot("Innovationsscheck", false)
 ))
 }});
 
-define({id: "89005bf4", mode: "inline", inputs: ["draw_results","display"], body: async (draw_results,display) => {
+define({id: "9887d7a4", mode: "inline", inputs: ["draw_results","display"], body: async (draw_results,display) => {
 display(await(
-draw_results("Innovationsscheck", true, 430)
+draw_results("Innovationsscheck", true, 350)
 ))
 }});
 
-define({id: "b1e73a65", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "5baaf697", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("is_ideas",0,5)
+draw_waffle("is_ideas",-50,10)
 ))
 }});
 
-define({id: "19a309f0", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "3b4e91aa", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("is_connection", -75)
+draw_waffle("is_connection", -85)
 ))
 }});
 
-define({id: "50ca7c30", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "f10fcdf6", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("is_wtt",  -75)
+draw_waffle("is_wtt", -85)
 ))
 }});
 
-define({id: "816b47a3", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "94e527d9", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("is_project_goals",  -75)
+draw_waffle("is_project_goals",  -85)
 ))
 }});
 
-define({id: "f26f4668", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "aeedaeb6", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("is_mitnahme", -75)
+draw_waffle("is_mitnahme", -85, 5)
 ))
 }});
 
@@ -236,7 +236,7 @@ draw_waffle("is_mitnahme", -75)
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link"><a href="./">Wirkungen der Innosuisse-Förderung</a></li>
+    <li class="observablehq-link"><a href="./">Wirkung der Innosuisse-Förderung</a></li>
   </ol>
   <ol>
     <li class="observablehq-link"><a href="./">Einleitung</a></li>
@@ -266,7 +266,7 @@ draw_waffle("is_mitnahme", -75)
 <div class="observablehq observablehq--block"><!--:39893348:--></div>
 <h1 id="projekte-von-unternehmen-mit-forschenden" tabindex="-1"><a class="observablehq-header-anchor" href="#projekte-von-unternehmen-mit-forschenden">Projekte von Unternehmen mit Forschenden</a></h1>
 <h2 id="innovationsprojekte-mit-umsetzungspartner" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationsprojekte-mit-umsetzungspartner">Innovationsprojekte mit Umsetzungspartner</a></h2>
-<div style="display: flex; gap: 10px;">
+<div style="display: flex;">
   <div><observablehq-loading></observablehq-loading><!--:f86ebaa3:--></div>
   <div><observablehq-loading></observablehq-loading><!--:e580afae:--></div>
 </div>
@@ -326,34 +326,34 @@ Wie bereits dargestellt, haben gleichzeitig rund 30 % der geförderten Projekte 
 <p>Die Mehrheit der beteiligten Projektpartner haben ihre Ziele vollständig erreicht oder sogar übertroffen. Ein Teil der geförderten Projekte hat die gesteckten Ziele nicht vollständig oder nicht erreicht. Innovationsvorhaben sind mit erheblichen technologischen Risiken und Unwägbarkeiten bei der Markumsetzung verbunden. Diese hohen Risikopotenziale unterstreichen die Notwendigkeit der öffentlichen Förderung, um den Wissens- und Technologietransfer zu unterstützen, da die Innovationsprojekte ohne Förderung nicht durchgeführt würden.</p>
 <p>Dies belegen die tiefen Mitnahmeeffekte bei der Förderung: Nur 5 % der Unternehmen geben an, dass sie das Projekt auch ohne die Unterstützung von Innosuisse in derselben Form durchgeführt hätten. 19 % hätten es in veränderter oder reduzierter Form durchgeführt.</p>
   <div style="display: flex; gap: 15px;">
-  <div><observablehq-loading></observablehq-loading><!--:eb8ed1c4:--></div>
-  <div><observablehq-loading></observablehq-loading><!--:e71db4f7:--></div>
+  <div><observablehq-loading></observablehq-loading><!--:32a40ad8:--></div>
+  <div><observablehq-loading></observablehq-loading><!--:f4dc727c:--></div>
   </div>
 <h3 id="innosuisse-foerderung-staerkt-den-wissens-und-technologietransfer-wtt-auch-langfristig" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-foerderung-staerkt-den-wissens-und-technologietransfer-wtt-auch-langfristig">Innosuisse-Förderung stärkt den Wissens- und Technologietransfer (WTT) auch langfristig</a></h3>
 <p>Der WTT und die Zusammenarbeit zwischen den Unternehmen und der Forschung wird durch die Innovationsprojekte gefördert und gestärkt. Drei Viertel der Unternehmen geben an, dass die Projektförderung ihre Forschung und Entwicklung beschleunigt und gestärkt hat. Die Zusammenarbeit und der WTT mit der Forschung ist langfristig beständig: Fast die Hälfte der Unternehmen arbeitet drei Jahre nach Projektabschluss immer noch mit den Forschungspartnern zusammen. 15 % übernehmen sogar Forschungspersonal, das am Projekt beteiligt war und stärken somit ihre interne Wissens- und Innovationsbasis langfristig.</p>
   <div style="display: flex; gap: 15px;">
-    <observablehq-loading></observablehq-loading><!--:9e50de69:-->
-    <observablehq-loading></observablehq-loading><!--:135f2d73:-->
+    <observablehq-loading></observablehq-loading><!--:d56dcc71:-->
+    <observablehq-loading></observablehq-loading><!--:c804aa5a:-->
 </div>
 <h3 id="projektergebnisse-sind-wissenschaftlich-verankert" tabindex="-1"><a class="observablehq-header-anchor" href="#projektergebnisse-sind-wissenschaftlich-verankert">Projektergebnisse sind wissenschaftlich verankert</a></h3>
 <p>Der wissenschaftliche Output, der durch die Projekte entsteht, ist bemerkenswert. Aus über der Hälfte der Projekte entstehen Ko-Publikationen zwischen Umsetzungs- und Forschungspartnern. International belegt die Schweiz in dieser – für die Innovationsindizes wichtigen – Metrik den Spitzenplatz (<a href="https://projects.research-and-innovation.ec.europa.eu/en/statistics/performance-indicators/european-innovation-scoreboard/eis-2024#/eis/indicators/3.2?country_scope=all&amp;highlight=CH" target="_blank" rel="noopener noreferrer">European Commission, 2024</a>, <a href="https://www.wipo.int/gii-ranking/en/switzerland/section/economy-profile" target="_blank" rel="noopener noreferrer">WIPO, 2024</a>). Die Innovationsprojekte leisten dazu einen Beitrag. Die starke internationale Positionierung beim Wissens- und Technologietransfer zeigt auch die Ergebnisse einer Studie des SBFI (<a href="https://www.sbfi.admin.ch/sbfi/de/home/dienstleistungen/publikationen/publikationsdatenbank/wtt-endbericht-2023.html" target="_blank" rel="noopener noreferrer">2023</a>).</p>
 <p>62 % der Forschungspartner publizieren ihre wissenschaftlichen Ergebnisse in einer Fachzeitschrift mit Peer-Review. In 19 % der geförderten Projekte werden Dissertationen geschrieben, zusätzlich zur Vielzahl an Bachelor- und Masterarbeiten. Diese Zahlen belegen die starke wissenschaftliche Verankerung der Innovationsprojekte und zeigen auch die Bedeutung der Projekte für die Forschungsseite und den Beitrag zur wissenschaftlichen Nachwuchsförderung. Die wissenschaftliche Qualität ist sehr hoch und die Weiterverbreitung der Projektergebnisse wird dadurch sichergestellt.</p>
-<div><observablehq-loading></observablehq-loading><!--:8b6b3426:--></div>
+<div><observablehq-loading></observablehq-loading><!--:22970307:--></div>
 <h3 id="innosuisse-foerderung-zielt-auf-risikoreiche-und-interdisziplinaere-projekte" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-foerderung-zielt-auf-risikoreiche-und-interdisziplinaere-projekte">Innosuisse-Förderung zielt auf risikoreiche und interdisziplinäre Projekte</a></h3>
 <p>Mit der Innosuisse-Förderung werden mehrheitlich komplexere und risikoreichere und auch interdisziplinäre Projekte unterstützt. Interdisziplinäre Projekte integrieren Wissen, Methoden und Technologien aus verschiedenen Fachrichtungen um gemeinsam neuartige Lösungen für komplexe Probleme zu entwickeln. Transdisziplinäre Projekte beziehen zusätzlich nicht-akademische Akteure aus Gesellschaft, Politik, Wirtschaft und Praxis aktiv in den Forschungsprozess ein, um gemeinsam gesellschaftlich relevante Probleme zu lösen und praxistaugliches Wissen zu generieren. Einen Hinweis auf den Risikograd der Innovationsprojekte zeigt sich im Anteil von 27% an radikalen Innovationsprojekten.</p>
 <div style="display: flex; gap: 10px;">
-<div><observablehq-loading></observablehq-loading><!--:78e6aa89:--></div>
-<div><observablehq-loading></observablehq-loading><!--:6ede5c4a:--></div>
+<div><observablehq-loading></observablehq-loading><!--:d531c47f:--></div>
+<div><observablehq-loading></observablehq-loading><!--:2aaad6b8:--></div>
 </div>
 <h3 id="unternehmen-geben-mehrheitlich-die-impulse-fuer-die-innovationsprojekte-und-setzen-die-forschungsergebnisse-in-wertschoepfung-um" tabindex="-1"><a class="observablehq-header-anchor" href="#unternehmen-geben-mehrheitlich-die-impulse-fuer-die-innovationsprojekte-und-setzen-die-forschungsergebnisse-in-wertschoepfung-um">Unternehmen geben mehrheitlich die Impulse für die Innovationsprojekte und setzen die Forschungsergebnisse in Wertschöpfung um</a></h3>
 <p>Der Wissens- und Technologietransfer zwischen Umsetzungspartner und Forschungspartner ist wechselseitig. Die Unternehmen entwickeln risikoreiche Innovationsideen für die Forschung und Entwicklung und erhalten konkrete Ergebnisse aus der Forschung für ihre Umsetzung und die Inwertsetzung auf den Märkten (vgl. <a href="https://observablehq.com/@ecosystem-monitor/wirkungsmonitoring#cell-808" target="_blank" rel="noopener noreferrer">Abschnitt zu den ökonomischen Effekten</a>).</p>
-<div><observablehq-loading></observablehq-loading><!--:7cba4850:--></div>
+<div><observablehq-loading></observablehq-loading><!--:d982bc28:--></div>
 <h3 id="innosuisse-projekte-sind-fuer-forschungs-und-umsetzungspartner-erfolgreich" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-projekte-sind-fuer-forschungs-und-umsetzungspartner-erfolgreich">Innosuisse-Projekte sind für Forschungs- und Umsetzungspartner erfolgreich</a></h3>
 <p>Risikoreiche Projekte müssen auch scheitern können, sei es wegen technologischen Risken oder Risiken bei der Umsetzung der Projektidee auf dem Markt. Vor diesem Hintergrund ist die etwas tiefere Erfolgsquote bei den Umsetzungspartnern nicht beunruhigend. Für die wissenschaftlich hohe Qualität der Projekte spricht, dass fast drei Viertel der Forschungspartner die Projekte als Erfolg einschätzen.</p>
 <p>Der Unterschied zwischen den Erfolgsquoten ist nachvollziehbar: Für die Forschungspartner steht die wissenschaftliche Qualität und auch der Transfer des Forschungswissens für Wirtschaft und Gesellschaft im Vordergrund, für die Unternehmen ist zudem die Anwendung in der wirtschaftlichen Praxis und die Wertschöpfung auf den Märkten essenziell. Hier kann die Innosuisse-Förderung mit den erzielten Ergebnissen der Projektförderung nur wichtige Voraussetzungen dazu schaffen</p>
-<div><observablehq-loading></observablehq-loading><!--:3ad88c7e:--></div>
+<div><observablehq-loading></observablehq-loading><!--:f4518cd8:--></div>
 <h2 id="innovationsscheck" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationsscheck">Innovationsscheck</a></h2>
-<div style="display: flex; gap: 10px;">
+<div style="display: flex;">
   <div><observablehq-loading></observablehq-loading><!--:c934791d:--></div>
   <div><observablehq-loading></observablehq-loading><!--:04f04709:--></div>
 </div>
@@ -361,27 +361,27 @@ Wie bereits dargestellt, haben gleichzeitig rund 30 % der geförderten Projekte 
 <h3 id="zusammenarbeit-mit-forschungspartnern-wird-geprueft-und-innovationsideen-weiterentwickelt" tabindex="-1"><a class="observablehq-header-anchor" href="#zusammenarbeit-mit-forschungspartnern-wird-geprueft-und-innovationsideen-weiterentwickelt">Zusammenarbeit mit Forschungspartnern wird geprüft und Innovationsideen weiterentwickelt</a></h3>
 <p>Die beteiligten Unternehmen beabsichtigen mit dem Innovationsscheck, bereits konkrete und nutzbare Ergebnisse zu erzielen, ihre Innovationsidee zu testen und weiterzuentwickeln sowie die Zusammenarbeit mit einem Forschungspartner zu prüfen. Zwei Drittel (66 %) der Innovationsschecks zielen darauf ab, ein Innovationsprojekt bei Innosuisse vorzubereiten.</p>
 <p>Die Zusammenarbeit wird in nahezu allen Fällen erfolgreich geprüft. 63 % der Unternehmen haben ihre Innovationsidee erfolgreich getestet und weiterentwickelt und dieses Ziel vollständig erreicht. Bei rund 40 % der Schecks werden konkrete und direkt nutzbare Ergebnisse erzielt. Etwa die Hälfte der Innovationsschecks führt dazu, dass ein Innovationsprojekt bei Innosuisse erfolgreich vorbereitet wird.</p>
-<div><observablehq-loading></observablehq-loading><!--:89005bf4:--></div>
+<div><observablehq-loading></observablehq-loading><!--:9887d7a4:--></div>
 <h3 id="projektideen-werden-weiterverfolgt" tabindex="-1"><a class="observablehq-header-anchor" href="#projektideen-werden-weiterverfolgt">Projektideen werden weiterverfolgt</a></h3>
 <p>Die Innovationsideen sind relevant für die KMU, darum werden sie auch nach der Förderung weiterverfolgt. Rund ein Viertel der Unternehmen startet nach Abschluss des Innovationsschecks ein Innosuisse-Innovationsprojekt oder plant dies zu tun.</p>
-<div><observablehq-loading></observablehq-loading><!--:b1e73a65:--></div>
+<div><observablehq-loading></observablehq-loading><!--:5baaf697:--></div>
 <h3 id="neue-und-bestaendige-partnerschaften-mit-der-forschung" tabindex="-1"><a class="observablehq-header-anchor" href="#neue-und-bestaendige-partnerschaften-mit-der-forschung">Neue und beständige Partnerschaften mit der Forschung</a></h3>
 <p>Der Innovationscheck ist  ein wichtiger Initialzünder für den Wissens- und Technologietransfer und die Zusammenarbeit mit der Forschung. Über der Hälfte der beteiligten Unternehmen können neu an den Wissens- und Technologietransfer mit der Forschung herangeführt werden. Zusätzlich sind 87&nbsp;% der KMU zufrieden oder sehr zufrieden mit den Leistungen der Forschungspartner.</p>
 <p>Die Innovationsschecks stiften somit wichtige Nutzen für die Unternehmen über den Projektabschluss hinaus. Die grosse Mehrheit der KMU arbeiten auch nach dem Abschluss noch mit ihrem Forschungspartner zusammen. Damit wird die Innovationskultur im Unternehmen langfristig gestärkt und der Wissens- und Technologietransfer verstetigt.</p>
 <div style="display: flex; gap: 40px;">
-<observablehq-loading></observablehq-loading><!--:19a309f0:-->
-<observablehq-loading></observablehq-loading><!--:50ca7c30:--> 
+<observablehq-loading></observablehq-loading><!--:3b4e91aa:-->
+<observablehq-loading></observablehq-loading><!--:f10fcdf6:--> 
 </div>
 <h3 id="zielerreichung-ist-hoch-und-es-werden-innovationsideen-umgesetzt-die-sonst-nicht-angegangen-worden-waeren" tabindex="-1"><a class="observablehq-header-anchor" href="#zielerreichung-ist-hoch-und-es-werden-innovationsideen-umgesetzt-die-sonst-nicht-angegangen-worden-waeren">Zielerreichung ist hoch und es werden Innovationsideen umgesetzt, die sonst nicht angegangen worden wären</a></h3>
 <p>Zwei Drittel der KMU erreichen die gesetzten Ziele mit den Innovationsschecks vollständig oder übertreffen sie. Diese niederschwellige und unkomplizierte Förderung unterstützt damit die Prüfung der Machbarkeit der Innovationsideen und stärkt die weitere Umsetzung von inkrementellen und radikalen Innovationsideen.</p>
 <p>Die geringen Mitnahmeeffekte zeigen, dass mit den Innovationsschecks Ideen geprüft werden können, die ansonsten im Tagesgeschäft keinen Platz gehabt hätten. Nur 8 % der KMU geben an, dass sie die Innovationsidee auch ohne Förderung in einer ähnlichen Form geprüft hätten. 19 % hätten sie in leicht veränderter Form geprüft.
 </p><div style="display: flex; gap: 15px;">
-<observablehq-loading></observablehq-loading><!--:816b47a3:-->
-<observablehq-loading></observablehq-loading><!--:f26f4668:--><p></p>
+<observablehq-loading></observablehq-loading><!--:94e527d9:-->
+<observablehq-loading></observablehq-loading><!--:aeedaeb6:--><p></p>
 </div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./vergleichende-ergebnisse"><span>Vergleichende Ergebnisse</span></a><a rel="next" href="./projekte-forschende"><span>Innovationsprojekte ohne Umsetzungspartner</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-28T22:19:24">Jan 28, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-29T17:26:46">Jan 29, 2025</a>.</div>
 </footer>
 </div>
 </body>
