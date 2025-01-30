@@ -15,10 +15,10 @@
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.ef8c7bb4.js">
+<link rel="modulepreload" href="./_import/functions.da6cfa27.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.a17e7b16.js">
+<link rel="modulepreload" href="./_import/data.d79399f2.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -69,11 +69,11 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.34507805.txt","lastModified":1738229889391,"size":10656});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.56ae738b.txt","lastModified":1738231667918,"size":19213});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 
 define({id: "68e5ce68", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","draw_fin_plot","n_subcluster"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.ef8c7bb4.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.da6cfa27.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subcluster};
 }});
@@ -142,27 +142,21 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <ul>
 <li><strong>Zufriedenheit:</strong> Die Fördernehmer und Fördernehmerinnen sind mit den Angeboten von Innosuisse und deren Umsetzung zufrieden oder sehr zufrieden: 89&nbsp;% bei den Teilnehmenden der Innovation Booster, rund 90% der Forschenden und 80&nbsp;% der Umsetzungspartner bei den Umsetzungspartnern sowie 68&nbsp;% bei den Start-ups im Core Coaching. Die Fördernehmerinnen und Fördernehmer, die mit dem Förderangebot nicht oder nur wenig zufrieden sind, liegen durchwegs tief zwischen 1&nbsp;% und 2&nbsp;%.</li>
 <li><strong>Inkrementelle und radikale Innovationen:</strong> Innosuisse fördert sowohl radikale als auch inkrementelle Innovationen. Die jeweiligen Anteile unterscheiden sich je nach Förderangebot. Bei den Innovationsprojekten mit Umsetzungspartnern sind 25&nbsp;% der Innovationen klar inkrementell und 27&nbsp;% klar radikal. Bei den Start-ups im Coaching ist der Anteil radikaler Innovationen mit 55&nbsp;% mehr als doppelt so hoch.</li>
-<li><strong>Soziale und ökologische Nachhaltigkeit:</strong> Rund 60&nbsp;% der geförderten Innovationsprojekte zeigen bei einer konkreten Umsetzung das Potenzial, einen wesentlichen Beitrag zur nachhaltigen Entwicklung zu leisten, entweder zur ökologischen oder sozialen nachhaltigen Entwicklung oder bei beiden Themenbereichen gleichzeitig. Bei den Start-ups im Coaching ist dieser Anteil mit 66&nbsp;% nochmals etwas höher.</li>
 </ul>
 <p><a href="./vergleichende-ergebnisse">→ Zu den detaillierten Ergebnissen und Darstellungen</a></p>
 </div>
-<div class="card" style="max-width: 600px;">
+<div class="card" style="max-width: 600px">
 <h4 id="innovationsprojekte-mit-umsetzungspartner" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationsprojekte-mit-umsetzungspartner">Innovationsprojekte mit Umsetzungspartner</a></h4>
-<p>Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Innosuisse. Unternehmen und Organisationen aus der Wirtschaft und Gesellschaft kooperieren mit Forschungspartnern, um gemeinsam innovative Produkte, Dienstleistungen, Prozesse oder neue Geschäftsmodelle zu entwickeln. Das übergeordnete Ziel der Förderung besteht darin, die Innovationen entweder erfolgreich auf den Markt zu bringen oder im Unternehmen umzusetzen, zum Nutzen von Wirtschaft und Gesellschaft.</p>
+<p>Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Innosuisse. Unternehmen und Organisationen aus der Wirtschaft und Gesellschaft kooperieren mit Forschungspartnern, um gemeinsam innovative Produkte, Dienstleistungen, Prozesse oder neue Geschäftsmodelle zu entwickeln.</p>
 <ul>
 <li><strong>Markteinführung:</strong> Drei Jahre nach Abschluss der Förderung sind mehr als die Hälfte der geförderten Innovationen (57&nbsp;%) entweder auf dem Markt eingeführt, im Unternehmen umgesetzt oder die Einführung ist in den nächsten zwei Jahren geplant.</li>
-<li><strong>Wirtschaftliche Effekte:</strong> Die Förderung erzielt bei über 60&nbsp;% der KMU messbare und maßgebliche wirtschaftliche Effekte. Ein Drittel berichtet von einem Beschäftigungswachstum und schafft dadurch neue, hochqualifizierte Arbeitsplätze. Weitere wirtschaftliche Effekte zeigen sich beispielsweise in Umsatzsteigerungen, höheren F&amp;E-Ausgaben oder Kosteneinsparungen.</li>
-<li><strong>Neuheiten für internationale Märkte:</strong> 33&nbsp;% der geförderten Innovationsprojekte zielen darauf ab, Neuerungen für den internationalen und globalen Markt zu entwickeln. Dadurch werden Schweizer Unternehmen gezielt dabei unterstützt, ihre Wettbewerbsfähigkeit zu stärken und international wettbewerbsfähig zu bleiben.</li>
 <li><strong>Schaffung von Arbeitsplätzen:</strong> Ein gefördertes Projekt führt im Durchschnitt der Jahre 2021–2023 zu 2.5 neuen und hochqualifizierten Arbeitsplätzen. Drei Jahre nach Projektabschluss entstehen daraus rund 800 bis 900 Vollzeitstellen. Diese positive Wirkung der Förderung wird auch durch eine wissenschaftliche Studie der Konjunkturforschungsstelle der ETH Zürich bestätigt. Unternehmen, die von Innosuisse gefördert wurden, verzeichnen drei Jahre nach Abschluss der Förderung eine um 18&nbsp;% höhere Beschäftigung als vergleichbare, innovative Unternehmen ohne Innosuisse-Förderung.</li>
 <li><strong>Hebelwirkung der Förderung schafft Wertschöpfung:</strong> Die Förderung führt über die neu geschaffenen Arbeitsplätze direkt zu zusätzlicher Wertschöpfung bei den geförderten Unternehmen: Jeder Förderfranken bringt der Wirtschaft direkt rund vier Wertschöpfungsfranken, gemessen drei Jahre nach der Förderung für drei weitere Jahre.</li>
 <li><strong>Stärkung des Wissens- und Technologietransfers:</strong> Der Wissens- und Technologietransfer (WTT) wirkt auch längerfristig: Fast die Hälfte der Unternehmen arbeitet auch drei Jahre nach Projektabschluss weiter mit ihren Forschungspartnern zusammen. 15&nbsp;% übernehmen zusätzlich Forschungspersonal, das am Projekt beteiligt war. Sie stärken damit ihre interne Wissens- und Innovationsbasis.</li>
-<li><strong>Wissenschaftliche Verankerung:</strong> Die Innovationsprojekte führen auch zur Veröffentlichung von wissenschaftlichen Forschungsarbeiten: In 19&nbsp;% der geförderten Projekte entstehen neben Bachelor- und Masterarbeiten auch Dissertationen. 62&nbsp;% der wissenschaftlichen Ergebnisse werden in Fachzeitschriften mit Peer-Review veröffentlicht.</li>
 </ul>
 <p><a href="./projekte-unternehmen-forschende">→ Zu den detaillierten Ergebnissen und Darstellungen</a></p>
-</div>
-<div class="card" style="max-width: 600px;">
 <h4 id="innovationsscheck" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationsscheck">Innovationsscheck</a></h4>
-<p>Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung, um erste Schritte in der Zusammenarbeit mit Forschungspartnern zu ermöglichen. Ziel ist es, Machbarkeits- und Marktstudien sowie technologische Abklärungen durchzuführen, die auch als Grundlage für mögliche spätere Innovationsprojekte dienen können.</p>
+<p>Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung. Ziel ist es, Machbarkeits- und Marktstudien sowie technologische Abklärungen durchzuführen.</p>
 <ul>
 <li><strong>Zusammenarbeit mit der Forschung:</strong> Der Innovationsscheck ist ein wichtiger Initialzünder für den Wissens- und Technologietransfer und die Zusammenarbeit mit der Forschung. Über die Hälfte der beteiligten Unternehmen können dank des Innovationsschecks neu an den Wissens- und Technologietransfer mit der Forschung herangeführt werden. 70&nbsp;% der KMU arbeiten auch nach dem Abschluss noch mit ihrem Forschungspartner zusammen.</li>
 <li><strong>Erzielte Ergebnisse:</strong> Die Zusammenarbeit mit den Forschungspartnern wird in nahezu allen Fällen erfolgreich geprüft. 63&nbsp;% der Unternehmen haben ihre Innovationsidee erfolgreich getestet und weiterentwickelt und dieses Ziel vollständig erreicht. Bei rund 40&nbsp;% der Schecks werden konkrete und direkt nutzbare Ergebnisse erzielt. Etwa die Hälfte der Innovationsschecks führt dazu, dass ein Innovationsprojekt bei Innosuisse erfolgreich vorbereitet wird.</li>
@@ -171,14 +165,12 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 </div>
 <div class="card" style="max-width: 600px;">
 <h4 id="innovationsprojekte-ohne-umsetzungspartner" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationsprojekte-ohne-umsetzungspartner">Innovationsprojekte ohne Umsetzungspartner</a></h4>
-<p>Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche Erkenntnisse in praxisorientierte Lösungen zu überführen. Sie ermöglichen es den Forschenden, risikoreiche Projekte mit hohem Innovationspotenzial in Richtung Anwendung zu entwickeln und erste Schritte in die Umsetzung zu unternehmen.</p>
+<p>Innovationsprojekte ohne Umsetzungspartner zielen darauf ab, wissenschaftliche Erkenntnisse zu risikoreichen Projekten mit hohem Innovationspotenzial in Richtung Anwendung zu entwickeln und erste Schritte in die Umsetzung zu unternehmen.</p>
 <ul>
 <li><strong>Anwendungsorientierung:</strong> Jedes zweite geförderte Projekt liefert schlüssige Ergebnisse für weitere Umsetzungsschritte und die Hälfte der Projekte besitzt mit hoher Wahrscheinlichkeit längerfristiges Potenzial für eine Markteinführung.</li>
 <li><strong>Zusammenarbeit mit Umsetzungspartnern:</strong> In über zwei Dritteln der Projekte wurde bereits mit potenziellen Umsetzungspartnern zusammengearbeitet. Neben dem Wissens- und Technologietransfer (WTT) zu etablierten Unternehmen spielen Start-ups und Spin-offs, die aus der Forschung hervorgehen, eine wichtige Rolle im WTT. In 38&nbsp;% der Projekte wurde eine solche Ausgründung bereits realisiert oder ist geplant.</li>
 </ul>
 <p><a href="./projekte-forschende">→ Zu den detaillierten Ergebnissen und Darstellungen</a></p>
-</div>
-<div class="card" style="max-width: 600px;">
 <h4 id="bridge-proof-of-concept" tabindex="-1"><a class="observablehq-header-anchor" href="#bridge-proof-of-concept">BRIDGE: Proof of Concept</a></h4>
 <p>Das gemeinsam vom Schweizerischen Nationalfonds und Innosuisse entwickelte Förderangebot richtet sich an Forschende, die an der Schnittstelle von Grundlagenforschung und wissenschaftsbasierter Innovation arbeiten. Das Programm bietet ein Jahr lang Unterstützung, um Forschungsergebnisse anwendungsorientiert weiterzuentwickeln, mit dem Ziel, diese zur Marktreife zu führen und eine Karriere ausserhalb der Forschung und der Hochschulen vorzubereiten.</p>
 <ul>
@@ -202,14 +194,13 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <li><strong>Unterstützung der Start-ups im Core Coaching:</strong> Rund vier von fünf gecoachten Start-ups bestätigen, dass das Core Coaching in mindestens einem für das Start-up zentralen Themenbereich einen massgeblichen Beitrag geleistet hat zur Entwicklung des Start-ups (78&nbsp;%). Der Anteil der Start-ups, deren Erwartungen an den gesamten Coachingprozess mehrheitlich erfüllt wurden, liegt mit 84&nbsp;% noch etwas höher.</li>
 <li><strong>Internationale Neuheiten:</strong> Start-ups verfolgen mehrheitlich radikale und auch disruptive Innovationen, die den Markt grundlegend verändern oder neue Märkte schaffen. 77&nbsp;% der Start-ups entwickeln eine Weltmarktneuheit oder eine Innovation für die internationalen Märkte.</li>
 <li><strong>Kapitalakquisition:</strong> Bis zum Abschluss des Core Coachings haben 22&nbsp;% der Start-ups über 5 Millionen Franken an Kapital akquiriert. Zwei Drittel erhielten im Core Coaching direkte und hilfreiche Unterstützung bei der Kapitalbeschaffung.</li>
-<li><strong>Internationalität der Gründer und Gründerinnen:</strong> Die Gründungsteams der Start-ups zeichnen sich durch hohe Internationalität aus: 67&nbsp;% haben mindestens ein Mitglied mit ausländischem Bürgerrecht, und im Durchschnitt bestehen 43&nbsp;% der Teams aus ausländischen Mitgliedern.</li>
 </ul>
 <p><a href="./begleitung-start-ups">→ Zu den detaillierten Ergebnissen und Darstellungen</a></p>
 </div>
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="next" href="./editorial"><span>Editorial</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T11:31:09">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T12:14:08">Jan 30, 2025</a>.</div>
 </footer>
 </div>
 </body>
