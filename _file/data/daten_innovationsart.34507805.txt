@@ -1,0 +1,59 @@
+inst	instrument	respondant	type	pct	plot	label_de
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Unternehmen	ökologische Nachhaltigkeit	45	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Unternehmen	soziale Nachhaltigkeit	31	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Unternehmen	Digitale Geschäftsmodelle	37	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Unternehmen	Digitale Technologien	51	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Forschende	ökologische Nachhaltigkeit	52	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Forschende	soziale Nachhaltigkeit	36	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Forschende	Digitale Geschäftsmodelle	36	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Forschende	Digitale Technologien	50	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Unternehmen	Digitalisierung	55	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Unternehmen	Nachhaltigkeit	59	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Forschende	Digitalisierung	56	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Forschende	Nachhaltigkeit	68	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	KMU	ökologische Nachhaltigkeit	54	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	KMU	soziale Nachhaltigkeit	41	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	KMU	Digitale Geschäftsmodelle	32	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	KMU	Digitale Technologien	44	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	KMU	Digitalisierung	49	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	KMU	Nachhaltigkeit	72	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Forschende	ökologische Nachhaltigkeit	41	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Forschende	soziale Nachhaltigkeit	44	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Forschende	Digitale Geschäftsmodelle	27	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Forschende	Digitale Technologien	39	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Forschende	Digitalisierung	44	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Forschende	Nachhaltigkeit	69	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Begleitung von Start-ups	Start-up Core Coaching	Start-up	ökologische Nachhaltigkeit	55	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Begleitung von Start-ups	Start-up Core Coaching	Start-up	soziale Nachhaltigkeit	58	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Begleitung von Start-ups	Start-up Core Coaching	Start-up	Digitale Geschäftsmodelle	48	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Begleitung von Start-ups	Start-up Core Coaching	Start-up	Digitale Technologien	57	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Begleitung von Start-ups	Start-up Core Coaching	Start-up	Digitalisierung	63	digital	Anteil der Innovationsvorhaben, die auf neuen digitalen Technologien oder Geschäftsmodellen basieren in %
+Begleitung von Start-ups	Start-up Core Coaching	Start-up	Nachhaltigkeit	67	nachhaltig	Anteil der Innovationsvorhaben, die zur ökologischen oder sozialen Nachhaltigkeit beitragen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP		Dienstleistungsinnovation	25	type_1	Anteil der Innovationsvorhaben, die folgende Innovationsarten verfolgen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP		Geschäftsmodellinnovation	10	type_1	Anteil der Innovationsvorhaben, die folgende Innovationsarten verfolgen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP		Produktinnovation	71	type_1	Anteil der Innovationsvorhaben, die folgende Innovationsarten verfolgen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP		Prozessinnovation	35	type_2	
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP		Soziale Innovation	11	type_2	
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck		Dienstleistungsinnovation	28	type_1	Anteil der Innovationsvorhaben, die folgende Innovationsarten verfolgen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck		Geschäftsmodellinnovation	15	type_1	Anteil der Innovationsvorhaben, die folgende Innovationsarten verfolgen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck		Produktinnovation	73	type_1	Anteil der Innovationsvorhaben, die folgende Innovationsarten verfolgen in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck		Prozessinnovation	29	type_2	
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck		Soziale Innovation	8	type_2	
+Begleitung von Start-ups	Start-up Core Coaching		Dienstleistungsinnovation	33	type_1	Anteil der Innovationsvorhaben, die folgende Innovationsarten verfolgen in %
+Begleitung von Start-ups	Start-up Core Coaching		Geschäftsmodellinnovation	17	type_1	Anteil der Innovationsvorhaben, die folgende Innovationsarten verfolgen in %
+Begleitung von Start-ups	Start-up Core Coaching		Produktinnovation	88	type_1	Anteil der Innovationsvorhaben, die folgende Innovationsarten verfolgen in %
+Begleitung von Start-ups	Start-up Core Coaching		Prozessinnovation	24	type_2	
+Begleitung von Start-ups	Start-up Core Coaching		Soziale Innovation	7	type_2	
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP		radikale	27	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck		radikale	21	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP		radikale	25	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %
+Starthilfe für Projekte und Vernetzung	Innovation Booster		radikale	29	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %
+Starthilfe für Projekte und Vernetzung	Innovation Booster		inkrementelle	15	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %
+Begleitung von Start-ups	Start-up Core Coaching		radikale	55	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP		disruptive	29	disruptiv	Anteil der klar disruptiven Innovationsvorhaben in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck		disruptive	33	disruptiv	Anteil der klar disruptiven Innovationsvorhaben in %
+Begleitung von Start-ups	Start-up Core Coaching		disruptive	65	disruptiv	Anteil der klar disruptiven Innovationsvorhaben in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP		inkrementelle	25	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck		inkrementelle	27	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP		inkrementelle	11	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %
+Begleitung von Start-ups	Start-up Core Coaching		inkrementelle	9	inkr_radikal	Anteil der klar inkrementellen oder radikalen Innovationsvorhaben, in %

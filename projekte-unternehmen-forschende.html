@@ -7,18 +7,18 @@
 <title>Projekte von Forschenden mit Unternehmen | Wirkung der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles-ch-projekte.b1318eca.css">
+<link rel="preload" as="style" href="./_import/styles-ch-projekte.895ca2ee.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles-ch-projekte.b1318eca.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles-ch-projekte.895ca2ee.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.212c61ec.js">
+<link rel="modulepreload" href="./_import/functions.ef8c7bb4.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.62b5ddd6.js">
+<link rel="modulepreload" href="./_import/data.a17e7b16.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -65,15 +65,15 @@ import {define} from "./_observablehq/client.6c3b6f8d.js";
 import {registerFile} from "./_observablehq/stdlib.86572394.js";
 
 registerFile("./data/daten_controlling.txt", {"name":"./data/daten_controlling.txt","mimeType":"text/plain","path":"./_file/data/daten_controlling.e80418ee.txt","lastModified":1737579114417,"size":6281});
-registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.b22d4c6c.txt","lastModified":1738164191706,"size":14674});
-registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.6e85d407.txt","lastModified":1738162532704,"size":10493});
+registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.3def6d08.txt","lastModified":1738230559494,"size":14674});
+registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.34507805.txt","lastModified":1738229889391,"size":10656});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.7ba28c05.txt","lastModified":1738165989266,"size":19170});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.56ae738b.txt","lastModified":1738231667918,"size":19213});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 
 define({id: "39893348", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","leverage","kof_did_plot"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.212c61ec.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.ef8c7bb4.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,leverage,kof_did_plot};
 }});
@@ -174,9 +174,9 @@ draw_waffle("ip_impuls",-115)
 ))
 }});
 
-define({id: "f4518cd8", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
+define({id: "537233b1", mode: "inline", inputs: ["draw_waffle","display"], body: async (draw_waffle,display) => {
 display(await(
-draw_waffle("ip_success", -70)
+draw_waffle("ip_success", -85)
 ))
 }});
 
@@ -270,27 +270,26 @@ draw_waffle("is_mitnahme", -85, 5)
   <div><observablehq-loading></observablehq-loading><!--:f86ebaa3:--></div>
   <div><observablehq-loading></observablehq-loading><!--:e580afae:--></div>
 </div>
-<p>Die nationalen Standard-Innovationsprojekte sind das wichtigste Förderinstrument von Innosuisse. Unternehmen und Organisationen aus Wirtschaft und Gesellschaft kooperieren mit Forschungspartnern, um gemeinsam innovative Produkte, Dienstleistungen oder Prozesse zu entwickeln und auf den Markt zu zu führen, zum Nutzen von Wirtschaft und Gesellschaft.</p>
-<p>Die Projekte basieren auf Ergebnissen von Forschung &amp; Entwicklung in allen wissenschaftsbasierten Disziplinen und weisen einen hohen Innovationsgrad auf. Die innovativen Ideen stammen primär aus der Wirtschaft und Gesellschaft. Die damit erzielten Forschungsergebnisse werden in die wirtschaftliche Praxis überführt, stärken die Wettbewerbsposition der Unternehmen, schaffen Wertschöpfung und Arbeitsplätze und unterstützen damit die Innovationsfähigkeit der Unternehmen und der Volkswirtschaft.</p>
+<p>Die nationalen Standard-Innovationsprojekte sind das wichtigste Förderinstrument von Innosuisse. Unternehmen und Organisationen aus Wirtschaft und Gesellschaft kooperieren mit Forschungspartnern, um gemeinsam innovative Produkte, Dienstleistungen oder Prozesse zu entwickeln und auf den Markt zu führen, zum Nutzen von Wirtschaft und Gesellschaft.</p>
+<p>Die Projekte basieren auf Ergebnissen von Forschung &amp; Entwicklung in allen wissenschaftsbasierten Disziplinen und weisen einen hohen Innovationsgrad auf. Die innovativen Ideen stammen mehrheitlich aus der Wirtschaft und Gesellschaft. Die damit erzielten Forschungsergebnisse werden in die wirtschaftliche Praxis überführt, stärken die Wettbewerbsposition der Unternehmen, schaffen Wertschöpfung und Arbeitsplätze und unterstützen damit die Innovationsfähigkeit der Unternehmen und der Volkswirtschaft.</p>
 <p>Der Wissens- und Technologietransfer zwischen der Forschung sowie der Wirtschaft und Gesellschaft wird damit in beiden Richtungen gestärkt.</p>
 <h3 id="mehrheit-der-gefoerderten-innovationsprojekte-wird-auf-dem-markt-oder-im-unternehmen-eingefuehrt" tabindex="-1"><a class="observablehq-header-anchor" href="#mehrheit-der-gefoerderten-innovationsprojekte-wird-auf-dem-markt-oder-im-unternehmen-eingefuehrt">Mehrheit der geförderten Innovationsprojekte wird auf dem Markt oder im Unternehmen eingeführt</a></h3>
-<p>Bei Projektabschluss sind 45 % der geförderten Projekte auf dem Markt oder in der Organisation umgesetzt oder es ist geplant diese innerhalb eines Jahres umzusetzen. Rund ein Drittel der Projekte verfolgen Prozessinnovationen, die vergleichsweise schneller und in der Organisation umgesetzt werden.</p>
-<p>Drei Jahre nach Abschluss der Förderung sind über die Hälfte der geförderten Innovationen (57 %) eingeführt oder es ist geplant diese in den nächsten zwei Jahren einzuführen.</p>
-<p>Ein Teil der Projekte benötigt einen längeren Zeitraum für die Markteinführung oder das Innovationsprojekt wird in Folgeprojekten weitergeführt. 19 % der risikoreichen Förderprojekte sind drei Jahre nach Abschluss abgebrochen worden, mit anderen Worten sie werden nicht umgesetzt und auch nicht weitergeführt.</p>
+<p>Bei Projektabschluss sind 45&nbsp;% der geförderten Projekte auf dem Markt oder in der Organisation umgesetzt oder es ist geplant diese innerhalb eines Jahres umzusetzen. Rund ein Drittel der Projekte verfolgen Prozessinnovationen, die vergleichsweise schneller und in der Organisation umgesetzt werden.</p>
+<p>Drei Jahre nach Abschluss der Förderung sind über die Hälfte der geförderten Innovationen (57&nbsp;%) eingeführt oder es ist geplant diese in den nächsten zwei Jahren einzuführen.</p>
+<p>Ein Teil der Projekte benötigt einen längeren Zeitraum für die Markteinführung oder das Innovationsprojekt wird in Folgeprojekten weitergeführt. 19&nbsp;% der risikoreichen Förderprojekte sind drei Jahre nach Abschluss abgebrochen worden, mit anderen Worten sie werden nicht umgesetzt und auch nicht weitergeführt.</p>
 <div><observablehq-loading></observablehq-loading><!--:85cd3065:--></div>
-<h3 id="foerderung-erzielt-bei-ueber-60-der-kmu-messbare-und-massgebliche-wirtschaftliche-effekte" tabindex="-1"><a class="observablehq-header-anchor" href="#foerderung-erzielt-bei-ueber-60-der-kmu-messbare-und-massgebliche-wirtschaftliche-effekte">Förderung erzielt bei über 60 % der KMU messbare und massgebliche wirtschaftliche Effekte</a></h3>
-<p>Kennzahlen über die Wirkung belegen die wirtschaftlichen Effekte, welche ohne das geförderte Projekt nicht entstanden wären. Ein Drittel der KMU berichtet über ein Wachstum der Beschäftigung und schafft damit neue hochqualifizierte Arbeitsstellen. 3 von 10 Unternehmen stellen eine Umsatzsteigerung fest. Über ein Viertel der Unternehmen hat mehr in Forschung und Entwicklung (F&amp;E) investiert, sei es in Beschäftigte im F&amp;E-Bereich oder mehr F&amp;E-Ausgaben getätigt. üUber Kosteneinsparungen berichten 12 % der Unternehmen.</p>
+<h3 id="foerderung-erzielt-bei-ueber-60-der-kmu-messbare-und-massgebliche-wirtschaftliche-effekte" tabindex="-1"><a class="observablehq-header-anchor" href="#foerderung-erzielt-bei-ueber-60-der-kmu-messbare-und-massgebliche-wirtschaftliche-effekte">Förderung erzielt bei über 60&nbsp;% der KMU messbare und massgebliche wirtschaftliche Effekte</a></h3>
+<p>Ausgewählte Kennzahlen belegen die Wirksamkeit hinsichtlich ökonomischer Effekte, welche ohne das geförderte Projekt nicht entstanden wären. Ein Drittel der KMU berichtet über ein Wachstum der Beschäftigung und schafft damit neue hochqualifizierte Arbeitsstellen. 3 von 10 Unternehmen stellen eine Umsatzsteigerung fest. Über ein Viertel der Unternehmen hat mehr in Forschung und Entwicklung (F&amp;E) investiert, sei es in Beschäftigte im F&amp;E-Bereich oder mehr F&amp;E-Ausgaben getätigt. Uber Kosteneinsparungen berichten 12&nbsp;% der Unternehmen.</p>
 <div><observablehq-loading></observablehq-loading><!--:98feb8c7:--></div>
 <h3 id="grosse-hebelwirkung-eines-foerderfrankens" tabindex="-1"><a class="observablehq-header-anchor" href="#grosse-hebelwirkung-eines-foerderfrankens">Grosse Hebelwirkung eines Förderfrankens</a></h3>
 <p>Ein Innovationsprojekt führt im Durchschnitt der Berichtsjahre 2021-2023 zu knapp 2.5 zusätzlichen Vollzeitstellen. Hochgerechnet auf die in diesem Zeitraum durchschnittlich 350 abgeschlossenen Projekte, werden somit bei den Unternehmen in der Schweiz zwischen 800 und 900 neue Vollzeitstellen geschaffen.</p>
 <div style="font-size: 20px; font-weight: 700; max-width: 500px; padding-top: 10px; padding-bottom: 20px; text-align: center">800 – 900 Vollzeitstellen pro Jahr</div>
-<p>Die zusätzlich geschaffenen Arbeitsstellen führen direkt zu Wertschöpfung bei den Unternehmen. Die Hebelwirkung der Förderung ist beachtlich: Jeder Förderfranken bringt der Wirtschaft rund vier Wertschöpfungsfranken, gemessen drei Jahre nach der Förderung für drei weitere Jahre. Weitere indirekte Multiplikatoreffekte bei den Unternehmen, zum Beispiel über zusätzliche Ausgaben für Vorleistungen der Unternehmen, sind hier nicht eingerechnet. Zudem verdeutlichen die in diesem Bericht präsentierten Ergebnisse, dass die Auswirkungen der Innovationsförderung weit über die unmittelbaren wirtschaftlichen Effekte hinausgehen.
-<span style="background-color:yellow">(Link zu Berechnung folgt, sobald veröffentlicht.)</span>
-<observablehq-loading></observablehq-loading><!--:3d192e12:--></p>
+<p>Die zusätzlich geschaffenen Arbeitsstellen führen direkt zu Wertschöpfung bei den Unternehmen. Die Hebelwirkung der Förderung ist beachtlich: Jeder Förderfranken bringt der Wirtschaft rund vier Wertschöpfungsfranken, gemessen drei Jahre nach der Förderung für drei weitere Jahre. Weitere indirekte Multiplikatoreffekte bei den Unternehmen, zum Beispiel über zusätzliche Ausgaben für Vorleistungen der Unternehmen, sind hier nicht eingerechnet. Zudem verdeutlichen die in diesem Bericht präsentierten Ergebnisse, dass die Auswirkungen der Innovationsförderung weit über die unmittelbaren wirtschaftlichen Effekte hinausgehen <a href="./_file/data/methodik-volkswirtschaft-innosuisse-ebp.pdf" target="_blank">(EBP, 2025)</a>.</p>
+<div><observablehq-loading></observablehq-loading><!--:3d192e12:--></div>
 <div class="card" style="max-width: 640px">
 <h4>Wissenschaftliche Studie belegt direkte Wirkung von Innovationsförderung auf Umsatz und Beschäftigung</h4>
-<p>Ergebnisse der Konjunkturforschungsstelle (KOF) der ETH Zürich zeigen, dass die Förderung von Innovationsprojekten den <strong><strong>Umsatz</strong></strong> der beteiligten Unternehmen in den darauffolgenden fünf Jahren um durchschnittlich <strong>21 %</strong> steigert. Der Vergleich bezieht sich auf Schweizer Unternehmen, die keine Förderung von Innosuisse erhalten oder beantragt haben, aber ansonsten ähnliche Merkmale aufweisen, wie zum Beispiel Ausgaben für Forschung und Entwicklung, Bildungsstand der Belegschaft oder Wettbewerbsumfeld.</p>
-<p>Die Studie weist auch die Auswirkungen auf die <strong><strong>Beschäftigung</strong></strong> nach. Im Vergleich zu Unternehmen ohne Förderung haben Firmen mit Innovationsprojekten innerhalb von fünf Jahren durchschnittlich <strong>18 %</strong> mehr Stellen geschaffen.
+<p>Ergebnisse der Konjunkturforschungsstelle (KOF) der ETH Zürich zeigen, dass die Förderung von Innovationsprojekten den <strong>Umsatz</strong> der beteiligten Unternehmen in den darauffolgenden fünf Jahren um durchschnittlich <strong>21&nbsp;%</strong> steigert. Der Vergleich bezieht sich auf Schweizer Unternehmen, die keine Förderung von Innosuisse erhalten oder beantragt haben, aber ansonsten ähnliche Merkmale aufweisen, wie zum Beispiel Ausgaben für Forschung und Entwicklung, Bildungsstand der Belegschaft oder Wettbewerbsumfeld.</p>
+<p>Die Studie weist auch die Auswirkungen auf die <strong>Beschäftigung</strong> nach. Im Vergleich zu Unternehmen ohne Förderung haben Firmen mit Innovationsprojekten innerhalb von fünf Jahren durchschnittlich <strong>18&nbsp;%</strong> mehr Stellen geschaffen.
 Die positiven Auswirkungen sowohl auf Umsatz als auch auf Beschäftigung verstärken sich im Laufe der Zeit.</p>
 <p>Mit dieser Studie hat die KOF einen wissenschaftlichen Nachweis des Zusammenhangs zwischen Innovationsförderung in der Schweiz und ihrer Wirkung erbracht. Dabei wählten die Forschenden der KOF einen in der internationalen Forschungsgemeinschaft anerkannten methodischen Ansatz mit möglichst geringen Verzerrungen. Der sogenannte «Differenz-von-Differenzen-Ansatz» vergleicht Unternehmen, die Förderung von Innosuisse erhalten, mit ähnlichen Unternehmen ohne Förderung.</p>
 <p>Die Ergebnisse bestätigen die im Wirkungsmonitoring dargestellten ökonomischen Wirkungen der Projektförderung von Innosuisse.</p>
@@ -316,28 +315,27 @@ Quelle:
 </div>
 <div class="card" style="background-color: white"><observablehq-loading></observablehq-loading><!--:f1360ef9:--></div></div>
 <h3 id="innovationsfoerderung-gestaltet-erfolgreich-internationale-maerkte" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationsfoerderung-gestaltet-erfolgreich-internationale-maerkte">Innovationsförderung gestaltet erfolgreich internationale Märkte</a></h3>
-<p>33 % der geförderten Innovationsprojekte zielen darauf ab, Neuheiten für den internationalen und globalen Markt zu entwickeln. Damit werden Schweizer Unternehmen verstärkt unterstützt international wettbewerbsfähig zu sein oder zu bleiben.
-Wie bereits dargestellt, haben gleichzeitig rund 30 % der geförderten Projekte das Potenzial mit disruptiven Innovationen die Märkte stark zu beeinflussen oder neu zu definieren.</p>
+<p>33&nbsp;% der geförderten Innovationsprojekte zielen darauf ab, Neuheiten für den internationalen und globalen Markt zu entwickeln. Damit werden Schweizer Unternehmen verstärkt unterstützt international wettbewerbsfähig zu sein oder zu bleiben. Wie bereits dargestellt, haben gleichzeitig rund 29&nbsp;% der geförderten Projekte das Potenzial mit disruptiven Innovationen die Märkte stark zu beeinflussen oder neu zu definieren.</p>
   <div style="display: flex; gap: 40px;">
   <observablehq-loading></observablehq-loading><!--:132918ff:-->
   <observablehq-loading></observablehq-loading><!--:c838fe9e:-->
   </div>
 <h3 id="unternehmen-erreichen-die-projektziele-mehrheitlich-oder-uebertreffen-diese" tabindex="-1"><a class="observablehq-header-anchor" href="#unternehmen-erreichen-die-projektziele-mehrheitlich-oder-uebertreffen-diese">Unternehmen erreichen die Projektziele mehrheitlich oder übertreffen diese</a></h3>
 <p>Die Mehrheit der beteiligten Projektpartner haben ihre Ziele vollständig erreicht oder sogar übertroffen. Ein Teil der geförderten Projekte hat die gesteckten Ziele nicht vollständig oder nicht erreicht. Innovationsvorhaben sind mit erheblichen technologischen Risiken und Unwägbarkeiten bei der Markumsetzung verbunden. Diese hohen Risikopotenziale unterstreichen die Notwendigkeit der öffentlichen Förderung, um den Wissens- und Technologietransfer zu unterstützen, da die Innovationsprojekte ohne Förderung nicht durchgeführt würden.</p>
-<p>Dies belegen die tiefen Mitnahmeeffekte bei der Förderung: Nur 5 % der Unternehmen geben an, dass sie das Projekt auch ohne die Unterstützung von Innosuisse in derselben Form durchgeführt hätten. 19 % hätten es in veränderter oder reduzierter Form durchgeführt.</p>
+<p>Dies belegen die tiefen Mitnahmeeffekte bei der Förderung: Nur 5&nbsp;% der Unternehmen geben an, dass sie das Projekt auch ohne die Unterstützung von Innosuisse in derselben Form durchgeführt hätten. 19&nbsp;% hätten es in veränderter oder reduzierter Form durchgeführt.</p>
   <div style="display: flex; gap: 15px;">
   <div><observablehq-loading></observablehq-loading><!--:32a40ad8:--></div>
   <div><observablehq-loading></observablehq-loading><!--:f4dc727c:--></div>
   </div>
 <h3 id="innosuisse-foerderung-staerkt-den-wissens-und-technologietransfer-wtt-auch-langfristig" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-foerderung-staerkt-den-wissens-und-technologietransfer-wtt-auch-langfristig">Innosuisse-Förderung stärkt den Wissens- und Technologietransfer (WTT) auch langfristig</a></h3>
-<p>Der WTT und die Zusammenarbeit zwischen den Unternehmen und der Forschung wird durch die Innovationsprojekte gefördert und gestärkt. Drei Viertel der Unternehmen geben an, dass die Projektförderung ihre Forschung und Entwicklung beschleunigt und gestärkt hat. Die Zusammenarbeit und der WTT mit der Forschung ist langfristig beständig: Fast die Hälfte der Unternehmen arbeitet drei Jahre nach Projektabschluss immer noch mit den Forschungspartnern zusammen. 15 % übernehmen sogar Forschungspersonal, das am Projekt beteiligt war und stärken somit ihre interne Wissens- und Innovationsbasis langfristig.</p>
+<p>Der WTT und die Zusammenarbeit zwischen den Unternehmen und der Forschung wird durch die Innovationsprojekte gefördert und gestärkt. Drei Viertel der Unternehmen geben an, dass die Projektförderung ihre Forschung und Entwicklung beschleunigt und gestärkt hat. Die Zusammenarbeit und der WTT mit der Forschung ist langfristig beständig: Fast die Hälfte der Unternehmen arbeitet drei Jahre nach Projektabschluss immer noch mit den Forschungspartnern zusammen. 15&nbsp;% übernehmen sogar Forschungspersonal, das am Projekt beteiligt war und stärken somit ihre interne Wissens- und Innovationsbasis langfristig.</p>
   <div style="display: flex; gap: 15px;">
     <observablehq-loading></observablehq-loading><!--:d56dcc71:-->
     <observablehq-loading></observablehq-loading><!--:c804aa5a:-->
 </div>
 <h3 id="projektergebnisse-sind-wissenschaftlich-verankert" tabindex="-1"><a class="observablehq-header-anchor" href="#projektergebnisse-sind-wissenschaftlich-verankert">Projektergebnisse sind wissenschaftlich verankert</a></h3>
-<p>Der wissenschaftliche Output, der durch die Projekte entsteht, ist bemerkenswert. Aus über der Hälfte der Projekte entstehen Ko-Publikationen zwischen Umsetzungs- und Forschungspartnern. International belegt die Schweiz in dieser – für die Innovationsindizes wichtigen – Metrik den Spitzenplatz (<a href="https://projects.research-and-innovation.ec.europa.eu/en/statistics/performance-indicators/european-innovation-scoreboard/eis-2024#/eis/indicators/3.2?country_scope=all&amp;highlight=CH" target="_blank" rel="noopener noreferrer">European Commission, 2024</a>, <a href="https://www.wipo.int/gii-ranking/en/switzerland/section/economy-profile" target="_blank" rel="noopener noreferrer">WIPO, 2024</a>). Die Innovationsprojekte leisten dazu einen Beitrag. Die starke internationale Positionierung beim Wissens- und Technologietransfer zeigt auch die Ergebnisse einer Studie des SBFI (<a href="https://www.sbfi.admin.ch/sbfi/de/home/dienstleistungen/publikationen/publikationsdatenbank/wtt-endbericht-2023.html" target="_blank" rel="noopener noreferrer">2023</a>).</p>
-<p>62 % der Forschungspartner publizieren ihre wissenschaftlichen Ergebnisse in einer Fachzeitschrift mit Peer-Review. In 19 % der geförderten Projekte werden Dissertationen geschrieben, zusätzlich zur Vielzahl an Bachelor- und Masterarbeiten. Diese Zahlen belegen die starke wissenschaftliche Verankerung der Innovationsprojekte und zeigen auch die Bedeutung der Projekte für die Forschungsseite und den Beitrag zur wissenschaftlichen Nachwuchsförderung. Die wissenschaftliche Qualität ist sehr hoch und die Weiterverbreitung der Projektergebnisse wird dadurch sichergestellt.</p>
+<p>Der wissenschaftliche Output, der durch die Projekte entsteht, ist bemerkenswert. Aus über der Hälfte der Projekte entstehen Ko-Publikationen zwischen Umsetzungs- und Forschungspartnern. International belegt die Schweiz in dieser – für die Innovationsindizes wichtigen – Metrik den Spitzenplatz (<a href="https://projects.research-and-innovation.ec.europa.eu/en/statistics/performance-indicators/european-innovation-scoreboard/eis-2024#/eis/indicators/3.2?country_scope=all&amp;highlight=CH" target="_blank" rel="noopener noreferrer">European Commission, 2024</a> &amp; <a href="https://www.wipo.int/gii-ranking/en/switzerland/section/economy-profile" target="_blank" rel="noopener noreferrer">WIPO, 2024</a>). Die Innovationsprojekte leisten dazu einen Beitrag. Die starke internationale Positionierung beim Wissens- und Technologietransfer zeigt auch die Ergebnisse einer Studie des SBFI (<a href="https://www.sbfi.admin.ch/sbfi/de/home/dienstleistungen/publikationen/publikationsdatenbank/wtt-endbericht-2023.html" target="_blank" rel="noopener noreferrer">SBFI, 2023</a>).</p>
+<p>62&nbsp;% der Forschungspartner publizieren ihre wissenschaftlichen Ergebnisse in einer Fachzeitschrift mit Peer-Review. In 19&nbsp;% der geförderten Projekte werden Dissertationen geschrieben, zusätzlich zur Vielzahl an Bachelor- und Masterarbeiten. Diese Zahlen belegen die starke wissenschaftliche Verankerung der Innovationsprojekte und zeigen auch die Bedeutung der Projekte für die Forschungsseite und den Beitrag zur wissenschaftlichen Nachwuchsförderung. Die wissenschaftliche Qualität ist sehr hoch und die Weiterverbreitung der Projektergebnisse wird dadurch sichergestellt.</p>
 <div><observablehq-loading></observablehq-loading><!--:22970307:--></div>
 <h3 id="innosuisse-foerderung-zielt-auf-risikoreiche-und-interdisziplinaere-projekte" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-foerderung-zielt-auf-risikoreiche-und-interdisziplinaere-projekte">Innosuisse-Förderung zielt auf risikoreiche und interdisziplinäre Projekte</a></h3>
 <p>Mit der Innosuisse-Förderung werden mehrheitlich komplexere und risikoreichere und auch interdisziplinäre Projekte unterstützt. Interdisziplinäre Projekte integrieren Wissen, Methoden und Technologien aus verschiedenen Fachrichtungen um gemeinsam neuartige Lösungen für komplexe Probleme zu entwickeln. Transdisziplinäre Projekte beziehen zusätzlich nicht-akademische Akteure aus Gesellschaft, Politik, Wirtschaft und Praxis aktiv in den Forschungsprozess ein, um gemeinsam gesellschaftlich relevante Probleme zu lösen und praxistaugliches Wissen zu generieren. Einen Hinweis auf den Risikograd der Innovationsprojekte zeigt sich im Anteil von 27% an radikalen Innovationsprojekten.</p>
@@ -351,7 +349,7 @@ Wie bereits dargestellt, haben gleichzeitig rund 30 % der geförderten Projekte 
 <h3 id="innosuisse-projekte-sind-fuer-forschungs-und-umsetzungspartner-erfolgreich" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-projekte-sind-fuer-forschungs-und-umsetzungspartner-erfolgreich">Innosuisse-Projekte sind für Forschungs- und Umsetzungspartner erfolgreich</a></h3>
 <p>Risikoreiche Projekte müssen auch scheitern können, sei es wegen technologischen Risken oder Risiken bei der Umsetzung der Projektidee auf dem Markt. Vor diesem Hintergrund ist die etwas tiefere Erfolgsquote bei den Umsetzungspartnern nicht beunruhigend. Für die wissenschaftlich hohe Qualität der Projekte spricht, dass fast drei Viertel der Forschungspartner die Projekte als Erfolg einschätzen.</p>
 <p>Der Unterschied zwischen den Erfolgsquoten ist nachvollziehbar: Für die Forschungspartner steht die wissenschaftliche Qualität und auch der Transfer des Forschungswissens für Wirtschaft und Gesellschaft im Vordergrund, für die Unternehmen ist zudem die Anwendung in der wirtschaftlichen Praxis und die Wertschöpfung auf den Märkten essenziell. Hier kann die Innosuisse-Förderung mit den erzielten Ergebnissen der Projektförderung nur wichtige Voraussetzungen dazu schaffen</p>
-<div><observablehq-loading></observablehq-loading><!--:f4518cd8:--></div>
+<div><observablehq-loading></observablehq-loading><!--:537233b1:--></div>
 <h2 id="innovationsscheck" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationsscheck">Innovationsscheck</a></h2>
 <div style="display: flex;">
   <div><observablehq-loading></observablehq-loading><!--:c934791d:--></div>
@@ -359,8 +357,8 @@ Wie bereits dargestellt, haben gleichzeitig rund 30 % der geförderten Projekte 
 </div>
 <p>Der Innovationsscheck bietet KMU und Start-ups eine niederschwellige Förderung, um erste Schritte in der Zusammenarbeit mit Forschungspartnern zu ermöglichen. Ziel ist es, Machbarkeits- und Marktstudien sowie technologische Abklärungen durchzuführen, die als Grundlage für mögliche spätere Innovationsprojekte dienen können. Die Förderung richtet sich auch an Unternehmen ohne oder mit wenig Forschungserfahrung, um Innovationsideen frühzeitig zu validieren. Voraussetzung ist, dass ein Forschungspartner eingebunden wird und das Vorhaben einen klaren Innovationsgehalt aufweist.</p>
 <h3 id="zusammenarbeit-mit-forschungspartnern-wird-geprueft-und-innovationsideen-weiterentwickelt" tabindex="-1"><a class="observablehq-header-anchor" href="#zusammenarbeit-mit-forschungspartnern-wird-geprueft-und-innovationsideen-weiterentwickelt">Zusammenarbeit mit Forschungspartnern wird geprüft und Innovationsideen weiterentwickelt</a></h3>
-<p>Die beteiligten Unternehmen beabsichtigen mit dem Innovationsscheck, bereits konkrete und nutzbare Ergebnisse zu erzielen, ihre Innovationsidee zu testen und weiterzuentwickeln sowie die Zusammenarbeit mit einem Forschungspartner zu prüfen. Zwei Drittel (66 %) der Innovationsschecks zielen darauf ab, ein Innovationsprojekt bei Innosuisse vorzubereiten.</p>
-<p>Die Zusammenarbeit wird in nahezu allen Fällen erfolgreich geprüft. 63 % der Unternehmen haben ihre Innovationsidee erfolgreich getestet und weiterentwickelt und dieses Ziel vollständig erreicht. Bei rund 40 % der Schecks werden konkrete und direkt nutzbare Ergebnisse erzielt. Etwa die Hälfte der Innovationsschecks führt dazu, dass ein Innovationsprojekt bei Innosuisse erfolgreich vorbereitet wird.</p>
+<p>Die beteiligten Unternehmen beabsichtigen mit dem Innovationsscheck, bereits konkrete und nutzbare Ergebnisse zu erzielen, ihre Innovationsidee zu testen und weiterzuentwickeln sowie die Zusammenarbeit mit einem Forschungspartner zu prüfen. Zwei Drittel (66&nbsp;%) der Innovationsschecks zielen darauf ab, ein Innovationsprojekt bei Innosuisse vorzubereiten.</p>
+<p>Die Zusammenarbeit wird in nahezu allen Fällen erfolgreich geprüft. 63&nbsp;% der Unternehmen haben ihre Innovationsidee erfolgreich getestet und weiterentwickelt und dieses Ziel vollständig erreicht. Bei rund 40&nbsp;% der Schecks werden konkrete und direkt nutzbare Ergebnisse erzielt. Etwa die Hälfte der Innovationsschecks führt dazu, dass ein Innovationsprojekt bei Innosuisse erfolgreich vorbereitet wird.</p>
 <div><observablehq-loading></observablehq-loading><!--:9887d7a4:--></div>
 <h3 id="projektideen-werden-weiterverfolgt" tabindex="-1"><a class="observablehq-header-anchor" href="#projektideen-werden-weiterverfolgt">Projektideen werden weiterverfolgt</a></h3>
 <p>Die Innovationsideen sind relevant für die KMU, darum werden sie auch nach der Förderung weiterverfolgt. Rund ein Viertel der Unternehmen startet nach Abschluss des Innovationsschecks ein Innosuisse-Innovationsprojekt oder plant dies zu tun.</p>
@@ -374,14 +372,14 @@ Wie bereits dargestellt, haben gleichzeitig rund 30 % der geförderten Projekte 
 </div>
 <h3 id="zielerreichung-ist-hoch-und-es-werden-innovationsideen-umgesetzt-die-sonst-nicht-angegangen-worden-waeren" tabindex="-1"><a class="observablehq-header-anchor" href="#zielerreichung-ist-hoch-und-es-werden-innovationsideen-umgesetzt-die-sonst-nicht-angegangen-worden-waeren">Zielerreichung ist hoch und es werden Innovationsideen umgesetzt, die sonst nicht angegangen worden wären</a></h3>
 <p>Zwei Drittel der KMU erreichen die gesetzten Ziele mit den Innovationsschecks vollständig oder übertreffen sie. Diese niederschwellige und unkomplizierte Förderung unterstützt damit die Prüfung der Machbarkeit der Innovationsideen und stärkt die weitere Umsetzung von inkrementellen und radikalen Innovationsideen.</p>
-<p>Die geringen Mitnahmeeffekte zeigen, dass mit den Innovationsschecks Ideen geprüft werden können, die ansonsten im Tagesgeschäft keinen Platz gehabt hätten. Nur 8 % der KMU geben an, dass sie die Innovationsidee auch ohne Förderung in einer ähnlichen Form geprüft hätten. 19 % hätten sie in leicht veränderter Form geprüft.
+<p>Die geringen Mitnahmeeffekte zeigen, dass mit den Innovationsschecks Ideen geprüft werden können, die ansonsten im Tagesgeschäft keinen Platz gehabt hätten. Nur 8&nbsp;% der KMU geben an, dass sie die Innovationsidee auch ohne Förderung in einer ähnlichen Form geprüft hätten. 19&nbsp;% hätten sie in leicht veränderter Form geprüft.
 </p><div style="display: flex; gap: 15px;">
 <observablehq-loading></observablehq-loading><!--:94e527d9:-->
 <observablehq-loading></observablehq-loading><!--:aeedaeb6:--><p></p>
 </div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./vergleichende-ergebnisse"><span>Vergleichende Ergebnisse</span></a><a rel="next" href="./projekte-forschende"><span>Innovationsprojekte ohne Umsetzungspartner</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-29T17:26:46">Jan 29, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T11:31:09">Jan 30, 2025</a>.</div>
 </footer>
 </div>
 </body>
