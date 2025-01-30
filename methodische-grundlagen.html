@@ -7,18 +7,18 @@
 <title>Methodische Grundlagen | Wirkung der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles.c1f3deb5.css">
+<link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles.c1f3deb5.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles.c2e88b07.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.da6cfa27.js">
+<link rel="modulepreload" href="./_import/colors.a3005464.js">
+<link rel="modulepreload" href="./_import/functions.a94ecbed.js">
+<link rel="modulepreload" href="./_import/data.92db0e7e.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.d79399f2.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -71,9 +71,10 @@ registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mim
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
 registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
+registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "4a952f2c", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","plot_erhebung"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, plot_erhebung}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.da6cfa27.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, plot_erhebung}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.a3005464.js"), import("./_import/functions.a94ecbed.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,plot_erhebung};
 }});
@@ -84,9 +85,9 @@ coloredUnderline("Innovationsprojekte","Förderung für Schweizer Innovationspro
 ))
 }});
 
-define({id: "31d99658", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+define({id: "b73c2f05", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
 display(await(
-coloredUnderline("Innovationsschecks","Förderung für Schweizer Innovationsprojekte")
+coloredUnderline("Innovationsschecks","Innovationsscheck")
 ))
 }});
 
@@ -102,9 +103,9 @@ coloredUnderline("Innovation Booster","Starthilfe für Projekte und Vernetzung")
 ))
 }});
 
-define({id: "d23148bc", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+define({id: "25cb720d", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
 display(await(
-coloredUnderline("BRIDGE «Proof of Concept»-Projekten","Förderung für Schweizer Innovationsprojekte")
+coloredUnderline("BRIDGE Proof of Concept-Projekten","BRIDGE: Proof of Concept")
 ))
 }});
 
@@ -144,9 +145,9 @@ coloredUnderline("Begleitung von Start-ups","Begleitung von Start-ups")
 ))
 }});
 
-define({id: "3d3e26ae", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+define({id: "393a3ba2", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
 display(await(
-coloredUnderline("Start-up Innovationsprojekten","Förderung für Schweizer Innovationsprojekte und Swiss Accelerator")
+coloredUnderline("Start-up Innovationsprojekten","Förderung für Schweizer Innovationsprojekte")
 ))
 }});
 
@@ -207,7 +208,7 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 <h2 id="methodische-grundlagen" tabindex="-1"><a class="observablehq-header-anchor" href="#methodische-grundlagen">Methodische Grundlagen</a></h2>
 <h3 id="konzeption-des-wirkungsmonitorings" tabindex="-1"><a class="observablehq-header-anchor" href="#konzeption-des-wirkungsmonitorings">Konzeption des Wirkungsmonitorings</a></h3>
 <p>Nach einer Erarbeitung von konzeptionellen Grundlagen wurde 2021 das Wirkungsmonitoring bei den Umsetzungspartnern der Innovationsprojekte mit systematischen Befragungen eingeführt und seither kontinuierlich auf weitere Instrumente ausgedehnt. Die in den  Grundlagen festgelegten Ziele der Wirkungsmessung sind erreicht worden und mittlerweile liegen eine Vielzahl aussagekräftiger Daten vor. Sie erlauben fundierte Aussagen zu den vielfältigen Wirkungen der Innovationsförderung zu formulieren.</p>
-<p>Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und  Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der <observablehq-loading></observablehq-loading><!--:61683793:-->, der KMU bei den <observablehq-loading></observablehq-loading><!--:31d99658:--> sowie bei allen am <observablehq-loading></observablehq-loading><!--:39ad5b65:--> teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den <observablehq-loading></observablehq-loading><!--:d3c4b8e3:--> und den <observablehq-loading></observablehq-loading><!--:d23148bc:--> beruhen die Ergebnisse auf Monitoring-Daten aller laufenden Initiativen.</p>
+<p>Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und  Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der <observablehq-loading></observablehq-loading><!--:61683793:-->, der KMU bei den <observablehq-loading></observablehq-loading><!--:b73c2f05:--> sowie bei allen am <observablehq-loading></observablehq-loading><!--:39ad5b65:--> teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den <observablehq-loading></observablehq-loading><!--:d3c4b8e3:--> und den <observablehq-loading></observablehq-loading><!--:25cb720d:--> beruhen die Ergebnisse auf Monitoring-Daten aller laufenden Initiativen.</p>
 <div><observablehq-loading></observablehq-loading><!--:bd934341:--></div>
 <h3 id="details-der-befragungen-und-vollerhebungen" tabindex="-1"><a class="observablehq-header-anchor" href="#details-der-befragungen-und-vollerhebungen">Details der Befragungen und Vollerhebungen</a></h3>
 <p>Bei den Befragungen und Selbsteinschätzungen der Fördernehmerinnen und Fördernehmer werden in der Regel Skalenbewertungen auf einer 6er-Skala (z.B. (1) keine Bedeutung, (2) geringe Bedeutung, (3) eher geringe Bedeutung, (4) eher hohe Bedeutung, (5) hohe Bedeutung, (6) sehr hohe Bedeutung verwendet). Dort wo sinnvoll, werden (ja/nein)-Fragen gestellt und ausgewählte Kennzahlen zu ökonomischen Kennzahlen erhoben.</p>
@@ -251,13 +252,7 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 <p>Für die <observablehq-loading></observablehq-loading><!--:61683793-1:--> bei den Umsetzungspartnern wird der Mittelwert der Monitoringjahre 2021–2023 dargestellt. Die Ergebnisse bei den <observablehq-loading></observablehq-loading><!--:69c971a9:--> basieren auf dem Mittelwert der Monitoringjahre 2023 und 2024, da die Auswertungen für 2024 bereits vorliegen. Die übrigen Indikatoren basieren auf dem Monitoringjahr 2023.</p>
 <p>Der Rücklauf der Befragungen liegt zwischen rund 50 % und über 75 % und erlaubt damit statistisch valide Aussagen.</p>
 <h3 id="tabellarische-zusammenstellung-der-ergebnisse" tabindex="-1"><a class="observablehq-header-anchor" href="#tabellarische-zusammenstellung-der-ergebnisse">Tabellarische Zusammenstellung der Ergebnisse</a></h3>
-<p>Die detaillierten Ergebnisse finden sich in einer tabellarischen Zusammenstellung (<a href="./data/wirkungsindikatoren-2021-2023.xlsx">⤓&nbsp;Excel</a>), gegliedert nach</p>
-<ul>
-<li>Instrumenten</li>
-<li>Zielgruppen der Förderung</li>
-<li>fünf Stossrichtungen der Wirkungsorientierung</li>
-<li>differenzierter Kategorisierung der Wirkung</li>
-</ul>
+<p>Die detaillierten Ergebnisse finden sich in einer tabellarischen Zusammenstellung (<a href="./_file/data/wirkungsindikatoren-2021-2023.xlsx">⤓&nbsp;Excel</a>), gegliedert nach Instrumenten, Zielgruppen der Förderung, fünf Stossrichtungen der Wirkungsorientierung und differenzierter Kategorisierung der Wirkung</p>
 <h3 id="foerderangebote-und-wirkungsziele-von-innosuisse-outcomes" tabindex="-1"><a class="observablehq-header-anchor" href="#foerderangebote-und-wirkungsziele-von-innosuisse-outcomes">Förderangebote und Wirkungsziele von Innosuisse (Outcomes)</a></h3>
 <p>Die Förderangebote von Innosuisse können in drei übergeordnete Förderbereiche gegliedert werden (vgl. nachfolgende Übersicht):</p>
 <ol>
@@ -272,13 +267,13 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 <p>Die Ergebnisse beinhalten einerseits kurz- bis mittelfristige Wirkungen bei Abschluss der Innovationsvorhaben oder kurz nach Projektabschluss. Andererseits werden auch längerfristige Wirkungen dargestellt, beispielsweise die Umsetzung auf dem Markt oder Beschäftigungswirkungen.</p>
 <p>Die Zuordnung zu den fünf dargestellten Stossrichtungen wird in der hier vorliegenden Berichterstattung nicht explizit dargestellt, wird aber in der tabellarischen Zusammenstellung (siehe oben) transparent gemacht. Dies gilt ebenso für die verwendeten Skalenbewertungen für die Berechnungen der ausgewiesenen Indikatoren.</p>
 <h3 id="weiterentwicklung-des-wirkungsmonitorings" tabindex="-1"><a class="observablehq-header-anchor" href="#weiterentwicklung-des-wirkungsmonitorings">Weiterentwicklung des Wirkungsmonitorings</a></h3>
-<p>Das vorliegende Wirkungsmonitoring wird schrittweise erweitert werden. Der Fokus bei der Weiterentwicklung liegt bei den <observablehq-loading></observablehq-loading><!--:3d3e26ae:-->, den <observablehq-loading></observablehq-loading><!--:c7c196d4:-->, der <observablehq-loading></observablehq-loading><!--:5e8ed8ca:--> und den beiden Förderlinien des gemeinsam mit dem Schweizerischen Nationalfonds (SNF) durchgeführten <observablehq-loading></observablehq-loading><!--:8472f2ec:-->.</p>
+<p>Das vorliegende Wirkungsmonitoring wird schrittweise erweitert werden. Der Fokus bei der Weiterentwicklung liegt bei den <observablehq-loading></observablehq-loading><!--:393a3ba2:-->, den <observablehq-loading></observablehq-loading><!--:c7c196d4:-->, der <observablehq-loading></observablehq-loading><!--:5e8ed8ca:--> und den beiden Förderlinien des gemeinsam mit dem Schweizerischen Nationalfonds (SNF) durchgeführten <observablehq-loading></observablehq-loading><!--:8472f2ec:-->.</p>
 <p>Für die in der vergangenen BFI-Periode 2021–2024 neu eingeführten Instrumente und zum Teil finanziell gewichtigen Instrumente (Flagship Initiative, Start-up Innovationsprojekte, Swiss Accelerator) liegen noch keine Daten vor, da die ersten Projekte erst im Berichtsjahr 2025 abgeschlossen werden. Die internationalen Projekte und das BRIDGE-Programm werden ab Förderjahr 2025 in die Berichterstattung miteinbezogen, die übrigen Instrumente ab 2026 und Folgejahre.</p>
 <p>In der ersten Jahreshälfte 2025 werden die hier vorliegenden Ergebnisse und Indikatoren aktualisiert und für das Förderjahr 2024 kommuniziert werden.</p>
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./editorial"><span>Editorial</span></a><a rel="next" href="./foerderangebote-und-inhalte"><span>Förderangebote und Inhalte</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T12:14:08">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T22:04:59">Jan 30, 2025</a>.</div>
 </footer>
 </div>
 </body>

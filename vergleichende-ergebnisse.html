@@ -7,16 +7,16 @@
 <title>Vergleichende Ergebnisse | Wirkung der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles.c1f3deb5.css">
+<link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles.c1f3deb5.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles.c2e88b07.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.da6cfa27.js">
-<link rel="modulepreload" href="./_import/data.d79399f2.js">
+<link rel="modulepreload" href="./_import/colors.a3005464.js">
+<link rel="modulepreload" href="./_import/functions.a94ecbed.js">
+<link rel="modulepreload" href="./_import/data.92db0e7e.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
@@ -71,16 +71,17 @@ registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mim
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
 registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
+registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "9cf2776e", outputs: ["html","color_inst","color_zufrieden","grey_innosuisse","black_innosuisse","coloredUnderline","draw_result","draw_innoart","draw_dn","df_zufrieden"], body: async () => {
-const [{html}, {color_inst, color_zufrieden, grey_innosuisse, black_innosuisse}, {coloredUnderline, draw_result, draw_innoart, draw_dn}, {df_zufrieden}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.da6cfa27.js"), import("./_import/data.d79399f2.js")]);
+const [{html}, {color_inst, color_zufrieden, grey_innosuisse, black_innosuisse}, {coloredUnderline, draw_result, draw_innoart, draw_dn}, {df_zufrieden}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.a3005464.js"), import("./_import/functions.a94ecbed.js"), import("./_import/data.92db0e7e.js")]);
 
 return {html,color_inst,color_zufrieden,grey_innosuisse,black_innosuisse,coloredUnderline,draw_result,draw_innoart,draw_dn,df_zufrieden};
 }});
 
-define({id: "8e843dc8", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+define({id: "12f8bff4", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
 display(await(
-coloredUnderline("Start-up Core Coaching","Begleitung von Start-ups")
+coloredUnderline("Start-up Core Coaching","Start-up Core Coaching")
 ))
 }});
 
@@ -132,9 +133,9 @@ coloredUnderline("Innovationsprojekten mit Umsetzungspartnern","Förderung für 
 ))
 }});
 
-define({id: "31d99658", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+define({id: "b73c2f05", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
 display(await(
-coloredUnderline("Innovationsschecks","Förderung für Schweizer Innovationsprojekte")
+coloredUnderline("Innovationsschecks","Innovationsscheck")
 ))
 }});
 
@@ -144,9 +145,9 @@ coloredUnderline("Projektförderung","Förderung für Schweizer Innovationsproje
 ))
 }});
 
-define({id: "31d99658-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+define({id: "b73c2f05-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
 display(await(
-coloredUnderline("Innovationsschecks","Förderung für Schweizer Innovationsprojekte")
+coloredUnderline("Innovationsschecks","Innovationsscheck")
 ))
 }});
 
@@ -180,9 +181,9 @@ coloredUnderline("Innovationsprojekten mit Umsetzungspartnern","Förderung für 
 ))
 }});
 
-define({id: "31d99658-2", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+define({id: "b73c2f05-2", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
 display(await(
-coloredUnderline("Innovationsschecks","Förderung für Schweizer Innovationsprojekte")
+coloredUnderline("Innovationsschecks","Innovationsscheck")
 ))
 }});
 
@@ -192,7 +193,7 @@ coloredUnderline("Start-ups im Core Coaching","Begleitung von Start-ups")
 ))
 }});
 
-define({id: "8e843dc8-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+define({id: "8e843dc8", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
 display(await(
 coloredUnderline("Start-up Core Coaching","Begleitung von Start-ups")
 ))
@@ -326,7 +327,7 @@ draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)
 <div class="observablehq observablehq--block"><!--:9cf2776e:--></div>
 <h2 id="vergleichende-ergebnisse-zu-foerderangeboten" tabindex="-1"><a class="observablehq-header-anchor" href="#vergleichende-ergebnisse-zu-foerderangeboten">Vergleichende Ergebnisse zu Förderangeboten</a></h2>
 <h3 id="zufriedenheit-mit-den-foerderangeboten-von-innosuisse-ist-durchwegs-hoch" tabindex="-1"><a class="observablehq-header-anchor" href="#zufriedenheit-mit-den-foerderangeboten-von-innosuisse-ist-durchwegs-hoch">Zufriedenheit mit den Förderangeboten von Innosuisse ist durchwegs hoch</a></h3>
-<p>Die Fördernehmer von Innosuisse sind mit der Innovationsförderung von Innosuisse und deren Umsetzung zufrieden bis sehr zufrieden. Die Anteile der hier dargestellten Instrumente liegen über 80&nbsp;%, beim  <observablehq-loading></observablehq-loading><!--:8e843dc8:--> sind es mehr als zwei Drittel. Nur sehr geringe Anteile sind mit den Instrumenten von Innosuisse unzufrieden.</p>
+<p>Die Fördernehmer von Innosuisse sind mit der Innovationsförderung von Innosuisse und deren Umsetzung zufrieden bis sehr zufrieden. Die Anteile der hier dargestellten Instrumente liegen über 80&nbsp;%, beim  <observablehq-loading></observablehq-loading><!--:12f8bff4:--> sind es mehr als zwei Drittel. Nur sehr geringe Anteile (≤ 1 %) sind mit den Instrumenten von Innosuisse unzufrieden.</p>
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px;">
 <p><observablehq-loading></observablehq-loading><!--:32a4b4ec:-->
 <observablehq-loading></observablehq-loading><!--:087b8d6e:-->
@@ -335,23 +336,23 @@ draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)
 <observablehq-loading></observablehq-loading><!--:f800ef39:-->
 <observablehq-loading></observablehq-loading><!--:4b11ebcc:--></p>
 </div>
-<h3 id="innosuisse-foerdert-gleichzeitig-inkrementelle-und-radikale-innovationen" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-foerdert-gleichzeitig-inkrementelle-und-radikale-innovationen">Innosuisse fördert gleichzeitig inkrementelle und radikale Innovationen</a></h3>
+<h3 id="innosuisse-foerdert-sowohl-inkrementelle-wie-auch-radikale-innovationen" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-foerdert-sowohl-inkrementelle-wie-auch-radikale-innovationen">Innosuisse fördert sowohl inkrementelle wie auch radikale Innovationen</a></h3>
 <div><observablehq-loading></observablehq-loading><!--:bcfc6fd9:--></div>
 <p class="comment">
 Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit vorgegebenen Definitionen: (1) sehr inkrementelle, (2) inkrementelle Innovationen bzw. (5) radikale, (6) sehr radikale Innovationen.
 </p> 
-<p>Bei den <observablehq-loading></observablehq-loading><!--:23ce74f8:--> und den <observablehq-loading></observablehq-loading><!--:31d99658:--> verfolgen rund ein Viertel der Innovationsvorhaben <strong><strong>klar inkrementelle Innovationen</strong></strong>. Hier wird primär die Weiterentwicklung oder Optimierung von Bestehendem (Produkte, Dienstleistungen, Prozesse, Geschäftsmodelle etc.) verfolgt.</p>
-<p><strong><strong>Radikale Innovationen</strong></strong> (27%) werden bei der <observablehq-loading></observablehq-loading><!--:178b7ad1:--> in gleichem Ausmass gefördert wie inkrementelle Innovationen. Radikale Innovationen streben im Gegensatz zu inkrementellen Innovationen grundlegende Neuerungen und Veränderungen durch revolutionäre oder radikale neue Ideen und Technologien an. Sie machen bei allen Instrumenten – mit Ausnahme der <observablehq-loading></observablehq-loading><!--:31d99658-1:--> – mindestens ein Viertel der <observablehq-loading></observablehq-loading><!--:548ab44d:--> und <observablehq-loading></observablehq-loading><!--:6b443175:--> aus. Bei den Start-ups im Coaching verfolgen mehr als die Hälfte der <observablehq-loading></observablehq-loading><!--:c3030dd8:--> den Anspruch mit ihren Geschäftsmodellen radikale Innovationen einzuführen.</p>
+<p>Bei den <observablehq-loading></observablehq-loading><!--:23ce74f8:--> und den <observablehq-loading></observablehq-loading><!--:b73c2f05:--> verfolgen rund ein Viertel der Innovationsvorhaben <strong><strong>klar inkrementelle Innovationen</strong></strong>. Hier wird primär die Weiterentwicklung oder Optimierung von Bestehendem (Produkte, Dienstleistungen, Prozesse, Geschäftsmodelle etc.) verfolgt.</p>
+<p><strong><strong>Radikale Innovationen</strong></strong> (27%) werden bei der <observablehq-loading></observablehq-loading><!--:178b7ad1:--> in gleichem Ausmass gefördert wie inkrementelle Innovationen. Radikale Innovationen streben im Gegensatz zu inkrementellen Innovationen grundlegende Neuerungen und Veränderungen durch revolutionäre oder radikale neue Ideen und Technologien an. Sie machen bei allen Instrumenten – mit Ausnahme der <observablehq-loading></observablehq-loading><!--:b73c2f05-1:--> – mindestens ein Viertel der <observablehq-loading></observablehq-loading><!--:548ab44d:--> und <observablehq-loading></observablehq-loading><!--:6b443175:--> aus. Bei den Start-ups im Coaching verfolgen mehr als die Hälfte der <observablehq-loading></observablehq-loading><!--:c3030dd8:--> den Anspruch mit ihren Geschäftsmodellen radikale Innovationen einzuführen.</p>
 <h3 id="innovationen-koennen-die-maerkte-stark-beeinflussen" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationen-koennen-die-maerkte-stark-beeinflussen">Innovationen können die Märkte stark beeinflussen</a></h3>
 <div><observablehq-loading></observablehq-loading><!--:a199f521:--></div>
 <p class="comment">
 Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit vorgegebenen Definitionen: (5) disruptive Innovationen, (6) stark disruptive Innovationen.
 </p> 
 <p>Davon zu unterscheiden sind <strong><strong>disruptive Innovationen</strong></strong>. Hier stehen nicht der technologische Neuheitsgrad, sondern umwälzende Wirkungen auf den Märkten im Vordergrund.  Sie sind dann disruptiv, wenn sie vollständig neue Märkte mit neuen Spielregeln und Zielgruppen schaffen oder bestehende Märkte in starkem Masse beeinflussen, beispielsweise durch Neuheiten, die im internationalen oder globalen Massstab neu sind für die Märkte. Sowohl radikale als auch inkrementelle Innovationen können disruptiv sein.</p>
-<p>Bei den <observablehq-loading></observablehq-loading><!--:23ce74f8-1:--> und <observablehq-loading></observablehq-loading><!--:31d99658-2:--> haben rund ein Drittel der Unternehmen das Potenzial, den Markt disruptiv umzugestalten. Bei den <observablehq-loading></observablehq-loading><!--:f4c4962f:--> verfolgen sogar rund zwei Drittel der Start-ups disruptive Innovationen mit dem Geschäftsmodell des gegründeten Unternehmens.</p>
+<p>Bei den <observablehq-loading></observablehq-loading><!--:23ce74f8-1:--> und <observablehq-loading></observablehq-loading><!--:b73c2f05-2:--> haben rund ein Drittel der Unternehmen das Potenzial, den Markt disruptiv umzugestalten. Bei den <observablehq-loading></observablehq-loading><!--:f4c4962f:--> verfolgen sogar rund zwei Drittel der Start-ups disruptive Innovationen mit dem Geschäftsmodell des gegründeten Unternehmens.</p>
 <h3 id="innosuisse-foerdert-innovationsvielfalt" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-foerdert-innovationsvielfalt">Innosuisse fördert Innovationsvielfalt</a></h3>
 <p>Die folgende Abbildung verdeutlicht zusätzlich die Vielfalt der unterstützten Innovationsformen. Oft werden auch mehrere Innovationen gleichzeitig verfolgt, beispielsweise wenn eine Produktinnovation mit einer Geschäftsmodell- oder Prozessinnovation kombiniert wird.</p>
-<p>Produktinnovationen sind mit beim <observablehq-loading></observablehq-loading><!--:8e843dc8-1:--> am wichtigsten (88&nbsp;%). Die Anteile bei Prozessinnovationen liegen zwischen 24&nbsp;% und 35&nbsp;%. Geschäftsmodellinnovationen sind im Vergleich mit anderen Instrumenten bei den <observablehq-loading></observablehq-loading><!--:c3030dd8-1:--> am bedeutendsten (17&nbsp;%). Diese werden oft mit Aspekten der digitalen Transformation verbunden. Innosuisse fördert auch soziale Innovationen. Deren Anteile sind jedoch vergleichsweise tief.</p>
+<p>Produktinnovationen sind mit beim <observablehq-loading></observablehq-loading><!--:8e843dc8:--> am wichtigsten (88&nbsp;%). Die Anteile bei Prozessinnovationen liegen zwischen 24&nbsp;% und 35&nbsp;%. Geschäftsmodellinnovationen sind im Vergleich mit anderen Instrumenten bei den <observablehq-loading></observablehq-loading><!--:c3030dd8-1:--> am bedeutendsten (17&nbsp;%). Diese werden oft mit Aspekten der digitalen Transformation verbunden. Innosuisse fördert auch soziale Innovationen. Deren Anteile sind jedoch vergleichsweise tief.</p>
 <p>Die Innovationsvielfalt ist auch Ausdruck dessen, dass Innosuisse die wissenschaftsbasierte Innovation bottom-up und thematisch offen fördert.</p>
 <div>
 <observablehq-loading></observablehq-loading><!--:74286c5d:-->
@@ -379,7 +380,7 @@ Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit
 <p class="comment">Gestellte Frage: Kann das von Innosuisse geförderte Projekt oder die Projektidee einen Beitrag zur ökologischen und/oder sozialen Nachhaltigkeit&nbsp;leisten? Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit vorgegebenen Definitionen: (4) eher hoher Beitrag, (5) hoher Beitrag, (6) sehr hoher Beitrag.</p></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./foerderangebote-und-inhalte"><span>Förderangebote und Inhalte</span></a><a rel="next" href="./projekte-unternehmen-forschende#projekte-von-unternehmen-mit-forschenden"><span>Innovationsprojekte mit Umsetzungspartner</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T12:14:08">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T22:04:59">Jan 30, 2025</a>.</div>
 </footer>
 </div>
 </body>

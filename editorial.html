@@ -7,18 +7,18 @@
 <title>Editorial | Wirkung der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles.c1f3deb5.css">
+<link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles.c1f3deb5.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles.c2e88b07.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.da6cfa27.js">
+<link rel="modulepreload" href="./_import/colors.a3005464.js">
+<link rel="modulepreload" href="./_import/functions.a94ecbed.js">
+<link rel="modulepreload" href="./_import/data.92db0e7e.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.d79399f2.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -71,9 +71,10 @@ registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mim
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
 registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
+registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "68e5ce68", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","draw_fin_plot","n_subcluster"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.da6cfa27.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.a3005464.js"), import("./_import/functions.a94ecbed.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subcluster};
 }});
@@ -90,9 +91,9 @@ coloredUnderline("Start-up Coaching","Begleitung von Start-ups")
 ))
 }});
 
-define({id: "a328ea62", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+define({id: "c11fb10c", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
 display(await(
-coloredUnderline("Bridge Proof of Concept-Projekte","Förderung für Schweizer Innovationsprojekte")
+coloredUnderline("BRIDGE-Projekte","BRIDGE: Proof of Concept")
 ))
 }});
 
@@ -152,15 +153,15 @@ coloredUnderline("thematischen Innovation Booster","Starthilfe für Projekte und
 <h3 id="ergebnisse-belegen-die-breiten-nutzen-der-innovationsfoerderung" tabindex="-1"><a class="observablehq-header-anchor" href="#ergebnisse-belegen-die-breiten-nutzen-der-innovationsfoerderung">Ergebnisse belegen die breiten Nutzen der Innovationsförderung</a></h3>
 <p>Die Ergebnisse sind erfreulich. Sie bestätigen den ökonomischen «Impact» der Förderung bei den  <observablehq-loading></observablehq-loading><!--:cedbd51b:-->, insbesondere bei den beteiligten Klein- und Mittelunternehmen (KMU). Drei Jahre nach Projektabschluss sind knapp 60 % der Innovationsprojekte auf dem Markt oder stehen vor dem Markteintritt. Über 60 % der als Hauptumsetzungspartner beteiligten KMU berichten über direkte ökonomische Wirkungen aus den geförderten Projekten in ihrem Unternehmen. Insbesondere werden eine Vielzahl von Arbeitsplätzen geschaffen, die Wertschöpfung generieren und welche ohne die Förderung nicht entstanden wären.</p>
 <p>Der Fokus der Innosuisse-Förderung liegt auf der Stärkung des WTT zwischen der Forschung bzw. den Hochschulen und den Unternehmen und Organisationen in der wirtschaftlichen Praxis. Die Ergebnisse seitens der Forschung zeigen zudem die wissenschaftliche Verankerung der geförderten Projekte, beispielsweise durch beachtliche Anteile von Dissertationen, die durch die Förderung an den Hochschulen initiiert und durchgeführt werden.</p>
-<p>Innosuisse unterstützt im Coaching insbesondere Start-ups mit hohem Risiko in der Umsetzung und gleichzeitig hohem Wirkungspotenzial auf den Märkten. Die Ergebnisse beim <observablehq-loading></observablehq-loading><!--:8111285e:--> sind insbesondere in Bezug auf die erfolgreiche Kapitalbeschaffung und auf die Unternehmensentwicklung nach drei Jahren erfreulich. Zudem zeigen die, dass die Start-ups im Coaching zur Marktreife geführt werden, in den internationalen Märkten Fuss fassen und das Wachstum gestärkt wird. <observablehq-loading></observablehq-loading><!--:a328ea62:--> fördern gezielt den WTT, in dem über 70 % der Projekte der Forschenden in die Gründung innovativer und wissenschaftsbasierter Start-ups münden.</p>
+<p>Innosuisse unterstützt im Coaching insbesondere Start-ups mit hohem Risiko in der Umsetzung und gleichzeitig hohem Wirkungspotenzial auf den Märkten. Die Ergebnisse beim <observablehq-loading></observablehq-loading><!--:8111285e:--> sind insbesondere in Bezug auf die erfolgreiche Kapitalbeschaffung und auf die Unternehmensentwicklung nach drei Jahren erfreulich. Zudem zeigen die, dass die Start-ups im Coaching zur Marktreife geführt werden, in den internationalen Märkten Fuss fassen und das Wachstum gestärkt wird. <observablehq-loading></observablehq-loading><!--:c11fb10c:--> fördern gezielt den WTT, in dem über 70 % der Projekte der Forschenden in die Gründung innovativer und wissenschaftsbasierter Start-ups münden.</p>
 <p>Innovation lebt von neuen und auch radikalen Innovationsideen. Die <observablehq-loading></observablehq-loading><!--:7de35578:--> schaffen themenorientierte Netzwerke und Plattformen. Akteure aus Wissenschaft und Praxis erschliessen gemeinsam neue Perspektiven für konkrete Problemlösungen, entwickeln daraus vielversprechende Innovationsideen und entwickeln sie systematisch weiter. Die Ergebnisse zeigen, dass aus den erfolgreich geprüften Ideen eine Vielzahl konkreter Innovationsvorhaben zwischen Forschung und Wirtschaft lanciert werden, die dank dieser Zusammenarbeit in Zukunft in die Praxis transferiert werden können.</p>
 <p>Die von Innosuisse geförderten Innovationsvorhaben adressieren wirtschaftliche und gesellschaftliche Herausforderungen bei der Entwicklung digitaler Lösungen sowie bei der Stärkung der ökologischen und sozialen Nachhaltigkeit durch die unterstützten Innovationsvorhaben. So leisten wir einen Beitrag dazu, dass die Schweizer Wirtschaft das digitale Potenzial und den Wandel zu mehr Nachhaltigkeit für ihre langfristige Wettbewerbsfähigkeit nutzen kann.</p>
 <h3 id="oeffentliche-innovationsfoerderung-lohnt-sich-aus-volkswirtschaftlicher-sicht" tabindex="-1"><a class="observablehq-header-anchor" href="#oeffentliche-innovationsfoerderung-lohnt-sich-aus-volkswirtschaftlicher-sicht">Öffentliche Innovationsförderung lohnt sich aus volkswirtschaftlicher Sicht</a></h3>
-<p>Besonders erfreulich ist aus meiner Sicht, dass der mit ökonomischen Ergebnissen konkret belegbare volkswirtschaftliche Nutzen der geförderten Innovationsprojekte, welcher die Förderkosten um ein Mehrfaches übersteigt. Weitere Nutzen, wie beispielsweise  zur Stärkung der Innovationsfähigkeit und der Innovationskraft der geförderten Unternehmen sind hier nicht eingerechnet.</p>
+<p>Besonders erfreulich ist aus meiner Sicht, dass der mit ökonomischen Ergebnissen konkret belegbare volkswirtschaftliche Nutzen der geförderten Innovationsprojekte die Förderkosten um ein Mehrfaches übersteigt. Weitere Nutzen, wie beispielsweise zur Stärkung der Innovationsfähigkeit und der Innovationskraft der geförderten Unternehmen sind hier nicht eingerechnet.</p>
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./"><span>Wirkung der Innosuisse-Förderung</span></a><a rel="next" href="./methodische-grundlagen"><span>Methodische Grundlagen</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T12:14:08">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T22:04:59">Jan 30, 2025</a>.</div>
 </footer>
 </div>
 </body>

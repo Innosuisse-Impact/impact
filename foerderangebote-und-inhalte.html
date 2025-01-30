@@ -7,18 +7,18 @@
 <title>Überblick Förderangebote und Inhalte des Wirkungsmonitorings | Wirkung der Innosuisse-Förderung</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/styles.c1f3deb5.css">
+<link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/styles.c1f3deb5.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles.c2e88b07.css">
 <link rel="modulepreload" href="./_observablehq/client.6c3b6f8d.js">
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.e80e8e2d.js">
-<link rel="modulepreload" href="./_import/functions.da6cfa27.js">
+<link rel="modulepreload" href="./_import/colors.a3005464.js">
+<link rel="modulepreload" href="./_import/functions.a94ecbed.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
+<link rel="modulepreload" href="./_import/data.92db0e7e.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
-<link rel="modulepreload" href="./_import/data.d79399f2.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
@@ -71,9 +71,10 @@ registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mim
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
 registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
+registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "21f0fa03", outputs: ["html","color_inst","grey_innosuisse","black_innosuisse","grey_comment","coloredUnderline","draw_fin_plot","n_subcluster"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse, black_innosuisse, grey_comment}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.e80e8e2d.js"), import("./_import/functions.da6cfa27.js")]);
+const [{html}, {color_inst, grey_innosuisse, black_innosuisse, grey_comment}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.a3005464.js"), import("./_import/functions.a94ecbed.js")]);
 
 return {html,color_inst,grey_innosuisse,black_innosuisse,grey_comment,coloredUnderline,draw_fin_plot,n_subcluster};
 }});
@@ -150,6 +151,66 @@ coloredUnderline("Coaching-, Trainings- und Internationalisierungsangeboten","Be
 ))
 }});
 
+define({id: "528b3180", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovationsprojekten mit Umsetzungspartnern","Innovationsprojekte mit Umsetzungspartner")
+))
+}});
+
+define({id: "b73c2f05", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovationsschecks","Innovationsscheck")
+))
+}});
+
+define({id: "3e02200f", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("BRIDGE Proof of Concept","BRIDGE: Proof of Concept")
+))
+}});
+
+define({id: "32303aed", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovationsprojekten ohne Umsetzungspartner","Innovationsprojekte ohne Umsetzungspartner")
+))
+}});
+
+define({id: "d3b8d2ea", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Start-ups im Coaching","Start-up Core Coaching")
+))
+}});
+
+define({id: "3e02200f-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("BRIDGE Proof of Concept","BRIDGE: Proof of Concept")
+))
+}});
+
+define({id: "d3b8d2ea-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Start-ups im Coaching","Start-up Core Coaching")
+))
+}});
+
+define({id: "32303aed-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovationsprojekten ohne Umsetzungspartner","Innovationsprojekte ohne Umsetzungspartner")
+))
+}});
+
+define({id: "528b3180-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovationsprojekten mit Umsetzungspartnern","Innovationsprojekte mit Umsetzungspartner")
+))
+}});
+
+define({id: "b73c2f05-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovationsschecks","Innovationsscheck")
+))
+}});
+
 define({id: "0219af3d", mode: "inline", inputs: ["n_subcluster","display"], body: async (n_subcluster,display) => {
 display(await(
 n_subcluster
@@ -217,12 +278,18 @@ n_subcluster
 Die Projekte, in welchen die Start-ups und KMUs direkt unterstützt werden (Start-up Innovationsprojekte und Swiss Accelerator) werden zu einem späteren Zeitpunkt in das Monitoring integriert, da die Projekte noch nicht abgeschlossen sind. Dies gilt in gleicher Form für die Flagship-Projekte.</p>
 <p class="comment">¹ In der Folge wird «Unternehmen» vielfach als Synonym für «Umsetzungspartner» verwendet. Das ist nicht ganz präzise, weil die Umsetzungspartner sowohl KMU, Grossunternehmen und Start-ups, wie auch Verwaltungen, Non-Profit-Organisationen und andere private oder öffentliche Institutionen umfassen können. Allerdings besteht die grosse Mehrheit der Umsetzungspartner aus Unternehmen (KMU, Grossunternehmen und Start-ups), darum erlauben wir uns diese Vereinfachung hier, um damit die Texte einfacher verständlich zu machen.</p><p>
 </p><h3 id="thematische-schwerpunkte-der-innovationsvorhaben-2021-2023" tabindex="-1"><a class="observablehq-header-anchor" href="#thematische-schwerpunkte-der-innovationsvorhaben-2021-2023">Thematische Schwerpunkte der Innovationsvorhaben 2021–2023</a></h3>
-<p>Die bewilligten Innovationsvorhaben lassen sich in fünf verschiedene Themenbereiche gliedern, welche in der nachfolgenden Abbildung zusätzlich nach Instrumenten bzw. Förderangeboten dargestellt sind. Die Abbildung zeigt den prozentualen Anteil der Themenbereiche an den bewilligten Innovationsvorhaben im Durchschnitt der Jahre 2021-2023. Die prozentualen Anteile nach Instrumenten unterscheiden sich zum Teil deutlich.</p>
-<p>«Engineering» weist bei den Innovationsprojekten mit Umsetzungspartnern (37 %), den Innovationsschecks (32 %) und bei BRIDGE Proof of Concept (31 %) höhere und vergleichbare Anteile auf. «Life Sciences» hingegen zeigen einen sehr hohen Anteil bei den Innovationsprojekten ohne Umsetzungspartner (66 %) und einen überdurchschnittlichen Anteil bei den Start-ups im Coaching (38 %). Bei BRIDGE Proof of Concept ist es der wichtigste Themenbereich (34 %).  Dem Bereich «Information and communication technologies ICT» kommt bei den Start-ups im Coaching das grösste Gewicht zu (30 %). Die Unterschiede bei «Energy &amp; environment» sind geringer und bewegen sich zwischen 9 % bei den Innovationsprojekten ohne Umsetzungspartner und 17 % bei den Innovationsprojekten mit Umsetzungspartner (17 %). «Social sciences &amp; business management» sind bei den Innovationsschecks (21 %) am stärksten vertreten, ansonsten sind die Anteile vergleichsweise geringer.</p>
+<p>Die bewilligten Innovationsvorhaben lassen sich in fünf verschiedene Themenbereiche gliedern, welche in der nachfolgenden Abbildung zusätzlich nach Instrumenten bzw. Förderangeboten dargestellt sind. Die Abbildung zeigt den prozentualen Anteil der Themenbereiche an den bewilligten Innovationsvorhaben im Durchschnitt der Jahre 2021–2023. Die prozentualen Anteile nach Instrumenten unterscheiden sich zum Teil deutlich.</p>
+<ul>
+<li>«Engineering» weist bei den <observablehq-loading></observablehq-loading><!--:528b3180:--> (37 %), den <observablehq-loading></observablehq-loading><!--:b73c2f05:--> (32 %) und bei <observablehq-loading></observablehq-loading><!--:3e02200f:--> (31 %) höhere und vergleichbare Anteile auf.</li>
+<li>«Life Sciences» hingegen zeigen einen sehr hohen Anteil bei den <observablehq-loading></observablehq-loading><!--:32303aed:--> (66 %) und einen überdurchschnittlichen Anteil bei den <observablehq-loading></observablehq-loading><!--:d3b8d2ea:--> (38 %). Bei <observablehq-loading></observablehq-loading><!--:3e02200f-1:--> ist es der wichtigste Themenbereich (34 %).</li>
+<li>Dem Bereich «Information and communication technologies ICT» kommt bei den <observablehq-loading></observablehq-loading><!--:d3b8d2ea-1:--> das grösste Gewicht zu (30 %).</li>
+<li>Die Unterschiede bei «Energy &amp; environment» sind geringer und bewegen sich zwischen 9 % bei den <observablehq-loading></observablehq-loading><!--:32303aed-1:--> und 17 % bei den <observablehq-loading></observablehq-loading><!--:528b3180-1:-->.</li>
+<li>«Social sciences &amp; business management» sind bei den <observablehq-loading></observablehq-loading><!--:b73c2f05-1:--> (21 %) am stärksten vertreten, ansonsten sind die Anteile vergleichsweise geringer.</li>
+</ul>
 <div><observablehq-loading></observablehq-loading><!--:0219af3d:--></div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./methodische-grundlagen"><span>Methodische Grundlagen</span></a><a rel="next" href="./vergleichende-ergebnisse"><span>Vergleichende Ergebnisse</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T12:14:08">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T22:04:59">Jan 30, 2025</a>.</div>
 </footer>
 </div>
 </body>
