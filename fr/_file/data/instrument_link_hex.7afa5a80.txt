@@ -1,0 +1,11 @@
+instrument	inst	link	hex
+Start-up Core Coaching	Begleitung von Start-ups	/accompagnement-de-start-ups	#FF8674
+Innovation Booster	Starthilfe für Projekte und Vernetzung	/aide-au-demarrage-projets-mise-en-reseau	#FCE300
+BRIDGE: Proof of Concept	Förderung für Schweizer Innovationsprojekte	/projets-chercheurs#bridge-proof-of-concept	#06F7DA
+Innovationsprojekte ohne Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	/projets-chercheurs	#06F7DA
+Innovationsscheck	Förderung für Schweizer Innovationsprojekte	/projets-entreprises-chercheurs#cheque-innovation	#06F7DA
+Innovationsprojekte mit Umsetzungspartner	Förderung für Schweizer Innovationsprojekte	/projets-entreprises-chercheurs	#06F7DA
+Begleitung von Start-ups	Begleitung von Start-ups	/accompagnement-de-start-ups	#FF8674
+Starthilfe für Projekte und Vernetzung	Starthilfe für Projekte und Vernetzung	/aide-au-demarrage-projets-mise-en-reseau	#FCE300
+Förderung für Schweizer Innovationsprojekte	Förderung für Schweizer Innovationsprojekte	/projets-entreprises-chercheurs	#06F7DA
+Förderung für internationale Innovationsprojekte	Förderung für internationale Innovationsprojekte	/offres-dencouragement-et-contenus	#A2AFE9
