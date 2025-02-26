@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.0">
-<title>Starthilfe für Projekte und Vernetzung | Wirkung der Innosuisse-Förderung</title>
+<title>Starthilfe für Projekte und Vernetzung | Wirkungsmonitor</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_import/styles-ch-starthilfe.f83bf820.css">
@@ -14,9 +14,9 @@
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.a3005464.js">
-<link rel="modulepreload" href="./_import/functions.a94ecbed.js">
-<link rel="modulepreload" href="./_import/data.92db0e7e.js">
+<link rel="modulepreload" href="./_import/colors.d690918f.js">
+<link rel="modulepreload" href="./_import/functions.1116e96d.js">
+<link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
@@ -69,12 +69,12 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.34507805.txt","lastModified":1738229889391,"size":10656});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.6c6442bc.txt","lastModified":1740153343203,"size":19188});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "7feea599", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","ib_toipis"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, ib_toipis}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.a3005464.js"), import("./_import/functions.a94ecbed.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, ib_toipis}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.1116e96d.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,ib_toipis};
 }});
@@ -117,7 +117,7 @@ ib_toipis
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link"><a href="./">Wirkung der Innosuisse-Förderung</a></li>
+    <li class="observablehq-link"><a href="./">Wirkungsmonitor</a></li>
   </ol>
   <ol>
     <li class="observablehq-link"><a href="./">Einleitung</a></li>
@@ -152,13 +152,13 @@ ib_toipis
   <div><observablehq-loading></observablehq-loading><!--:f2236152:--></div>
   </div>
   <p class="comment">Im Unterschied zu den anderen Mini-Graphiken, werden hier nicht die bewilligten, sondern die investierten Beträge bzw. die aktiven Innovation Booster dargestellt.</p>
-<p>Die von Innosuisse geförderten Innovation Booster fokussieren jeweils auf ein bestimmtes Innovationsthema. Sie sind thematisch breit aufgestellt, von der künstlichen Intelligenz über Lifestyle und Tourismus bis hin zu Foodtech.</p>
+<p>Die von Innosuisse geförderten Innovation Booster fokussieren jeweils auf ein bestimmtes Innovationsthema. Sie sind thematisch breit aufgestellt, von der künstlichen Intelligenz über Tourismus bis hin zu Foodtech.</p>
 <p>2023 unterstützte Innosuisse 17 aktive Innovation Booster in verschiedenen Themenbereichen. Im Herbst 2023 wurden weitere 8 Innovation Booster für die Jahre 2024-2027 bewilligt. Sie starteten im Januar 2024. Die Förderung der 2021 von geförderten Innovation Booster wird Ende 2024 abgeschlossen. Die hier präsentierten Ergebnisse beruhen auf bestehenden Monitoring-Daten in einem kürzeren Wirkungshorizont.</p>
 <p>Die Innovation Booster entwickeln neue und radikale Innovationsideen und prüfen diese in einem offenen, netzwerkbasierten Innovationsprozess mit einer offenen Innovationskultur. Die Partner der geförderten Netzwerke kommen aus dem Forschungsumfeld, der Wirtschaft und der Gesellschaft. Der Fokus der Förderung liegt in der frühen Phase der Ideenfindung und -prüfung, wobei experimentelle Methoden wie «Design Thinking» und «Co-Creation» zum Einsatz kommen.</p>
 <p>Die Weiterentwicklung von erfolgreich getesteten Innovationsideen, auch im Rahmen von geförderten Innovationsprojekten ist
 ein zentrales Wirkungsziel der Innovation Booster. Damit werden wissenschaftsbasierte und nachhaltige Innovationen gefördert und den Umsetzungspartnern und dem Innovationsystem Schweiz konkreter Mehrwert und Wettbewerbsvorteile verschafft.</p>
 <p>Eine im Jahr 2025 durchgeführte Wirkungsevaluation wird die hier vorliegenden Ergebnisse vertiefen und über längerfristige Wirkungsverläufe zur Weiterentwicklung der geprüften Innovationsideen Aussagen machen.</p>
-<h3 id="innovation-booster-staerken-die-innovationskompetenzen-der-teilnehmenden" tabindex="-1"><a class="observablehq-header-anchor" href="#innovation-booster-staerken-die-innovationskompetenzen-der-teilnehmenden">Innovation Booster stärken  die Innovationskompetenzen der Teilnehmenden</a></h3>
+<h3 id="innovation-booster-staerken-die-innovationskompetenzen-der-teilnehmenden" tabindex="-1"><a class="observablehq-header-anchor" href="#innovation-booster-staerken-die-innovationskompetenzen-der-teilnehmenden">Innovation Booster stärken die Innovationskompetenzen der Teilnehmenden</a></h3>
 <p>Die Innovation Booster haben zum Ziel in der Challenge-Phase neue und auch radikale Innovationsideen zu entwickeln, um diese in einer weiteren Phase der Ideenprüfung auf Machbarkeit und Potenziale hinsichtlich Nachfrage und Nutzerorientierung zu testen.</p>
 <p>Die grosse Mehrheit der Befragten (82 %) bestätigt, dass sie aufgrund ihrer Teilnahme an einem Innovation Booster ihre Fähigkeiten und Kompetenz zum Entwickeln und Testen von radikalen Ideen erhöhen konnten.</p>
 <div><observablehq-loading></observablehq-loading><!--:0c9813fa:--></div>
@@ -169,7 +169,7 @@ ein zentrales Wirkungsziel der Innovation Booster. Damit werden wissenschaftsbas
 <div><observablehq-loading></observablehq-loading><!--:9c1396f6:--></div></div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./projekte-forschende"><span>Innovationsprojekte ohne Umsetzungspartner</span></a><a rel="next" href="./begleitung-start-ups"><span>Start-up Core Coaching</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T22:04:59">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:55:03">Feb 26, 2025</a>.</div>
 </footer>
 </div>
 </body>

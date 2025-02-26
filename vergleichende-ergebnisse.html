@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.0">
-<title>Vergleichende Ergebnisse | Wirkung der Innosuisse-Förderung</title>
+<title>Vergleichende Ergebnisse | Wirkungsmonitor</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
@@ -14,9 +14,9 @@
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.a3005464.js">
-<link rel="modulepreload" href="./_import/functions.a94ecbed.js">
-<link rel="modulepreload" href="./_import/data.92db0e7e.js">
+<link rel="modulepreload" href="./_import/colors.d690918f.js">
+<link rel="modulepreload" href="./_import/functions.1116e96d.js">
+<link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
@@ -69,12 +69,12 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.34507805.txt","lastModified":1738229889391,"size":10656});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.6c6442bc.txt","lastModified":1740153343203,"size":19188});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "9cf2776e", outputs: ["html","color_inst","color_zufrieden","grey_innosuisse","black_innosuisse","coloredUnderline","draw_result","draw_innoart","draw_dn","df_zufrieden"], body: async () => {
-const [{html}, {color_inst, color_zufrieden, grey_innosuisse, black_innosuisse}, {coloredUnderline, draw_result, draw_innoart, draw_dn}, {df_zufrieden}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.a3005464.js"), import("./_import/functions.a94ecbed.js"), import("./_import/data.92db0e7e.js")]);
+const [{html}, {color_inst, color_zufrieden, grey_innosuisse, black_innosuisse}, {coloredUnderline, draw_result, draw_innoart, draw_dn}, {df_zufrieden}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.1116e96d.js"), import("./_import/data.3d5bb675.js")]);
 
 return {html,color_inst,color_zufrieden,grey_innosuisse,black_innosuisse,coloredUnderline,draw_result,draw_innoart,draw_dn,df_zufrieden};
 }});
@@ -297,7 +297,7 @@ draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link"><a href="./">Wirkung der Innosuisse-Förderung</a></li>
+    <li class="observablehq-link"><a href="./">Wirkungsmonitor</a></li>
   </ol>
   <ol>
     <li class="observablehq-link"><a href="./">Einleitung</a></li>
@@ -327,7 +327,7 @@ draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)
 <div class="observablehq observablehq--block"><!--:9cf2776e:--></div>
 <h2 id="vergleichende-ergebnisse-zu-foerderangeboten" tabindex="-1"><a class="observablehq-header-anchor" href="#vergleichende-ergebnisse-zu-foerderangeboten">Vergleichende Ergebnisse zu Förderangeboten</a></h2>
 <h3 id="zufriedenheit-mit-den-foerderangeboten-von-innosuisse-ist-durchwegs-hoch" tabindex="-1"><a class="observablehq-header-anchor" href="#zufriedenheit-mit-den-foerderangeboten-von-innosuisse-ist-durchwegs-hoch">Zufriedenheit mit den Förderangeboten von Innosuisse ist durchwegs hoch</a></h3>
-<p>Die Fördernehmer von Innosuisse sind mit der Innovationsförderung von Innosuisse und deren Umsetzung zufrieden bis sehr zufrieden. Die Anteile der hier dargestellten Instrumente liegen über 80&nbsp;%, beim  <observablehq-loading></observablehq-loading><!--:12f8bff4:--> sind es mehr als zwei Drittel. Nur sehr geringe Anteile (≤ 1 %) sind mit den Instrumenten von Innosuisse unzufrieden.</p>
+<p>Die Fördernehmer von Innosuisse sind mit der Innovationsförderung von Innosuisse und deren Umsetzung zufrieden bis sehr zufrieden. Die Anteile der hier dargestellten Instrumente liegen über 80&nbsp;%, beim <observablehq-loading></observablehq-loading><!--:12f8bff4:--> sind es mehr als zwei Drittel. Nur sehr geringe Anteile (≤ 1 %) sind mit den Instrumenten von Innosuisse unzufrieden.</p>
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px;">
 <p><observablehq-loading></observablehq-loading><!--:32a4b4ec:-->
 <observablehq-loading></observablehq-loading><!--:087b8d6e:-->
@@ -359,8 +359,8 @@ Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit
 <observablehq-loading></observablehq-loading><!--:45525f68:-->
 </div>
 <h3 id="digitale-transformation-ist-ein-kernaspekt-bei-der-innovationsfoerderung" tabindex="-1"><a class="observablehq-header-anchor" href="#digitale-transformation-ist-ein-kernaspekt-bei-der-innovationsfoerderung">Digitale Transformation ist ein Kernaspekt bei der Innovationsförderung</a></h3>
-<p>Die Digitalisierung zielt sowohl auf wichtige digitale Zukunftstechnologien (Blockchain, Robotik, Quantum Computing, Künstliche Intelligenz, etc.) als auch auf die Entwicklung digitaler Geschäftsmodelle (Software / Platform / Infrastructure as a Service, Big Data, etc.). Beide sind für die Schweizer Wirtschaft von hoher Relevanz. Die wirtschaftlichen Chancen und der Innovationswettbewerb sind in diesem Bereich ausserordentlich hoch.</p>
-<p>Rund 55&nbsp;% der von Innosuisse geförderten <observablehq-loading></observablehq-loading><!--:73013399:--> tragen wesentlich zur digitalen Transformation der Wirtschaft bei,  durch digitale Technologien und/oder digitalen Geschäftsmodellen. Die Anwendung von neuen digitalen Technologien ist wichtiger, als die Umsetzung eines digitalen Geschäftsmodells. Bei den <observablehq-loading></observablehq-loading><!--:53ec1e4d:--> ist die Bedeutung der Digitalisierung nochmals signifikant höher.</p>
+<p>Die Digitalisierung zielt sowohl auf wichtige digitale Zukunftstechnologien (Blockchain, Robotik, Quantum Computing, Künstliche Intelligenz, etc.) als auch auf die Entwicklung digitaler Geschäftsmodelle (Software, Plattform, Infrastructure as a Service, Big Data, etc.). Beide sind für die Schweizer Wirtschaft von hoher Relevanz. Die wirtschaftlichen Chancen und der Innovationswettbewerb sind in diesem Bereich ausserordentlich hoch.</p>
+<p>Rund 55&nbsp;% der von Innosuisse geförderten <observablehq-loading></observablehq-loading><!--:73013399:--> tragen wesentlich zur digitalen Transformation der Wirtschaft bei, durch digitale Technologien und/oder digitalen Geschäftsmodellen. Die Anwendung von neuen digitalen Technologien ist wichtiger, als die Umsetzung eines digitalen Geschäftsmodells. Bei den <observablehq-loading></observablehq-loading><!--:53ec1e4d:--> ist die Bedeutung der Digitalisierung nochmals signifikant höher.</p>
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
   <observablehq-loading></observablehq-loading><!--:844554a7:-->
   <observablehq-loading></observablehq-loading><!--:e8af2367:-->
@@ -370,7 +370,7 @@ Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit
 <p class="comment">Gestellte Frage: Beruht das von Innosuisse geförderte Projekt auf neuen digitalen Technologien oder auf neuen digitalen Geschäftsmodellen? Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit vorgegebenen Definitionen: (5) stark, (6) sehr stark.</p>
 <h3 id="innovation-hat-eine-schluesselrolle-bei-der-entwicklung-nachhaltiger-loesungen" tabindex="-1"><a class="observablehq-header-anchor" href="#innovation-hat-eine-schluesselrolle-bei-der-entwicklung-nachhaltiger-loesungen">Innovation hat eine Schlüsselrolle bei der Entwicklung nachhaltiger Lösungen</a></h3>
 <p>Die Förderinstrumente ermöglichen es Unternehmen und Organisationen, frühzeitig innovative Ansätze und Technologien zur Entwicklung nachhaltiger Lösungen zu prüfen und bis zur Umsetzung zu entwickeln, sei es auf nationaler oder auf globaler Ebene. Innosuisse leistet somit zentrale und zukunftsgerichtete Beiträge zur Bewältigung globaler Herausforderungen wie der Energie- und Ressourceneffizienz, dem Klimawandel oder bei sozialen Fragen. Die Innovationsförderung ist mit eine Impulsgeberin bei der Transformation hin zu einer nachhaltigen Wirtschaft und Gesellschaft.</p>
-<p>Rund 60&nbsp;% der geförderten <observablehq-loading></observablehq-loading><!--:61683793:--> zeigen bei einer konkreter Umsetzung das Potenzial einen Beitrag zur nachhaltigen Entwicklung zu leisten, entweder zur ökologischen oder sozialen nachhaltigen Entwicklung oder bei beiden Themenbereichen. Bei den <observablehq-loading></observablehq-loading><!--:d9e80a86:--> sind die Anteile mit 67&nbsp;% leicht höher.</p>
+<p>Rund 60&nbsp;% der geförderten <observablehq-loading></observablehq-loading><!--:61683793:--> zeigen bei einer konkreten Umsetzung das Potenzial einen Beitrag zur nachhaltigen Entwicklung zu leisten, entweder zur ökologischen oder sozialen nachhaltigen Entwicklung oder bei beiden Themenbereichen. Bei den <observablehq-loading></observablehq-loading><!--:d9e80a86:--> sind die Anteile mit 67&nbsp;% leicht höher.</p>
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
   <observablehq-loading></observablehq-loading><!--:26edcbd5:-->
   <observablehq-loading></observablehq-loading><!--:7ab74cbb:-->
@@ -380,7 +380,7 @@ Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit
 <p class="comment">Gestellte Frage: Kann das von Innosuisse geförderte Projekt oder die Projektidee einen Beitrag zur ökologischen und/oder sozialen Nachhaltigkeit&nbsp;leisten? Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit vorgegebenen Definitionen: (4) eher hoher Beitrag, (5) hoher Beitrag, (6) sehr hoher Beitrag.</p></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./foerderangebote-und-inhalte"><span>Förderangebote und Inhalte</span></a><a rel="next" href="./projekte-unternehmen-forschende#projekte-von-unternehmen-mit-forschenden"><span>Innovationsprojekte mit Umsetzungspartner</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T22:04:59">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:55:03">Feb 26, 2025</a>.</div>
 </footer>
 </div>
 </body>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.0">
-<title>Wirkung der Innosuisse-Förderung</title>
+<title>Wirkung der Innosuisse-Förderung | Wirkungsmonitor</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
@@ -14,9 +14,9 @@
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.a3005464.js">
-<link rel="modulepreload" href="./_import/functions.a94ecbed.js">
-<link rel="modulepreload" href="./_import/data.92db0e7e.js">
+<link rel="modulepreload" href="./_import/colors.d690918f.js">
+<link rel="modulepreload" href="./_import/functions.1116e96d.js">
+<link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
@@ -69,12 +69,12 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.34507805.txt","lastModified":1738229889391,"size":10656});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.6c6442bc.txt","lastModified":1740153343203,"size":19188});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "5f56e586", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","draw_fin_plot","n_subcluster","instrument_link"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}, {instrument_link}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.a3005464.js"), import("./_import/functions.a94ecbed.js"), import("./_import/data.92db0e7e.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}, {instrument_link}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.1116e96d.js"), import("./_import/data.3d5bb675.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subcluster,instrument_link};
 }});
@@ -87,7 +87,7 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link observablehq-link-active"><a href="./">Wirkung der Innosuisse-Förderung</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./">Wirkungsmonitor</a></li>
   </ol>
   <ol>
     <li class="observablehq-link observablehq-link-active"><a href="./">Einleitung</a></li>
@@ -120,7 +120,7 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 </div>
 <br>
 <h2 id="ergebnisse-des-wirkungsmonitoring-2021-2023" tabindex="-1"><a class="observablehq-header-anchor" href="#ergebnisse-des-wirkungsmonitoring-2021-2023">Ergebnisse des Wirkungsmonitoring 2021–2023</a></h2>
-<p class="comment" style="margin-bottom: 30px">Version 1.0, letzte Änderungen: 30. Januar 2025
+<p class="comment" style="margin-bottom: 30px">Version 1.1, letzte Änderungen: 26. Februar 2025
 </p><p>Innosuisse legt grosses Gewicht darauf die Wirksamkeit der Innovationsförderung gegenüber den Stakeholdern, den politischen Entscheidungsträgern und der Öffentlichkeit transparent darzulegen.</p>
 <p>Folgende zwei Fragen stehen im Vordergrund:</p>
 <ul>
@@ -131,7 +131,7 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <p>Die wichtigsten Ergebnisse aus dem Wirkungsmonitoring sind nachfolgend kurz zusammengefasst. Im Editorial ordnen wir diese aus Sicht der Innosuisse ein. In den methodischen Grundlagen wird die Einbettung, Konzeption und Auswertung des Wirkungsmonitorings erläutert.</p>
 <p>Im Hauptteil werden die Ergebnisse ausführlich dargestellt und kurz diskutiert. Wir empfehlen direkt hier einzusteigen für die vertiefenden, graphisch illustrierten Abschnitte zu den Förderangeboten (siehe die Kapitel links unter Ergebnisse).</p>
 <ul>
-<li>Das Kapitel Förderangebote und Inhalte zeigt auf, wie breit das Monitoring die Instrumente von Innosuisse abdeckt. In den vergleichenden Ergebnisse werden die Förderangebote untereinander verglichen.</li>
+<li>Das Kapitel Förderangebote und Inhalte zeigt auf, wie breit das Monitoring die Instrumente von Innosuisse abdeckt. In den vergleichenden Ergebnissen werden die Förderangebote untereinander verglichen.</li>
 <li>Danach werden in einem Kapitel pro Förderangebot die Ergebnisse des Wirkungsmonitoring präsentiert und erläutert.</li>
 </ul>
 <p>Im ersten Halbjahr 2025 folgt eine Aktualisierung der Ergebnisse basierend auf dem Monitoring 2024.
@@ -153,8 +153,8 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <p>Die nationalen Innovationsprojekte sind das wichtigste Förderinstrument von Innosuisse. Unternehmen und Organisationen aus der Wirtschaft und Gesellschaft kooperieren mit Forschungspartnern, um gemeinsam innovative Produkte, Dienstleistungen, Prozesse oder neue Geschäftsmodelle zu entwickeln.</p>
 <ul>
 <li><strong>Markteinführung:</strong> Drei Jahre nach Abschluss der Förderung sind mehr als die Hälfte der geförderten Innovationen (57&nbsp;%) entweder auf dem Markt eingeführt, im Unternehmen umgesetzt oder die Einführung ist in den nächsten zwei Jahren geplant.</li>
-<li><strong>Schaffung von Arbeitsplätzen:</strong> Ein gefördertes Projekt führt im Durchschnitt der Jahre 2021–2023 zu 2.5 neuen und hochqualifizierten Arbeitsplätzen. Drei Jahre nach Abschluss entstehen aus den Projekten rund 800 bis 900 Vollzeitstellen. Diese positive Wirkung der Förderung wird auch durch eine wissenschaftliche Studie der Konjunkturforschungsstelle der ETH Zürich bestätigt. Unternehmen, die von Innosuisse gefördert wurden, verzeichnen drei Jahre nach Abschluss der Förderung eine um 18&nbsp;% höhere Beschäftigung als vergleichbare, innovative Unternehmen ohne Innosuisse-Förderung.</li>
-<li><strong>Hebelwirkung der Förderung schafft Wertschöpfung:</strong> Die Förderung führt über die neu geschaffenen Arbeitsplätze direkt zu zusätzlicher Wertschöpfung bei den geförderten Unternehmen: Jeder Förderfranken bringt der Wirtschaft direkt rund vier Wertschöpfungsfranken, gemessen drei Jahre nach der Förderung für drei weitere Jahre.</li>
+<li><strong>Schaffung von Arbeitsplätzen:</strong> Ein gefördertes Projekt führt im Durchschnitt der Jahre 2021–2023 zu 2.5 neuen und hochqualifizierten Arbeitsplätzen. Drei Jahre nach Abschluss der Förderung entstehen aus den Projekten rund 800 bis 900 Vollzeitstellen. Diese positive Wirkung der Förderung wird auch durch eine wissenschaftliche Studie der Konjunkturforschungsstelle der ETH Zürich bestätigt. Unternehmen, die von Innosuisse gefördert wurden, verzeichnen drei Jahre nach Abschluss eine um 18&nbsp;% höhere Beschäftigung als vergleichbare, innovative Unternehmen ohne Innosuisse-Förderung.</li>
+<li><strong>Hebelwirkung der Förderung schafft Wertschöpfung:</strong> Die Förderung führt über die neu geschaffenen Arbeitsplätze direkt zu zusätzlicher Wertschöpfung bei den geförderten Unternehmen: Jeder Förderfranken bringt der Wirtschaft direkt rund vier Wertschöpfungsfranken, gemessen drei Jahre nach der Förderung summiert für drei weitere Jahre.</li>
 <li><strong>Stärkung des Wissens- und Technologietransfers:</strong> Der Wissens- und Technologietransfer (WTT) wirkt auch längerfristig: Fast die Hälfte der Unternehmen arbeitet auch drei Jahre nach Projektabschluss weiter mit ihren Forschungspartnern zusammen. 15&nbsp;% übernehmen zusätzlich Forschungspersonal, das am Projekt beteiligt war. Sie stärken damit ihre interne Wissens- und Innovationsbasis.</li>
 </ul>
 <p><a href="./projekte-unternehmen-forschende">→ Zu den detaillierten Ergebnissen und Darstellungen</a></p>
@@ -188,14 +188,14 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <p>Bei den themenorientierten Innovation Booster werden neue und radikale Innovationsideen in einem offenen und netzwerkbasierten Innovationsprozess entwickelt. Der Fokus liegt in der frühen Phase der experimentellen Ideenfindung und dem Testen von Ideen. Erfolgsversprechende Innovationsideen sollen in Projekten weitergeführt werden.</p>
 <ul>
 <li><strong>Fähigkeiten und Kompetenzen der Teilnehmenden:</strong> Die grosse Mehrheit der Befragten (82&nbsp;%) bestätigt, dass sie aufgrund ihrer Teilnahme an einem Innovation Booster ihre Fähigkeiten und Kompetenz zum Entwickeln und Testen von radikalen Ideen erhöhen konnten.</li>
-<li><strong>Weiterführung der Innovationsideen:</strong> Jede zweite geförderte Innovationsidee wird weiterverfolgt, oft mit neuen Lösungsansätzen. Es sind daraus auch 26 Innovationsprojekte bei Innosuisse entstanden.</li>
+<li><strong>Weiterführung der Innovationsideen:</strong> Jede zweite geförderte Innovationsidee wird weiterverfolgt, oft mit neuen Lösungsansätzen. Es entstehen daraus durchschnittlich 26 Innovationsprojekte bei Innosuisse pro Jahr.</li>
 </ul>
 <p><a href="./starthilfe-projekte-vernetzung">→ Zu den detaillierten Ergebnissen und Darstellungen</a></p>
 </div>
 <div class="card" style="max-width: 600px; --underline-color: #FF8674;">
 <h3 id="begleitung-von-start-ups" tabindex="-1"><a class="observablehq-header-anchor" href="#begleitung-von-start-ups"><a href="./begleitung-start-ups">Begleitung von Start-ups</a></a></h3>
 <h4 id="start-up-coaching" tabindex="-1"><a class="observablehq-header-anchor" href="#start-up-coaching"><a href="./begleitung-start-ups">Start-up Coaching</a></a></h4>
-<p>Das Coaching unterstützt wissenschaftsbasierte Start-ups durch massgeschneiderte Begleitung in verschiedenen Gründungsphasen. Das Förderangebot gliedert sich in drei aufeinander abgestimmte Angebote – Initial, Core und Scale-up Coaching. Die Start-ups haben die Möglichkeit, an internationalen Camps und international bedeutenden Messen teilzunehmen. Die Ergebnisse des Wirkungsmonitorings betreffen das Start-up Core Coaching.</p>
+<p>Das Coaching unterstützt Start-ups mit innovativen und wissenschaftsbasierten Geschäftsideen durch massgeschneiderte Begleitung in verschiedenen Gründungsphasen. Das Förderangebot gliedert sich in drei aufeinander abgestimmte Angebote – Initial, Core und Scale-up Coaching. Die Start-ups haben die Möglichkeit, an internationalen Camps und international bedeutenden Messen teilzunehmen. Die Ergebnisse des Wirkungsmonitorings betreffen das Start-up Core Coaching.</p>
 <ul>
 <li><strong>Unterstützung der Start-ups im Core Coaching:</strong> Rund vier von fünf gecoachten Start-ups bestätigen, dass das Core Coaching in mindestens einem für das Start-up zentralen Themenbereich einen massgeblichen Beitrag geleistet hat zur Entwicklung des Start-ups (78&nbsp;%). Der Anteil der Start-ups, deren Erwartungen an den gesamten Coachingprozess mehrheitlich erfüllt wurden, liegt mit 84&nbsp;% noch etwas höher.</li>
 <li><strong>Kapitalakquisition:</strong> Bis zum Abschluss des Core Coachings haben 21 % der Start-ups über 5 Millionen Franken an Kapital akquiriert. Zwei Drittel erhielten im Core Coaching direkte und hilfreiche Unterstützung bei der Kapitalbeschaffung.</li>
@@ -205,7 +205,7 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="next" href="./editorial"><span>Editorial</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T22:04:59">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:55:03">Feb 26, 2025</a>.</div>
 </footer>
 </div>
 </body>

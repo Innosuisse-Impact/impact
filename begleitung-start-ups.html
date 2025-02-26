@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.0">
-<title>Begleitung von Start-ups | Wirkung der Innosuisse-Förderung</title>
+<title>Begleitung von Start-ups | Wirkungsmonitor</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_import/styles-ch-startup.a7a5bd58.css">
@@ -14,10 +14,10 @@
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.a3005464.js">
-<link rel="modulepreload" href="./_import/functions.a94ecbed.js">
+<link rel="modulepreload" href="./_import/colors.d690918f.js">
+<link rel="modulepreload" href="./_import/functions.1116e96d.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
-<link rel="modulepreload" href="./_import/data.92db0e7e.js">
+<link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
@@ -69,12 +69,12 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.34507805.txt","lastModified":1738229889391,"size":10656});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.6c6442bc.txt","lastModified":1740153343203,"size":19188});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "464ae37e", outputs: ["html","color_inst","grey_innosuisse","color_su","black_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","drawMiniPlot1","su_vza"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse, color_su, black_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, drawMiniPlot1, su_vza}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.a3005464.js"), import("./_import/functions.a94ecbed.js")]);
+const [{html}, {color_inst, grey_innosuisse, color_su, black_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, drawMiniPlot1, su_vza}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.1116e96d.js")]);
 
 return {html,color_inst,grey_innosuisse,color_su,black_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,drawMiniPlot1,su_vza};
 }});
@@ -189,7 +189,7 @@ draw_waffle("scc_patent", -70)
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link"><a href="./">Wirkung der Innosuisse-Förderung</a></li>
+    <li class="observablehq-link"><a href="./">Wirkungsmonitor</a></li>
   </ol>
   <ol>
     <li class="observablehq-link"><a href="./">Einleitung</a></li>
@@ -224,14 +224,14 @@ draw_waffle("scc_patent", -70)
   <div><observablehq-loading></observablehq-loading><!--:9d50e930:--></div>
   <div><observablehq-loading></observablehq-loading><!--:a810c687:--></div>
 </div>
-<p style="font-size: 10px; color: #828282;">Der Betrag in Mio. Fr. und das Total der Coaching beziehen sich auf das Start-up Coaching insgesamt (Initial, Core und Scale-up Coaching). Bei letzten Abbildung werden nur die Anzahl Core Coachings abgebildet.</p>
-<p>Das Coaching der Innosuisse richtet sich an wissenschaftsbasierte Start-ups mit hohem Innovations- und Wachstumspotenzial und bietet individuell und thematisch abgestimmte Unterstützungsangebote, die  auf die jeweiligen Gründungsphasen und den spezifischen Bedarf massgeschneidert sind.</p>
+<p style="font-size: 10px; color: #828282;">Der Betrag in Mio. Fr. und das Total der Coaching beziehen sich auf das Start-up Coaching insgesamt (Initial, Core und Scale-up Coaching). Bei der letzten Abbildung werden nur die Anzahl Core Coachings abgebildet.</p>
+<p>Das Coaching der Innosuisse richtet sich an wissenschaftsbasierte Start-ups mit hohem Innovations- und Wachstumspotenzial und bietet individuell und thematisch abgestimmte Unterstützungsangebote, die auf die jeweiligen Gründungsphasen und den spezifischen Bedarf massgeschneidert sind.</p>
 <p>Die Coachingangebote von Innosuisse stärken die Agilität und die Kompetenzen des Gründungsteams – von der Festigung der Geschäftsidee und Businessmodellen über die Finanzierung bis hin zur Entwicklung von Wachstumsstrategien auf internationalen Märkten. Die Start-ups profitieren dabei von einem breiten Netzwerk an Coaches (200+), die sowohl allgemeine Start-up-Expertisen als auch zum Teil sehr spezialisiertes Wissen in Bereichen wie Finanzierung, Marketing, Technologien oder eigentumsrechtlichen Fragen einbringen. Die drei Phasen stellen zudem sicher, dass jedes Start-up zugleich gezielt und umfassend unterstützt wird.</p>
 <ul>
 <li>Im <strong><strong>Initial Coaching</strong></strong> (bis zu 12 Monate) werden Gründerinnen und Gründer dabei unterstützt, ihre Geschäftsidee zu validieren und ein erstes erfolgsversprechendes Geschäftsmodell zu entwickeln. Das Initial Coaching ist obligatorisch um in das Core Coaching einzutreten.</li>
 <li>Im <strong><strong>Core Coaching</strong></strong> (bis zu 36 Monate) liegt der Fokus auf der Weiterentwicklung des Geschäftsmodells, der Vorbereitung auf die Markteinführung und der Entwicklung von Strategien, um auf den Märkten Fuss zu fassen.</li>
 <li>Im <strong><strong>Scale-up Coaching</strong></strong> (bis zu 24 Monate) liegt der Schwerpunkt auf der längerfristigen Positionierung und Skalierung von Start-ups auf internationalen Märkten. Start-ups erhalten auch Unterstützung bei der Beschaffung von Investoren und der Umsetzung ihrer Wachstumsstrategie. Das Scale-up Coaching ist selektiv und richtet sich an «High-Potential Start-up» mit hohem Wachstumspotenzial.</li>
-<li><strong><strong>Internationale Start-up Camps und Messen</strong></strong>:  Ein besonderes Augenmerk liegt auf der Internationalisierung. Start-ups im Core Coaching und Scale-up Coaching haben die Möglichkeit, an internationalen Camps teilzunehmen, die weltweit in über zehn dynamischen «Start-up Hotspots» angeboten werden. Darüber hinaus bietet das Programm auch die Chance, an internationalen Leitmessen teilzunehmen. Beide Massnahmen stärken die internationalen Netzwerke, erleichtern den Zugang zu internationalen Märkten und helfen, das Potenzial zur Skalierung besser auszuschöpfen.</li>
+<li><strong><strong>Internationale Start-up Camps und Messen</strong></strong>: Ein besonderes Augenmerk liegt auf der Internationalisierung. Start-ups im Core Coaching und Scale-up Coaching haben die Möglichkeit, an internationalen Camps teilzunehmen, die weltweit in über zehn dynamischen «Start-up Hotspots» angeboten werden. Darüber hinaus bietet das Programm auch die Chance, an internationalen Leitmessen teilzunehmen. Beide Massnahmen stärken die internationalen Netzwerke, erleichtern den Zugang zu internationalen Märkten und helfen, das Potenzial zur Skalierung besser auszuschöpfen.</li>
 </ul>
 <p>Diese Breite, der modulare Aufbau sowie die Flexibilität des Coachings unterscheidet dieses von der Vielzahl anderer Angebote im nationalen und internationalen Vergleich.</p>
 <p>Ein hoher Anteil der gecoachten Start-ups sind Ausgründungen aus der Forschung (Spin-offs), die die Schnittstelle zwischen neuesten wissenschaftlichen Ergebnissen und dem Wissens- und Technologietransfer in den Markt stärken. Viele der Start-ups im Coaching verfolgen somit bahnbrechende Geschäftsideen, Technologien oder Geschäftsmodelle.</p>
@@ -255,7 +255,7 @@ draw_waffle("scc_patent", -70)
     <observablehq-loading></observablehq-loading><!--:53443d7c:-->
 </div>
 <h3 id="start-ups-schaffen-markteintritt-profitabilitaet-braucht-mehr-zeit" tabindex="-1"><a class="observablehq-header-anchor" href="#start-ups-schaffen-markteintritt-profitabilitaet-braucht-mehr-zeit">Start-ups schaffen Markteintritt – Profitabilität braucht mehr Zeit</a></h3>
-<p>Ein entscheidender Faktor für das Überleben und das Wachstum der Start-ups ist der konkrete Markteintritt, um später das Geschäftsmodell weiter zu skalieren. Bis zum Abschluss des Coachings konnten rund 80 % der Jungunternehmen ihre Innovation  auf dem Markt lancieren. Der nächste Meilenstein ist die Profitabilität, wenn das Start-up beginnt, Gewinne zu erzielen. Bei etwa jedem zehnten Start-up ist dies bereits zum Zeitpunkt des Coaching-Abschlusses der Fall. Drei Jahre später trifft dies bereits auf nahezu jedes dritte Start-up zu.</p>
+<p>Ein entscheidender Faktor für das Überleben und das Wachstum der Start-ups ist der konkrete Markteintritt, um später das Geschäftsmodell weiter zu skalieren. Bis zum Abschluss des Coachings konnten rund 80 % der Jungunternehmen ihre Innovation auf dem Markt lancieren. Der nächste Meilenstein ist die Profitabilität, wenn das Start-up beginnt, Gewinne zu erzielen. Bei etwa jedem zehnten Start-up ist dies bereits zum Zeitpunkt des Coaching-Abschlusses der Fall. Drei Jahre später trifft dies bereits auf nahezu jedes dritte Start-up zu.</p>
 <div style="display: flex; gap: 40px;">
  <observablehq-loading></observablehq-loading><!--:b784dd9e:-->
  <observablehq-loading></observablehq-loading><!--:6837bff0:-->
@@ -264,15 +264,15 @@ draw_waffle("scc_patent", -70)
 <p>Für Start-ups ist die Kapitalbeschaffung eine entscheidende Voraussetzung, um ihre Geschäftsidee weiterzuführen und die Skalierung auf den Märkten voranzutreiben. Forschung und Entwicklung sowie die Markteinführung einer Innovation erfordern hohe Investitionen, weshalb die Kapitalakquise ein zentrales Thema im Coaching-Programm von Innosuisse darstellt. Bis zum Abschluss des Programms haben 22 % der gecoachten Start-ups jeweils mehr als 5 Millionen Franken an neuem Kapital akquiriert. Bei zwei Dritteln der Start-ups hat das Coaching die Kapitalbeschaffung <a href="./begleitung-start-ups#start-ups-beurteilen-das-core-coaching-als-hilfreich-fuer-ihre-weiterentwicklung">direkt unterstützt</a>.</p>
 <div><observablehq-loading></observablehq-loading><!--:599a63b2:--></div>
 <h3 id="drei-jahre-nach-dem-coaching-werden-bei-den-start-ups-ueber-elf-vollzeitstellen-geschaffen" tabindex="-1"><a class="observablehq-header-anchor" href="#drei-jahre-nach-dem-coaching-werden-bei-den-start-ups-ueber-elf-vollzeitstellen-geschaffen">Drei Jahre nach dem Coaching werden bei den Start-ups über elf Vollzeitstellen geschaffen</a></h3>
-<p>Für Start-ups ist das Wachstum ein zentraler Indikator für den Erfolg. Drei Jahre nach dem Abschluss des Coaching-Programms haben die Start-ups im Durchschnitt über elf zusätzliche Vollzeitstellen geschaffen. Rund die Hälfte davon in der Schweiz. Besonders bei Start-ups im Bereich «Life Sciences» und solchen mit hochriskanten Innovationen zeigt sich, dass der Markteintritt und ein tragendes Wachstum häufig erst später einsetzt.</p>
+<p>Für Start-ups ist das Wachstum ein zentraler Indikator für den Erfolg. Drei Jahre nach dem Abschluss des Coaching-Programms haben die Start-ups im Durchschnitt über elf zusätzliche Vollzeitstellen geschaffen. Rund die Hälfte davon in der Schweiz. Besonders bei Start-ups im Bereich «Life Sciences» und solchen mit hochriskanten Innovationen zeigt sich, dass der Markteintritt und ein tragendes Wachstum häufig erst später einsetzen.</p>
 <div>
 <observablehq-loading></observablehq-loading><!--:3b93d978:-->
 <observablehq-loading></observablehq-loading><!--:af9dfec8:-->
 </div>
 <h3 id="coaching-widerspiegelt-und-staerkt-die-vielfalt-des-oekosystems" tabindex="-1"><a class="observablehq-header-anchor" href="#coaching-widerspiegelt-und-staerkt-die-vielfalt-des-oekosystems">Coaching widerspiegelt und stärkt die Vielfalt des Ökosystems</a></h3>
 <p>Der Anteil von Gründerinnen bei den Start-ups mit Coachingabschluss liegt bei 17 %. In 35 % der Gründungsteams sind weibliche Mitglieder vertreten, Tendenz zunehmend. Zudem weisen die Gründungsteams eine hohe Internationalität auf: 67&nbsp;% der Start-ups haben mindestens ein Gründungsmitglied mit ausländischem Bürgerrecht, und insgesamt sind durchschnittlich 43 % der Gründungsteams ausländische Mitglieder. Dies unterstreicht den internationalen Charakter der Schweizer Start-up-Szene.</p>
-<p>Thematisch liegt im Start-up Bereich ein starker Fokus auf dem Themenbereich «Life Sciences», inklusive Medtech und Healthcare (38 %) und ICT (30 %), siehe <a href="./foerderangebote-und-inhalte#thematische-schwerpunkte-der-innovationsvorhaben-2021-2023">Förderangebote und Inhalte</a>. Gleichzeitig sind auch die übrigen Technologie- und Innovationsbereiche vielfältig und breit vertreten. Die nachfolgenden Ausführungen zeigen zudem, dass den Spin-offs und direkten Ausgründungen aus der Forschungslandschaft und den Hochschulen eine hohe Bedeutung zukommt. Die Internationalität spielt dabei eine wesentliche Rolle.</p>
-<p>Diese Diversität der geförderten Start-ups  trägt wesentlich zur wirtschaftlichen und technologischen Dynamik des Start-up-Ökosystems und der Stärkung in der schweizerischen Volkswirtschaft bei.</p>
+<p>Thematisch liegt im Start-up Bereich ein starker Fokus auf dem Themenbereich «Life Sciences», inklusive Medtech und Healthcare (38 %) und ICT (20 %), siehe <a href="./foerderangebote-und-inhalte#themengebiete-der-innovationsvorhaben-2021-2023">Förderangebote und Inhalte</a>. Gleichzeitig sind auch die übrigen Technologie- und Innovationsbereiche vielfältig und breit vertreten. Die nachfolgenden Ausführungen zeigen zudem, dass den Spin-offs und direkten Ausgründungen aus der Forschungslandschaft und den Hochschulen eine hohe Bedeutung zukommt. Die Internationalität spielt dabei eine wesentliche Rolle.</p>
+<p>Diese Diversität der geförderten Start-ups trägt wesentlich zur wirtschaftlichen und technologischen Dynamik des Start-up-Ökosystems und der Stärkung in der schweizerischen Volkswirtschaft bei.</p>
 <div style="display: flex; gap: 10px;">
     <observablehq-loading></observablehq-loading><!--:81168f13:-->
     <observablehq-loading></observablehq-loading><!--:19570f64:-->
@@ -284,7 +284,7 @@ draw_waffle("scc_patent", -70)
     <observablehq-loading></observablehq-loading><!--:42d3f088:--></div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./starthilfe-projekte-vernetzung"><span>Innovation Booster</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T22:04:59">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:55:03">Feb 26, 2025</a>.</div>
 </footer>
 </div>
 </body>

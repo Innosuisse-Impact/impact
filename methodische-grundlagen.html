@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="generator" content="Observable Framework v1.13.0">
-<title>Methodische Grundlagen | Wirkung der Innosuisse-Förderung</title>
+<title>Methodische Grundlagen | Wirkungsmonitor</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
@@ -14,9 +14,9 @@
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.a3005464.js">
-<link rel="modulepreload" href="./_import/functions.a94ecbed.js">
-<link rel="modulepreload" href="./_import/data.92db0e7e.js">
+<link rel="modulepreload" href="./_import/colors.d690918f.js">
+<link rel="modulepreload" href="./_import/functions.1116e96d.js">
+<link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
@@ -69,12 +69,12 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.34507805.txt","lastModified":1738229889391,"size":10656});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1737039894950,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.99278e42.txt","lastModified":1737039950476,"size":2249});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.a259cb34.txt","lastModified":1738233557986,"size":19224});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.6c6442bc.txt","lastModified":1740153343203,"size":19188});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "4a952f2c", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","plot_erhebung"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, plot_erhebung}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.a3005464.js"), import("./_import/functions.a94ecbed.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, plot_erhebung}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.1116e96d.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,plot_erhebung};
 }});
@@ -177,7 +177,7 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link"><a href="./">Wirkung der Innosuisse-Förderung</a></li>
+    <li class="observablehq-link"><a href="./">Wirkungsmonitor</a></li>
   </ol>
   <ol>
     <li class="observablehq-link"><a href="./">Einleitung</a></li>
@@ -207,12 +207,12 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 <div class="observablehq observablehq--block"><!--:4a952f2c:--></div>
 <h2 id="methodische-grundlagen" tabindex="-1"><a class="observablehq-header-anchor" href="#methodische-grundlagen">Methodische Grundlagen</a></h2>
 <h3 id="konzeption-des-wirkungsmonitorings" tabindex="-1"><a class="observablehq-header-anchor" href="#konzeption-des-wirkungsmonitorings">Konzeption des Wirkungsmonitorings</a></h3>
-<p>Nach einer Erarbeitung von konzeptionellen Grundlagen wurde 2021 das Wirkungsmonitoring bei den Umsetzungspartnern der Innovationsprojekte mit systematischen Befragungen eingeführt und seither kontinuierlich auf weitere Instrumente ausgedehnt. Die in den  Grundlagen festgelegten Ziele der Wirkungsmessung sind erreicht worden und mittlerweile liegen eine Vielzahl aussagekräftiger Daten vor. Sie erlauben fundierte Aussagen zu den vielfältigen Wirkungen der Innovationsförderung zu formulieren.</p>
-<p>Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und  Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der <observablehq-loading></observablehq-loading><!--:61683793:-->, der KMU bei den <observablehq-loading></observablehq-loading><!--:b73c2f05:--> sowie bei allen am <observablehq-loading></observablehq-loading><!--:39ad5b65:--> teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den <observablehq-loading></observablehq-loading><!--:d3c4b8e3:--> und den <observablehq-loading></observablehq-loading><!--:25cb720d:--> beruhen die Ergebnisse auf Monitoring-Daten aller laufenden Initiativen.</p>
+<p>Nach einer Erarbeitung von konzeptionellen Grundlagen wurde 2021 das Wirkungsmonitoring bei den Umsetzungspartnern der Innovationsprojekte mit systematischen Befragungen eingeführt und seither kontinuierlich auf weitere Instrumente ausgedehnt. Die in den Grundlagen festgelegten Ziele der Wirkungsmessung sind erreicht worden und mittlerweile liegen eine Vielzahl aussagekräftiger Daten vor. Sie erlauben fundierte Aussagen zu den vielfältigen Wirkungen der Innovationsförderung zu formulieren.</p>
+<p>Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der <observablehq-loading></observablehq-loading><!--:61683793:-->, der KMU bei den <observablehq-loading></observablehq-loading><!--:b73c2f05:--> sowie bei allen am <observablehq-loading></observablehq-loading><!--:39ad5b65:--> teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den <observablehq-loading></observablehq-loading><!--:d3c4b8e3:--> und den <observablehq-loading></observablehq-loading><!--:25cb720d:--> beruhen die Ergebnisse auf Monitoring-Daten aller laufenden Initiativen.</p>
 <div><observablehq-loading></observablehq-loading><!--:bd934341:--></div>
 <h3 id="details-der-befragungen-und-vollerhebungen" tabindex="-1"><a class="observablehq-header-anchor" href="#details-der-befragungen-und-vollerhebungen">Details der Befragungen und Vollerhebungen</a></h3>
-<p>Bei den Befragungen und Selbsteinschätzungen der Fördernehmerinnen und Fördernehmer werden in der Regel Skalenbewertungen auf einer 6er-Skala (z.B. (1) keine Bedeutung, (2) geringe Bedeutung, (3) eher geringe Bedeutung, (4) eher hohe Bedeutung, (5) hohe Bedeutung, (6) sehr hohe Bedeutung verwendet). Dort wo sinnvoll, werden (ja/nein)-Fragen gestellt und ausgewählte Kennzahlen zu ökonomischen Kennzahlen erhoben.</p>
-<p>Die Erhebungen sind so konzipiert, dass die Selbsteinschätzungen der Fördernehmerinnen und Fördernehmer auf eine vertiefte Beschreibung der Innovationsvorhaben oder auf direkte Wirkungen der Förderung fokussieren.</p>
+<p>Bei den Befragungen und Selbsteinschätzungen der Fördernehmerinnen und Fördernehmer werden in der Regel Skalenbewertungen auf einer 6er-Skala (z.B. (1) keine Bedeutung, (2) geringe Bedeutung, (3) eher geringe Bedeutung, (4) eher hohe Bedeutung, (5) hohe Bedeutung, (6) sehr hohe Bedeutung verwendet). Dort wo sinnvoll, werden Ja-Nein-Fragen gestellt und ausgewählte Kennzahlen zu ökonomischen Kennzahlen erhoben.</p>
+<p>Die Erhebungen sind so konzipiert, dass die Selbsteinschätzung der Fördernehmerinnen und Fördernehmer fokussiert ist auf die detaillierte Charakterisierung der Innovationsvorhaben und auf die direkte Wirkung der Förderung.</p>
 <p>Die dargestellten Indikatoren basieren auf folgenden Datengrundlagen:</p>
 <table>
 <thead>
@@ -231,7 +231,7 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 <td>Berichtsjahr 2023</td>
 </tr>
 <tr>
-<td>Start-up Coaching</td>
+<td>Start-up Core Coaching</td>
 <td>Mittelwert Berichtsjahre 2023 und 2024</td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 </tr>
 </tbody>
 </table>
-<p>Die Befragungen basieren auf differenzierten Bewertungen der befragten Zielgruppen und, dort wo vorhanden, auf Mittelwerten über mehrere Befragungsjahre. Die Bezugsjahre des Monitorings unterscheiden sich nach den einzelnen Instrumenten und richten sich nach der Datenverfügbarkeit:</p>
+<p>Die Befragungen basieren auf differenzierten Bewertungen der befragten Zielgruppen und, dort wo vorhanden, auf Mittelwerten über mehrere Befragungsjahre. Die Bezugsjahre des Monitorings unterscheiden sich nach den einzelnen Förderangeboten und richten sich nach der Datenverfügbarkeit:</p>
 <p>Für die <observablehq-loading></observablehq-loading><!--:61683793-1:--> bei den Umsetzungspartnern wird der Mittelwert der Monitoringjahre 2021–2023 dargestellt. Die Ergebnisse bei den <observablehq-loading></observablehq-loading><!--:69c971a9:--> basieren auf dem Mittelwert der Monitoringjahre 2023 und 2024, da die Auswertungen für 2024 bereits vorliegen. Die übrigen Indikatoren basieren auf dem Monitoringjahr 2023.</p>
 <p>Der Rücklauf der Befragungen liegt zwischen rund 50 % und über 75 % und erlaubt damit statistisch valide Aussagen.</p>
 <h3 id="tabellarische-zusammenstellung-der-ergebnisse" tabindex="-1"><a class="observablehq-header-anchor" href="#tabellarische-zusammenstellung-der-ergebnisse">Tabellarische Zusammenstellung der Ergebnisse</a></h3>
@@ -260,7 +260,7 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 <li><observablehq-loading></observablehq-loading><!--:bf87c2f9:--></li>
 <li><observablehq-loading></observablehq-loading><!--:57a8313e:-->.</li>
 </ol>
-<p>Die nachfolgende Übersicht zeigt, zu welchen fünf Wirkungszielen (Outcomes) von Innosuisse die Förderangebote beitragen sollen. Die in der Folge dargestellten Ergebnisse der Befragungen sollen Aussagen machen über die Zielerreichung der Innovationsförderung und bieten eine fundierte Grundlage, um die Wirksamkeit der Fördermassnahmen zu beurteilen und diese gezielt weiterzuentwickeln.</p>
+<p>Die nachfolgende Übersicht zeigt, zu welchen fünf Stossrichtungen (Outcomes) von Innosuisse die Förderangebote beitragen sollen. Die in der Folge dargestellten Ergebnisse der Befragungen sollen Aussagen machen über die Zielerreichung der Innovationsförderung und bieten eine fundierte Grundlage, um die Wirksamkeit der Fördermassnahmen zu beurteilen und diese gezielt weiterzuentwickeln.</p>
 <div class="card" style="width: 600px;">
   <img src="./_file/images/ziele_innosuisse.c40f186f.jpg" alt="Image">
 </div>
@@ -273,7 +273,7 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./editorial"><span>Editorial</span></a><a rel="next" href="./foerderangebote-und-inhalte"><span>Förderangebote und Inhalte</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-01-30T22:04:59">Jan 30, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:55:03">Feb 26, 2025</a>.</div>
 </footer>
 </div>
 </body>
