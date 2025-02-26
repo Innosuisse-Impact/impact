@@ -1,0 +1,26 @@
+inst	instrument	subcluster	obs_value	instrument_fr	instrument_en
+Begleitung von Start-ups	Start-up Core Coaching	Engineering	0.14	Start-up Core Coaching	Start-up Core Coaching
+Begleitung von Start-ups	Start-up Core Coaching	Life sciences	0.38	Start-up Core Coaching	Start-up Core Coaching
+Begleitung von Start-ups	Start-up Core Coaching	Energy & environment	0.14	Start-up Core Coaching	Start-up Core Coaching
+Begleitung von Start-ups	Start-up Core Coaching	ICT	0.3	Start-up Core Coaching	Start-up Core Coaching
+Begleitung von Start-ups	Start-up Core Coaching	Social sciences & business mgmt	0.04	Start-up Core Coaching	Start-up Core Coaching
+Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	Engineering	0.31	BRIDGE Proof of Concept	BRIDGE Proof of Concept
+Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	Life sciences	0.34	BRIDGE Proof of Concept	BRIDGE Proof of Concept
+Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	Energy & environment	0.12	BRIDGE Proof of Concept	BRIDGE Proof of Concept
+Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	ICT	0.17	BRIDGE Proof of Concept	BRIDGE Proof of Concept
+Förderung für Schweizer Innovationsprojekte	BRIDGE Proof of Concept	Social sciences & business mgmt	0.06	BRIDGE Proof of Concept	BRIDGE Proof of Concept
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Engineering	0.13	Innovationsprojekte ohne UP	Innovation projects without IP
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Life sciences	0.66	Innovationsprojekte ohne UP	Innovation projects without IP
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Energy & environment	0.09	Innovationsprojekte ohne UP	Innovation projects without IP
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	ICT	0.09	Innovationsprojekte ohne UP	Innovation projects without IP
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte ohne UP	Social sciences & business mgmt	0.03	Innovationsprojekte ohne UP	Innovation projects without IP
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Engineering	0.32	Chèque d'innovation	Innovation cheque
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Life sciences	0.14	Chèque d'innovation	Innovation cheque
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Energy & environment	0.15	Chèque d'innovation	Innovation cheque
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	ICT	0.18	Chèque d'innovation	Innovation cheque
+Förderung für Schweizer Innovationsprojekte	Innovationsscheck	Social sciences & business mgmt	0.21	Chèque d'innovation	Innovation cheque
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Engineering	0.37	Innovationsprojekte mit UP	Innovation projects with IP
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Life sciences	0.18	Innovationsprojekte mit UP	Innovation projects with IP
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Energy & environment	0.17	Innovationsprojekte mit UP	Innovation projects with IP
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	ICT	0.18	Innovationsprojekte mit UP	Innovation projects with IP
+Förderung für Schweizer Innovationsprojekte	Innovationsprojekte mit UP	Social sciences & business mgmt	0.1	Innovationsprojekte mit UP	Innovation projects with IP

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.2">
+<title>Editorial | Impact monitor</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/styles.c2e88b07.css">
+<link rel="modulepreload" href="./_observablehq/client.4b842d01.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.83ab9eb5.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="./_import/colors.79c45eba.js">
+<link rel="modulepreload" href="./_import/functions.2563eddd.js">
+<link rel="modulepreload" href="./_import/data.cfb39f11.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/ddfe0eea.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/27911eeb.js">
+<link rel="modulepreload" href="./_npm/arquero@8.0.1/40fb4c55.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/2c0cdfa2.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/626bedc4.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/00c41b5d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/b22c5864.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/35880c2a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e1ff060.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/5851d7ef.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/dcd02767.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/034b7bcb.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/567840a0.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/cf9b720b.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/5dcd62f4.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/be692bd9.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/5bc129e1.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/19c92b44.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.4b842d01.js";
+import {registerFile} from "./_observablehq/stdlib.83ab9eb5.js";
+
+registerFile("./data/daten_controlling.txt", {"name":"./data/daten_controlling.txt","mimeType":"text/plain","path":"./_file/data/daten_controlling.d8ca2b9f.txt","lastModified":1740557176536,"size":12244});
+registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.869f0158.txt","lastModified":1740488102610,"size":14637});
+registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.500e2762.txt","lastModified":1740488102610,"size":28107});
+registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1740488102611,"size":931});
+registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.e69460e9.txt","lastModified":1740558792000,"size":3507});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.068769dc.txt","lastModified":1740565153377,"size":19177});
+registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.559abc30.txt","lastModified":1740560035325,"size":17882});
+registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.3e5dec9c.txt","lastModified":1740564491964,"size":1188});
+
+define({id: "68e5ce68", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","draw_fin_plot","n_subcluster"], body: async () => {
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.79c45eba.js"), import("./_import/functions.2563eddd.js")]);
+
+return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subcluster};
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Impact monitor</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Introduction</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./editorial">Editorial</a></li>
+    <li class="observablehq-link"><a href="./methodology">Methodology</a></li>
+  </ol>
+  <section>
+    <summary>Results</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./support-offers-and-content">Support offers and content</a></li>
+    <li class="observablehq-link"><a href="./comparative-results">Comparative results</a></li>
+    <li class="observablehq-link"><a href="./projects-companies-researchers">Innovation projects with implementation partners</a></li>
+    <li class="observablehq-link"><a href="./projects-companies-researchers#innovation-cheques">Innovation cheques</a></li>
+    <li class="observablehq-link"><a href="./projects-researchers">Innovation projects without implementation partner</a></li>
+    <li class="observablehq-link"><a href="./projects-researchers#bridge-proof-of-concept">BRIDGE Proof of Concept</a></li>
+    <li class="observablehq-link"><a href="./project-set-up-assistance-and-networking">Innovation Booster</a></li>
+    <li class="observablehq-link"><a href="./support-for-start-ups">Start-up Core Coaching</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Swiss Innovation Agency</a>
+</header>
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:68e5ce68:--></div>
+<h2 id="innosuisse-funding-sustainably-drives-business-success-and-employment" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-funding-sustainably-drives-business-success-and-employment">Innosuisse funding sustainably drives business success and employment</a></h2>
+<div style="display: flex; flex-direction: column; align-items: left; width: 640px; padding-left: 20px; padding-top: 20px;">
+<img src="https://isg-2023.prolog.work/images/discover/general/2023/Wirkung/thema_wirkung_Walti.jpg" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; object-position: -25px center;">
+<p style="font-size: 12px">
+<strong><b>Gérald Walti</b></strong>
+<br>CFO Innosuisse</p>
+</div>
+<h3 id="innovation-as-the-key-to-overcoming-future-challenges" tabindex="-1"><a class="observablehq-header-anchor" href="#innovation-as-the-key-to-overcoming-future-challenges">Innovation as the key to overcoming future challenges</a></h3>
+<p>Innovation is the key to overcoming rapid economic structural change and strengthening Switzerland's competitiveness. It creates highly qualified jobs for the future and helps to maintain prosperity. Switzerland is currently one of the most innovative countries in the world. It owes this to its political, regulatory and economic stability, an excellent education system and outstanding universities, and not least strong cooperation between research and industry.</p>
+<p>Innosuisse aims to contribute to strong and steady economic development with its funding, as well as to the other social and environmental pillars of sustainable development.</p>
+<p>Switzerland is one of the world's leading countries when it comes to knowledge and technology transfer (KTT) between research and industry. Innosuisse's innovation promotion programme starts by strengthening this exchange. If it is not effective, or only slightly so, in KTT and in the results achieved by companies, this has a negative impact on Switzerland's innovative strength and competitiveness.</p>
+<h3 id="results-prove-the-broad-benefits-of-innovation-promotion" tabindex="-1"><a class="observablehq-header-anchor" href="#results-prove-the-broad-benefits-of-innovation-promotion">Results prove the broad benefits of innovation promotion</a></h3>
+<p>The results are encouraging. They confirm the economic impact of funding on innovation projects, particularly for the small and medium-sized enterprises (SMEs) involved. Three years after the end of the project, almost 60% of the innovation projects are on the market or are about to enter the market. More than 60% of the SMEs involved as main implementation partners report direct economic impacts from the funded projects in their companies. In particular, a large number of jobs are being created that generate added value and would not have been created without the funding.</p>
+<p>Innosuisse funding focuses on strengthening KTT between research institutions (universities and research institutes) and companies and organisations in industry. The research results also show the scientific anchoring of the funded projects, for example through a considerable proportion of dissertations that are initiated and carried out at universities as a result of the funding.</p>
+<p>Innosuisse's coaching particularly supports start-ups with both high-risk implementation and high potential impact on the markets. The results of Start-up Coaching are particularly encouraging in terms of successful fundraising and business development after three years. They also show that the start-ups in the coaching programme are brought to market maturity, gain a foothold in international markets and experience stronger growth. BRIDGE projects specifically promote personal KTT, with over 70% of the projects by researchers resulting in the founding of innovative and science-based start-ups.</p>
+<p>Innovation thrives on new and radical innovation ideas. The thematic Innovation Boosters create topic-oriented networks and platforms. Stakeholders from science and industry work together to open up new perspectives for concrete solutions to problems, develop promising innovation ideas from these and systematically develop them further. The results show that a large number of concrete innovation projects between research and industry are launched from the successfully tested ideas, which can be transferred into practice in the future thanks to this collaboration.</p>
+<p>The innovation projects supported by Innosuisse address economic and societal challenges in the development of digital solutions and in strengthening environmental and social sustainability. In this way, we are helping to ensure that the Swiss economy can exploit the digital potential and the transformation towards greater sustainability for its long-term competitiveness.</p>
+<h3 id="public-innovation-funding-has-an-economic-impact" tabindex="-1"><a class="observablehq-header-anchor" href="#public-innovation-funding-has-an-economic-impact">Public innovation funding has an economic impact</a></h3>
+<p>From my point of view, it is particularly pleasing that the economic benefits of the funded innovation projects, which can be clearly demonstrated by economic results, exceed the funding costs many times over. This does not include other benefits, such as strengthening the innovative ability and innovative strength of the funded companies.</p>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./"><span>Impact monitor</span></a><a rel="next" href="./methodology"><span>Methodology</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T11:49:11">Feb 26, 2025</a>.</div>
+</footer>
+</div>
+</body>
+</html>

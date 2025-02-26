@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.2">
+<title>Comparative results | Impact monitor</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/styles.c2e88b07.css">
+<link rel="modulepreload" href="./_observablehq/client.4b842d01.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.83ab9eb5.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="./_import/colors.79c45eba.js">
+<link rel="modulepreload" href="./_import/functions.2563eddd.js">
+<link rel="modulepreload" href="./_import/data.cfb39f11.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/ddfe0eea.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/27911eeb.js">
+<link rel="modulepreload" href="./_npm/arquero@8.0.1/40fb4c55.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/2c0cdfa2.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/626bedc4.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/00c41b5d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/b22c5864.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/35880c2a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e1ff060.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/5851d7ef.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/dcd02767.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/034b7bcb.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/567840a0.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/cf9b720b.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/5dcd62f4.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/be692bd9.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/5bc129e1.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/19c92b44.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.4b842d01.js";
+import {registerFile} from "./_observablehq/stdlib.83ab9eb5.js";
+
+registerFile("./data/daten_controlling.txt", {"name":"./data/daten_controlling.txt","mimeType":"text/plain","path":"./_file/data/daten_controlling.d8ca2b9f.txt","lastModified":1740557176536,"size":12244});
+registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.869f0158.txt","lastModified":1740488102610,"size":14637});
+registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.500e2762.txt","lastModified":1740488102610,"size":28107});
+registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1740488102611,"size":931});
+registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.e69460e9.txt","lastModified":1740558792000,"size":3507});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.068769dc.txt","lastModified":1740565153377,"size":19177});
+registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.559abc30.txt","lastModified":1740560035325,"size":17882});
+registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.3e5dec9c.txt","lastModified":1740564491964,"size":1188});
+
+define({id: "9cf2776e", outputs: ["html","color_inst","color_zufrieden","grey_innosuisse","black_innosuisse","coloredUnderline","draw_result","draw_innoart","draw_dn","df_zufrieden"], body: async () => {
+const [{html}, {color_inst, color_zufrieden, grey_innosuisse, black_innosuisse}, {coloredUnderline, draw_result, draw_innoart, draw_dn}, {df_zufrieden}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.79c45eba.js"), import("./_import/functions.2563eddd.js"), import("./_import/data.cfb39f11.js")]);
+
+return {html,color_inst,color_zufrieden,grey_innosuisse,black_innosuisse,coloredUnderline,draw_result,draw_innoart,draw_dn,df_zufrieden};
+}});
+
+define({id: "12f8bff4", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Start-up Core Coaching","Start-up Core Coaching")
+))
+}});
+
+define({id: "55d33ce8", mode: "inline", inputs: ["Plot","color_zufrieden","black_innosuisse","display"], body: async (Plot,color_zufrieden,black_innosuisse,display) => {
+display(await(
+Plot.legend({color: color_zufrieden, swatchSize: 12, column:1, style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse}})
+))
+}});
+
+define({id: "087b8d6e", mode: "inline", inputs: ["draw_result","df_zufrieden","display"], body: async (draw_result,df_zufrieden,display) => {
+display(await(
+draw_result(df_zufrieden,"Innovationsprojekte mit Umsetzungspartner", false, 35)
+))
+}});
+
+define({id: "35397444", mode: "inline", inputs: ["draw_result","df_zufrieden","display"], body: async (draw_result,df_zufrieden,display) => {
+display(await(
+draw_result(df_zufrieden,"Innovationsschecks", false)
+))
+}});
+
+define({id: "69c2c469", mode: "inline", inputs: ["draw_result","df_zufrieden","display"], body: async (draw_result,df_zufrieden,display) => {
+display(await(
+draw_result(df_zufrieden,"Innovationsprojekte ohne Umsetzungspartner", false)
+))
+}});
+
+define({id: "f800ef39", mode: "inline", inputs: ["draw_result","df_zufrieden","display"], body: async (draw_result,df_zufrieden,display) => {
+display(await(
+draw_result(df_zufrieden,"Innovation Booster", false)
+))
+}});
+
+define({id: "86e561f9", mode: "inline", inputs: ["draw_result","df_zufrieden","display"], body: async (draw_result,df_zufrieden,display) => {
+display(await(
+draw_result(df_zufrieden,"Start-up Core Coaching", false)
+))
+}});
+
+define({id: "bcfc6fd9", mode: "inline", inputs: ["draw_innoart","display"], body: async (draw_innoart,display) => {
+display(await(
+draw_innoart("inkr_radikal", 550, 250)
+))
+}});
+
+define({id: "65549781", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("innovation projects with implementation partners","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+define({id: "8ded1db2", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovation cheques","Innovationsscheck")
+))
+}});
+
+define({id: "3662725d", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("projects","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+define({id: "184cdd11", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("innovation ideas","Innovation Booster")
+))
+}});
+
+define({id: "8ded1db2-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovation cheques","Innovationsscheck")
+))
+}});
+
+define({id: "d7f16aa4", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("start-ups in coaching","Begleitung von Start-ups")
+))
+}});
+
+define({id: "a199f521", mode: "inline", inputs: ["draw_innoart","display"], body: async (draw_innoart,display) => {
+display(await(
+draw_innoart("disruptiv", 380, 180)
+))
+}});
+
+define({id: "65549781-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("innovation projects with implementation partners","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+define({id: "4c1dc535", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("innovation cheques","Innovationsscheck")
+))
+}});
+
+define({id: "39ad5b65", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Core Coaching","Begleitung von Start-ups")
+))
+}});
+
+define({id: "8e843dc8", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Start-up Core Coaching","Begleitung von Start-ups")
+))
+}});
+
+define({id: "74286c5d", mode: "inline", inputs: ["draw_innoart","display"], body: async (draw_innoart,display) => {
+display(await(
+draw_innoart("type_1", 640, 180)
+))
+}});
+
+define({id: "45525f68", mode: "inline", inputs: ["draw_innoart","display"], body: async (draw_innoart,display) => {
+display(await(
+draw_innoart("type_2",475, 180)
+))
+}});
+
+define({id: "21bb9a97", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("innovation projects","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+define({id: "d7f16aa4-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("start-ups in coaching","Begleitung von Start-ups")
+))
+}});
+
+define({id: "844554a7", mode: "inline", inputs: ["draw_dn","display"], body: async (draw_dn,display) => {
+display(await(
+draw_dn("digital", "Innovationsprojekte mit UP", true, 20)
+))
+}});
+
+define({id: "e8af2367", mode: "inline", inputs: ["draw_dn","display"], body: async (draw_dn,display) => {
+display(await(
+draw_dn("digital", "Innovationsschecks", false, -8)
+))
+}});
+
+define({id: "0cb42eff", mode: "inline", inputs: ["draw_dn","display"], body: async (draw_dn,display) => {
+display(await(
+draw_dn("digital", "Innovationsprojekte ohne UP", false, -8)
+))
+}});
+
+define({id: "7deb3859", mode: "inline", inputs: ["draw_dn","display"], body: async (draw_dn,display) => {
+display(await(
+draw_dn("digital", "Start-up Core Coaching", false, -8)
+))
+}});
+
+define({id: "21bb9a97-1", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("innovation projects","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+define({id: "f8baeca7", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("start-ups in the coaching programme","Begleitung von Start-ups")
+))
+}});
+
+define({id: "26edcbd5", mode: "inline", inputs: ["draw_dn","display"], body: async (draw_dn,display) => {
+display(await(
+draw_dn("nachhaltig", "Innovationsprojekte mit UP", true, 20)
+))
+}});
+
+define({id: "7ab74cbb", mode: "inline", inputs: ["draw_dn","display"], body: async (draw_dn,display) => {
+display(await(
+draw_dn("nachhaltig", "Innovationsschecks", false, -8)
+))
+}});
+
+define({id: "485294a1", mode: "inline", inputs: ["draw_dn","display"], body: async (draw_dn,display) => {
+display(await(
+draw_dn("nachhaltig", "Innovationsprojekte ohne UP", false, -8)
+))
+}});
+
+define({id: "86675dc9", mode: "inline", inputs: ["draw_dn","display"], body: async (draw_dn,display) => {
+display(await(
+draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Impact monitor</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Introduction</a></li>
+    <li class="observablehq-link"><a href="./editorial">Editorial</a></li>
+    <li class="observablehq-link"><a href="./methodology">Methodology</a></li>
+  </ol>
+  <section class="observablehq-section-active">
+    <summary>Results</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./support-offers-and-content">Support offers and content</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./comparative-results">Comparative results</a></li>
+    <li class="observablehq-link"><a href="./projects-companies-researchers">Innovation projects with implementation partners</a></li>
+    <li class="observablehq-link"><a href="./projects-companies-researchers#innovation-cheques">Innovation cheques</a></li>
+    <li class="observablehq-link"><a href="./projects-researchers">Innovation projects without implementation partner</a></li>
+    <li class="observablehq-link"><a href="./projects-researchers#bridge-proof-of-concept">BRIDGE Proof of Concept</a></li>
+    <li class="observablehq-link"><a href="./project-set-up-assistance-and-networking">Innovation Booster</a></li>
+    <li class="observablehq-link"><a href="./support-for-start-ups">Start-up Core Coaching</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Swiss Innovation Agency</a>
+</header>
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:9cf2776e:--></div>
+<h2 id="comparative-results-for-innosuisse-s-support-offers" tabindex="-1"><a class="observablehq-header-anchor" href="#comparative-results-for-innosuisse-s-support-offers">Comparative results for Innosuisse’s support offers</a></h2>
+<h3 id="satisfaction-with-innosuisses-support-offers-is-consistently-high" tabindex="-1"><a class="observablehq-header-anchor" href="#satisfaction-with-innosuisses-support-offers-is-consistently-high">Satisfaction with Innosuisse's support offers is consistently high</a></h3>
+<p>Innosuisse's funding beneficiaries are satisfied to very satisfied with Innosuisse's innovation promotion and its implementation. The proportions of the instruments presented here are over 80%, and for <observablehq-loading></observablehq-loading><!--:12f8bff4:--> it is more than two thirds. Only a very small proportion (≤ 1%) are dissatisfied with Innosuisse's instruments.</p>
+<div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px;">
+<p><observablehq-loading></observablehq-loading><!--:55d33ce8:-->
+<observablehq-loading></observablehq-loading><!--:087b8d6e:-->
+<observablehq-loading></observablehq-loading><!--:35397444:-->
+<observablehq-loading></observablehq-loading><!--:69c2c469:-->
+<observablehq-loading></observablehq-loading><!--:f800ef39:-->
+<observablehq-loading></observablehq-loading><!--:86e561f9:--></p>
+</div>
+<h3 id="innosuisse-promotes-both-incremental-and-radical-innovations" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-promotes-both-incremental-and-radical-innovations">Innosuisse promotes both incremental and radical innovations</a></h3>
+<div><observablehq-loading></observablehq-loading><!--:bcfc6fd9:--></div>
+<p class="comment">
+Assessments of the funding recipients using a six-point evaluation scale with predefined definitions: (1) very incremental, (2) incremental innovations or (5) radical, (6) very radical innovations. 
+</p> 
+<p>In the case of <observablehq-loading></observablehq-loading><!--:65549781:-->  and <observablehq-loading></observablehq-loading><!--:8ded1db2:-->, around a quarter of innovation projects pursue <strong><strong>clearly incremental innovations</strong></strong>. These primarily involve the further development or optimisation of existing products (products, services, processes, business models, etc.).</p>
+<p><strong><strong>Radical innovations</strong></strong> (27%) are funded to the same extent as incremental innovations. In contrast to incremental innovations, radical innovations strive for fundamental innovations and changes through revolutionary or radical new ideas and technologies. They account for at least a quarter of the <observablehq-loading></observablehq-loading><!--:3662725d:-->  and <observablehq-loading></observablehq-loading><!--:184cdd11:--> across all instruments – with the exception of <observablehq-loading></observablehq-loading><!--:8ded1db2-1:-->. Among <observablehq-loading></observablehq-loading><!--:d7f16aa4:--> , more than half of the start-ups aim to introduce radical innovations with their business models.</p>
+<h3 id="innovations-can-have-a-strong-influence-on-markets" tabindex="-1"><a class="observablehq-header-anchor" href="#innovations-can-have-a-strong-influence-on-markets">Innovations can have a strong influence on markets</a></h3>
+<div><observablehq-loading></observablehq-loading><!--:a199f521:--></div>
+<p class="comment">
+Assessments of the funding recipients using a six-point rating scale with predefined definitions: (5) disruptive innovations, (6) highly disruptive innovations.
+</p> 
+<p>These should be distinguished from <strong><strong>disruptive innovations</strong></strong>. Here, the focus is not on the degree of technological novelty, but on the revolutionary impact on the markets. Innovations are disruptive when they create completely new markets with new rules and target groups or have a strong influence on existing markets, for example through innovations that are new to the markets on an international or global scale. Both radical and incremental innovations can be disruptive.</p>
+<p>Around a third of companies have the potential to disrupt the market with <observablehq-loading></observablehq-loading><!--:65549781-1:--> and <observablehq-loading></observablehq-loading><!--:4c1dc535:-->. Among start-ups in <observablehq-loading></observablehq-loading><!--:39ad5b65:-->, as many as two-thirds of start-ups pursue disruptive innovations with the business model of their newly founded company.</p>
+<h3 id="innosuisse-promotes-innovation-diversity" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-promotes-innovation-diversity">Innosuisse promotes innovation diversity</a></h3>
+<p>The following figure also illustrates the diversity of the forms of innovation supported. Often, several innovations are pursued simultaneously, for example, when a product innovation is combined with a business model or process innovation.</p>
+<p>Product innovations are most important in <observablehq-loading></observablehq-loading><!--:8e843dc8:--> (88%). The shares for process innovations are between 24% and 35%. Compared to other instruments, business model innovations are most important for start-ups (17%). These are often linked to aspects of digital transformation. Innosuisse also funds social innovations. However, their share is comparatively low.</p>
+<p>The diversity of innovation is also an expression of the fact that Innosuisse promotes science-based innovation in a bottom-up and thematically open manner.</p>
+<div>
+<observablehq-loading></observablehq-loading><!--:74286c5d:-->
+<observablehq-loading></observablehq-loading><!--:45525f68:-->
+</div>
+<h3 id="digital-transformation-is-a-core-aspect-of-innovation-promotion" tabindex="-1"><a class="observablehq-header-anchor" href="#digital-transformation-is-a-core-aspect-of-innovation-promotion">Digital transformation is a core aspect of innovation promotion</a></h3>
+<p>Digitisation is aimed at important future digital technologies (blockchain, robotics, quantum computing, artificial intelligence, etc.) as well as the development of digital business models (software/platform/infrastructure as a service, big data, etc.). Both are highly relevant to the Swiss economy. The economic opportunities and the competition in terms of innovation are exceptionally high in this area.</p>
+<p>Around 55% of the <observablehq-loading></observablehq-loading><!--:21bb9a97:--> funded by Innosuisse make a significant contribution to the digital transformation of the economy through digital technologies and/or digital business models. The application of new digital technologies is more important than the implementation of a digital business model. The importance of digitisation is significantly higher among the <observablehq-loading></observablehq-loading><!--:d7f16aa4-1:-->.</p>
+<div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
+  <observablehq-loading></observablehq-loading><!--:844554a7:-->
+  <observablehq-loading></observablehq-loading><!--:e8af2367:-->
+  <observablehq-loading></observablehq-loading><!--:0cb42eff:-->
+  <observablehq-loading></observablehq-loading><!--:7deb3859:-->
+</div>
+<p class="comment">Question asked: Is the project funded by Innosuisse based on new digital technologies or new digital business models? Assessment by the funding recipients using a six-point rating scale with predefined definitions: (5) strongly, (6) very strongly.</p>
+<h3 id="innovation-has-a-key-role-to-play-in-the-development-of-sustainable-solutions" tabindex="-1"><a class="observablehq-header-anchor" href="#innovation-has-a-key-role-to-play-in-the-development-of-sustainable-solutions">Innovation has a key role to play in the development of sustainable solutions</a></h3>
+<p>The support offers enable companies and organisations to test innovative approaches and technologies for the development of sustainable solutions at an early stage and to develop them to the point of implementation, whether at national or global level. Innosuisse thus makes a central and forward-looking contribution to overcoming global challenges such as energy and resource efficiency, climate change or social issues. Innovation promotion is one of the drivers of the transformation towards a sustainable business and society.</p>
+<p>Around 60% of the <observablehq-loading></observablehq-loading><!--:21bb9a97-1:--> that receive funding show the potential to contribute to sustainable development, either in terms of environmental or social sustainability or both, when implemented in a specific way. For the <observablehq-loading></observablehq-loading><!--:f8baeca7:-->, the figures are slightly higher at 67%.</p>
+<div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px; width: 800px">
+  <observablehq-loading></observablehq-loading><!--:26edcbd5:-->
+  <observablehq-loading></observablehq-loading><!--:7ab74cbb:-->
+  <observablehq-loading></observablehq-loading><!--:485294a1:-->
+  <observablehq-loading></observablehq-loading><!--:86675dc9:-->
+</div>
+<p class="comment">Question asked: Can the project or project idea funded by Innosuisse make a contribution to environmental and/or social sustainability? Assessment by the funding recipients using a six-point rating scale with predefined definitions: (4) rather high contribution, (5) high contribution, (6) very high contribution.</p></main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./support-offers-and-content"><span>Support offers and content</span></a><a rel="next" href="./projects-companies-researchers"><span>Innovation projects with implementation partners</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T11:49:11">Feb 26, 2025</a>.</div>
+</footer>
+</div>
+</body>
+</html>

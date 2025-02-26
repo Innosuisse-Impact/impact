@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.2">
+<title>Methodology | Impact monitor</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_import/styles.c2e88b07.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_import/styles.c2e88b07.css">
+<link rel="modulepreload" href="./_observablehq/client.4b842d01.js">
+<link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.83ab9eb5.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="./_import/colors.79c45eba.js">
+<link rel="modulepreload" href="./_import/functions.2563eddd.js">
+<link rel="modulepreload" href="./_import/data.cfb39f11.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/ddfe0eea.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/27911eeb.js">
+<link rel="modulepreload" href="./_npm/arquero@8.0.1/40fb4c55.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/2c0cdfa2.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/626bedc4.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/00c41b5d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/b22c5864.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/35880c2a.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e1ff060.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/5851d7ef.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/dcd02767.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/034b7bcb.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/567840a0.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/cf9b720b.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/5dcd62f4.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/be692bd9.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/5bc129e1.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/19c92b44.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.4b842d01.js";
+import {registerFile} from "./_observablehq/stdlib.83ab9eb5.js";
+
+registerFile("./data/daten_controlling.txt", {"name":"./data/daten_controlling.txt","mimeType":"text/plain","path":"./_file/data/daten_controlling.d8ca2b9f.txt","lastModified":1740557176536,"size":12244});
+registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt","mimeType":"text/plain","path":"./_file/data/daten_ergebnisse.869f0158.txt","lastModified":1740488102610,"size":14637});
+registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.500e2762.txt","lastModified":1740488102610,"size":28107});
+registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1740488102611,"size":931});
+registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.e69460e9.txt","lastModified":1740558792000,"size":3507});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.068769dc.txt","lastModified":1740565153377,"size":19177});
+registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.559abc30.txt","lastModified":1740560035325,"size":17882});
+registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.3e5dec9c.txt","lastModified":1740564491964,"size":1188});
+
+define({id: "4a952f2c", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","plot_erhebung"], body: async () => {
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, plot_erhebung}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.79c45eba.js"), import("./_import/functions.2563eddd.js")]);
+
+return {html,color_inst,grey_innosuisse,coloredUnderline,plot_erhebung};
+}});
+
+define({id: "21bb9a97", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("innovation projects","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+define({id: "8ded1db2", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovation cheques","Innovationsscheck")
+))
+}});
+
+define({id: "39ad5b65", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Core Coaching","Begleitung von Start-ups")
+))
+}});
+
+define({id: "0a52723a", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Innovation Boosters","Starthilfe für Projekte und Vernetzung")
+))
+}});
+
+define({id: "52ed9f9c", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("BRIDGE Proof of Concept projects","BRIDGE: Proof of Concept")
+))
+}});
+
+define({id: "bd934341", mode: "inline", inputs: ["plot_erhebung","display"], body: async (plot_erhebung,display) => {
+display(await(
+plot_erhebung
+))
+}});
+
+define({id: "078d7924", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Funding for innovation projects","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+define({id: "6a65fdc0", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Project set-up assistance and networking","Starthilfe für Projekte und Vernetzung")
+))
+}});
+
+define({id: "07188365", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Support for start-ups","Begleitung von Start-ups")
+))
+}});
+
+define({id: "6c04fc61", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Start-up innovation projects","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+define({id: "db93a062", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("internationally funded projects", "Förderung für internationale Innovationsprojekte")
+))
+}});
+
+define({id: "5e8ed8ca", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("Flagship Initiative","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+define({id: "15baa0df", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
+display(await(
+coloredUnderline("BRIDGE programme","Förderung für Schweizer Innovationsprojekte")
+))
+}});
+
+</script>
+</head>
+<body>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Impact monitor</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="./">Introduction</a></li>
+    <li class="observablehq-link"><a href="./editorial">Editorial</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./methodology">Methodology</a></li>
+  </ol>
+  <section>
+    <summary>Results</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./support-offers-and-content">Support offers and content</a></li>
+    <li class="observablehq-link"><a href="./comparative-results">Comparative results</a></li>
+    <li class="observablehq-link"><a href="./projects-companies-researchers">Innovation projects with implementation partners</a></li>
+    <li class="observablehq-link"><a href="./projects-companies-researchers#innovation-cheques">Innovation cheques</a></li>
+    <li class="observablehq-link"><a href="./projects-researchers">Innovation projects without implementation partner</a></li>
+    <li class="observablehq-link"><a href="./projects-researchers#bridge-proof-of-concept">BRIDGE Proof of Concept</a></li>
+    <li class="observablehq-link"><a href="./project-set-up-assistance-and-networking">Innovation Booster</a></li>
+    <li class="observablehq-link"><a href="./support-for-start-ups">Start-up Core Coaching</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<header id="observablehq-header">
+<a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Swiss Innovation Agency</a>
+</header>
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:4a952f2c:--></div>
+<h2 id="methodology" tabindex="-1"><a class="observablehq-header-anchor" href="#methodology">Methodology</a></h2>
+<h3 id="conceptual-foundation-of-the-impact-monitoring" tabindex="-1"><a class="observablehq-header-anchor" href="#conceptual-foundation-of-the-impact-monitoring">Conceptual foundation of the impact monitoring</a></h3>
+<p>After the conceptual foundations were developed, impact monitoring was introduced at the Innovation projects with implementation partners with systematic surveys in 2021 and has since been continuously expanded to include further instruments. The objectives of impact measurement set out in the principles have been achieved and a large amount of meaningful data is now available. They allow well-founded statements to be formulated about the diverse impacts of innovation promotion.</p>
+<p>Innosuisse's impact monitoring is based on mandatory and exhaustive surveys of all implementation and research partners of the <observablehq-loading></observablehq-loading><!--:21bb9a97:-->, SMEs with <observablehq-loading></observablehq-loading><!--:8ded1db2:--> and all start-ups participating in <observablehq-loading></observablehq-loading><!--:39ad5b65:-->. The surveys of the implementation partners of the innovation projects and the start-ups in the coaching programme are carried out at the end of the funding period and again three years after completion. For the <observablehq-loading></observablehq-loading><!--:0a52723a:--> and the <observablehq-loading></observablehq-loading><!--:52ed9f9c:-->, the results are based on monitoring data from all ongoing initiatives.</p>
+<div><observablehq-loading></observablehq-loading><!--:bd934341:--></div>
+<h3 id="details-of-the-surveys" tabindex="-1"><a class="observablehq-header-anchor" href="#details-of-the-surveys">Details of the surveys</a></h3>
+<p>In the surveys and self-assessments of funding beneficiaries, scale ratings on a scale of 1 to 6 are generally used (e.g. (1) no significance, (2) low significance, (3) rather low significance, (4) rather high significance, (5) high significance, (6) very high significance). Where appropriate, yes/no questions are asked and selected economic indicators are collected.</p>
+<p>The surveys are designed in such a way that the self-assessment of the funding beneficiaries is focused on the detailed characterisation of the innovation projects and on the direct impact of the funding.</p>
+<p>The indicators presented are based on the following data:</p>
+<table>
+<thead>
+<tr>
+<th>Support offer</th>
+<th>Data basis / reporting year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Implementation partners in innovation projects</td>
+<td>Mean value for reporting years 2021–2023</td>
+</tr>
+<tr>
+<td>Innovation cheques</td>
+<td>Reporting year 2023</td>
+</tr>
+<tr>
+<td>Research partners in innovation projects</td>
+<td>Reporting year 2023</td>
+</tr>
+<tr>
+<td>BRIDGE Proof of Concept</td>
+<td>Funding data and queries in the commercial register, reporting year 2023</td>
+</tr>
+<tr>
+<td>Innovation Booster</td>
+<td>Funding data and annual surveys of the ‘Leading Houses’, reporting year 2023</td>
+</tr>
+<tr>
+<td>Start-up Core Coaching</td>
+<td>Mean value for reporting years 2023 and 2024</td>
+</tr>
+</tbody>
+</table>
+<p>The surveys are based on differentiated assessments of the surveyed target groups and, where available, on mean values over several survey years. The reference years for monitoring differ according to the individual support offers and depend on data availability:</p>
+<p>For innovation projects with implementation partners, the mean value of the monitoring years 2021–2023 is shown. The results for start-ups in Core Coaching are based on the average of the monitoring years 2023 and 2024, as the evaluations for 2024 are already available. The other indicators are based on the monitoring year 2023.</p>
+<p>The response rate to the surveys is between around 50% and over 75%, thus allowing statistically valid statements to be made.</p>
+<h3 id="table-of-the-results" tabindex="-1"><a class="observablehq-header-anchor" href="#table-of-the-results">Table of the results</a></h3>
+<p>The detailed results can be found in a table (<a href="./_file/data/wirkungsindikatoren-2021-2023.xlsx">⤓&nbsp;Excel</a>, in German), broken down by instrument, funding target group, the five impact-oriented thrusts and a differentiated categorisation of the impact.</p>
+<h3 id="innosuisse-funding-offers-and-impact-objectives-outcomes" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-funding-offers-and-impact-objectives-outcomes">Innosuisse funding offers and impact objectives (outcomes)</a></h3>
+<p>Innosuisse's funding offers can be divided into three overarching funding areas (see overview below):</p>
+<ol>
+<li><observablehq-loading></observablehq-loading><!--:078d7924:--></li>
+<li><observablehq-loading></observablehq-loading><!--:6a65fdc0:--></li>
+<li><observablehq-loading></observablehq-loading><!--:07188365:--></li>
+</ol>
+<p>The following overview shows the five Innosuisse thrusts (outcomes) to which the support offers should contribute. The results of the surveys presented below are intended to provide information on the achievement of objectives in innovation promotion and offer a sound basis for assessing the effectiveness of the support measures and developing them in a targeted manner.</p>
+<div class="card" style="width: 600px;">
+  <img src="./_file/images/ziele_en.5c912d92.jpg" alt="Image">
+</div>
+<p>The results show short- to medium-term impacts at the end of the innovation project or shortly thereafter. They also show longer-term impacts, such as market implementation and employment effects.</p>
+<p>The assignment to the five thrusts is not explicitly shown in this report, but is made transparent in the tabular summary (see above). This also applies to the scale ratings used to calculate the reported indicators.</p>
+<h3 id="further-development-of-impact-monitoring" tabindex="-1"><a class="observablehq-header-anchor" href="#further-development-of-impact-monitoring">Further development of impact monitoring</a></h3>
+<p>This impact monitoring will be gradually expanded. The focus of the further development is on the <observablehq-loading></observablehq-loading><!--:6c04fc61:-->, the <observablehq-loading></observablehq-loading><!--:db93a062:-->, the <observablehq-loading></observablehq-loading><!--:5e8ed8ca:--> and the two funding lines of the <observablehq-loading></observablehq-loading><!--:15baa0df:-->, which is run jointly with the Swiss National Science Foundation (SNSF).</p>
+<p>No data is yet available for the instruments introduced in the previous ERI period 2021–2024 and for some of the financially significant instruments (Flagship Initiative, Start-up innovation projects, Swiss Accelerator), as the first projects will not be completed until the 2025 reporting year. International projects and the BRIDGE programme will be included in the reporting from funding year 2025, and the other instruments from 2026 and subsequent years.</p>
+<p>In the first half of 2025, the results and indicators presented here will be updated and communicated for funding year 2024.</p>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./editorial"><span>Editorial</span></a><a rel="next" href="./support-offers-and-content"><span>Support offers and content</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T11:49:11">Feb 26, 2025</a>.</div>
+</footer>
+</div>
+</body>
+</html>
