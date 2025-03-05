@@ -14,9 +14,9 @@
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.a12b38f2.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.68ffb941.js">
-<link rel="modulepreload" href="./_import/functions.862989b8.js">
-<link rel="modulepreload" href="./_import/data.a113fdac.js">
+<link rel="modulepreload" href="./_import/colors.c81f78a8.js">
+<link rel="modulepreload" href="./_import/functions.c8273e5a.js">
+<link rel="modulepreload" href="./_import/data.fcd42f81.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@8.0.0/a9fa94cf.js">
@@ -58,7 +58,7 @@
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
-<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
 <script type="module">
 
 import {define} from "./_observablehq/client.f9f802b7.js";
@@ -69,12 +69,12 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.500e2762.txt","lastModified":1740043972638,"size":28107});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1739458387196,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.4470f889.txt","lastModified":1739895367243,"size":2873});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.c3c13d0e.txt","lastModified":1740152995443,"size":19179});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.128aef0c.txt","lastModified":1741103895466,"size":19175});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.89502fea.txt","lastModified":1739996271440,"size":17883});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.7afa5a80.txt","lastModified":1739889394226,"size":1202});
 
 define({id: "5f56e586", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","draw_fin_plot","n_subcluster","instrument_link"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}, {instrument_link}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.68ffb941.js"), import("./_import/functions.862989b8.js"), import("./_import/data.a113fdac.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}, {instrument_link}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.c81f78a8.js"), import("./_import/functions.c8273e5a.js"), import("./_import/data.fcd42f81.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subcluster,instrument_link};
 }});
@@ -99,12 +99,12 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
     <ol>
     <li class="observablehq-link"><a href="./offres-dencouragement-et-contenus">Offres d&#x27;encouragement et contenus</a></li>
     <li class="observablehq-link"><a href="./resultats-comparatifs">Résultats comparatifs</a></li>
-    <li class="observablehq-link"><a href="./projets-entreprises-chercheurs#projets-dentreprises-avec-des-chercheurs">Projets d&#x27;innovation avec partenaire de mise on oeuvre</a></li>
+    <li class="observablehq-link"><a href="./projets-entreprises-chercheurs#projets-dentreprises-avec-des-chercheurs">Projets d&#x27;innovation avec partenaire chargé de la mise en valeur</a></li>
     <li class="observablehq-link"><a href="./projets-entreprises-chercheurs#cheque-d-innovation">Chèque innovation</a></li>
-    <li class="observablehq-link"><a href="./projets-chercheurs">Projets d&#x27;innovation sans partenaire de mise on oeuvre</a></li>
+    <li class="observablehq-link"><a href="./projets-chercheurs">Projets d&#x27;innovation sans partenaire chargé de la mise en valeur</a></li>
     <li class="observablehq-link"><a href="./projets-chercheurs#bridge-proof-of-concept">BRIDGE Proof of Concept</a></li>
     <li class="observablehq-link"><a href="./aide-au-demarrage-projets-mise-en-reseau">Innovation Booster</a></li>
-    <li class="observablehq-link"><a href="./accompagnement-de-start-ups">Start-up Core Coaching</a></li>
+    <li class="observablehq-link"><a href="./accompagnement-de-start-up">Start-up Core Coaching</a></li>
     </ol>
   </section>
 </nav>
@@ -121,11 +121,11 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <br>
 <h2 id="resultats-du-suivi-de-l-impact-2021-2023" tabindex="-1"><a class="observablehq-header-anchor" href="#resultats-du-suivi-de-l-impact-2021-2023">Résultats du suivi de l'impact 2021–2023</a></h2>
 <p class="comment" style="margin-bottom: 30px">Version 1.1, dernières modifications : 26 février 2025
-</p><p>Innosuisse accorde une grande importance à la présentation transparente de l'efficacité de la promotion de l'innovation aux parties prenantes, aux décideurs politiques et au public.</p>
+</p><p>Innosuisse accorde une grande importance à la présentation transparente de l'efficacité de l'encourgament de l'innovation aux parties prenantes, aux décideurs politiques et au public.</p>
 <p>Les deux questions suivantes sont au premier plan :</p>
 <ul>
-<li>Quels sont les effets des fonds publics utilisés sur les bénéficiaires (entreprises, organisations et start-ups) ?</li>
-<li>Le transfert de connaissances et de technologies entre les entreprises et la recherche est-il renforcé et sous quelle forme ?</li>
+<li>Quels sont les effets des fonds publics utilisés sur les bénéficiaires (entreprises, organisations et start-up) ?</li>
+<li>Le transfert de savoir et de technologie entre les entreprises et la recherche est-il renforcé et sous quelle forme ?</li>
 </ul>
 <p>Les principaux résultats du suivi de l'impact sont brièvement résumés ci-dessous. Dans l'éditorial, nous les analysons du point de vue d'Innosuisse. Les bases méthodologiques expliquent l'intégration, la conception et l'évaluation du suivi de l'impact.</p>
 <p>Dans la partie principale, les résultats sont présentés en détail et brièvement discutés. Nous vous recommandons de commencer directement ici pour les sections approfondies et illustrées graphiquement sur les offres d'encouragement (voir les chapitres à gauche sous Résultats).</p>
@@ -141,43 +141,43 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <h3 id="resultats-comparatifs-du-suivi-de-l-impact" tabindex="-1"><a class="observablehq-header-anchor" href="#resultats-comparatifs-du-suivi-de-l-impact"><a href="./resultats-comparatifs">Résultats comparatifs du suivi de l'impact</a></a></h3>
 <p>Certains résultats du suivi, qui sont collectés de manière standardisée, permettent d'établir des comparaisons entre les différentes offres d'encouragement.</p>
 <ul>
-<li><strong>Satisfaction</strong> : les bénéficiaires de subventions sont satisfaits ou très satisfaits des offres d'Innosuisse et de leur mise en œuvre : 89 % des participants à l'Innovation Booster, environ 90 % des chercheurs et 80 % des partenaires de mise en œuvre, ainsi que 68 % des start-ups bénéficiant du Core Coaching. Le nombre de bénéficiaires de l'encouragement qui ne sont pas ou peu satisfaits de l'offre d'encouragement est faible, entre 1 % et 2 %.</li>
-<li><strong>Innovations incrémentales et radicales</strong> : Innosuisse encourage à la fois les innovations radicales et incrémentales. Les proportions respectives diffèrent selon l'offre d'encouragement. Parmi les projets d'innovation avec des partenaires de mise en œuvre, 25 % des innovations sont clairement incrémentales et 27 % clairement radicales. Parmi les start-ups en cours de coaching, la proportion d'innovations radicales est plus de deux fois plus élevée, avec 55 %.</li>
+<li><strong>Satisfaction</strong> : les bénéficiaires de subventions sont satisfaits ou très satisfaits des offres d'Innosuisse et de leur mise en œuvre : 89 % des participants à l'Innovation Booster, environ 90 % des chercheurs et 80 % des partenaires chargés de la mise en valeur, ainsi que 68 % des start-up bénéficiant du Core Coaching. Le nombre de bénéficiaires de l'encouragement qui ne sont pas ou peu satisfaits de l'offre d'encouragement est faible, entre 1 % et 2 %.</li>
+<li><strong>Innovations incrémentales et radicales</strong> : Innosuisse encourage aussi bien les innovations radicales qu’incrémentales. Les proportions respectives diffèrent selon l'offre d'encouragement. Parmi les projets d'innovation avec des partenaires chargés de la mise en valeur, 25 % des innovations sont clairement incrémentales et 27 % clairement radicales. Parmi les start-up en cours de coaching, la proportion d'innovations radicales est plus de deux fois plus élevée, avec 55 %.</li>
 </ul>
 <p><a href="./resultats-comparatifs">→ Vers les résultats et les graphiques détaillés</a></p>
 </div>
 <div class="card" style="max-width: 600px; --underline-color: #06F7DA;">
 <h3 id="projets-d-entreprises-avec-des-chercheurs" tabindex="-1"><a class="observablehq-header-anchor" href="#projets-d-entreprises-avec-des-chercheurs"><a href="./projets-entreprises-chercheurs">Projets d'entreprises avec des chercheurs</a></a></h3>
-<h4 id="projets-d-innovation-avec-partenaire-de-mise-en-uvre" tabindex="-1"><a class="observablehq-header-anchor" href="#projets-d-innovation-avec-partenaire-de-mise-en-uvre"><a href="./projets-entreprises-chercheurs">Projets d'innovation avec partenaire de mise en œuvre</a></a></h4>
+<h4 id="projets-d-innovation-avec-partenaire-charge-de-la-mise-en-valeur" tabindex="-1"><a class="observablehq-header-anchor" href="#projets-d-innovation-avec-partenaire-charge-de-la-mise-en-valeur"><a href="./projets-entreprises-chercheurs">Projets d'innovation avec partenaire chargé de la mise en valeur</a></a></h4>
 <p>Les projets d'innovation nationaux sont le principal instrument d'encouragement d'Innosuisse. Des entreprises et des organisations issues de l'économie et de la société coopèrent avec des partenaires de recherche afin de développer ensemble des produits, des services, des processus ou des modèles commerciaux innovants.</p>
 <ul>
-<li><strong>Lancement sur le marché</strong> : trois ans après la fin de la subvention, plus de la moitié des innovations subventionnées (57 %) sont soit commercialisées, soit mises en œuvre dans l'entreprise, soit prévues pour les deux prochaines années.</li>
-<li><strong>Création d'emplois</strong> : en moyenne, un projet subventionné crée 2,5 emplois nouveaux et hautement qualifiés entre 2021 et 2023. Trois ans après la fin de l'aide, les projets ont permis de créer entre 800 et 900 emplois à temps plein. Cet effet positif de l'aide est également confirmé par une étude scientifique du Centre de recherches conjoncturelles de l'ETH Zurich. Trois ans après la fin, les entreprises qui ont bénéficié d'un soutien d'Innosuisse enregistrent une augmentation de 18 % de l'emploi par rapport aux entreprises innovantes comparables qui n'ont pas bénéficié d'un tel soutien.</li>
-<li><strong>L'effet de levier de l'aide crée de la valeur ajoutée</strong> : l'aide conduit, par le biais des nouveaux emplois créés, directement à une valeur ajoutée supplémentaire dans les entreprises soutenues : chaque franc d'aide apporte directement à l'économie environ quatre francs de valeur ajoutée, mesurée trois ans après l'aide et cumulée pour trois années supplémentaires.</li>
+<li><strong>Lancement sur le marché</strong> : trois ans après la fin de l'encouragement, plus de la moitié des innovations encouragées (57 %) sont soit commercialisées, soit mises en œuvre dans l'entreprise, soit prévues pour les deux prochaines années.</li>
+<li><strong>Création d'emplois</strong> : en moyenne, un projet encouragé crée 2,5 emplois nouveaux et hautement qualifiés entre 2021 et 2023. Trois ans après la fin de l'encouragement, les projets ont permis de créer entre 800 et 900 emplois à temps plein. Cet effet positif de l'encouragement est également confirmé par une étude scientifique du Centre de recherches conjoncturelles de l'ETH Zurich. Trois ans après la fin, les entreprises qui ont bénéficié d'un soutien d'Innosuisse enregistrent une augmentation de 18 % de l'emploi par rapport aux entreprises innovantes comparables qui n'ont pas bénéficié d'un tel soutien.</li>
+<li><strong>L'effet de levier de l'encouragement crée de la valeur ajoutée</strong> : l'encouragement conduit, par le biais des nouveaux emplois créés, directement à une valeur ajoutée supplémentaire dans les entreprises soutenues : chaque franc d'encouragement apporte directement à l'économie environ quatre francs de valeur ajoutée, mesurée trois ans après l'encouragement et cumulée pour trois années supplémentaires.</li>
 <li><strong>Renforcement du transfert de savoir et de technologie</strong> : le transfert de savoir et de technologie (TST) a également un effet à long terme : près de la moitié des entreprises continuent de travailler avec leurs partenaires de recherche trois ans après la fin du projet. 15 % d'entre elles embauchent du personnel de recherche supplémentaire qui a participé au projet. Elles renforcent ainsi leur base interne de savoir et d'innovation.</li>
 </ul>
 <p><a href="./projets-entreprises-chercheurs">→ Vers les résultats et les graphiques détaillés</a></p>
 <h4 id="cheque-d-innovation" tabindex="-1"><a class="observablehq-header-anchor" href="#cheque-d-innovation"><a href="./projets-entreprises-chercheurs#cheque-d-innovation">Chèque d'innovation</a></a></h4>
-<p>Le Chèque d'innovation offre aux PME et aux start-ups un soutien à bas seuil. L'objectif est de réaliser des études de faisabilité et de marché ainsi que des études technologiques.</p>
+<p>Le Chèque d'innovation offre aux PME et aux start-up un soutien à bas seuil. L'objectif est de réaliser des études de faisabilité et de marché ainsi que des études technologiques.</p>
 <ul>
-<li><strong>Coopération avec la recherche</strong> : Grâce au Chèque d'innovation, plus de la moitié des entreprises participantes peuvent désormais bénéficier d'un transfert de connaissances et de technologies avec la recherche. 70 % des PME continuent de travailler avec leur partenaire de recherche après la fin du projet.</li>
+<li><strong>Coopération avec la recherche</strong> : grâce au Chèque d'innovation, plus de la moitié des entreprises participantes peuvent désormais bénéficier d'un transfert de savoir et de technologie avec la recherche. 70 % des PME continuent de travailler avec leur partenaire de recherche après la fin du projet.</li>
 <li><strong>Résultats obtenus</strong> : la coopération avec les partenaires de recherche est évaluée avec succès dans presque tous les cas. 63 % des entreprises ont testé et développé avec succès leur idée d'innovation et ont ainsi pleinement atteint cet objectif. Environ un quart des chèques d'innovation sont suivis d'un projet d'innovation.</li>
 </ul>
 <p><a href="./projets-entreprises-chercheurs#cheque-d-innovation">→ Vers les résultats et les graphiques détaillés</a></p>
 </div>
 <div class="card" style="max-width: 600px;">
 <h3 id="projets-de-chercheurs" tabindex="-1"><a class="observablehq-header-anchor" href="#projets-de-chercheurs"><a href="./projets-chercheurs">Projets de chercheurs</a></a></h3>
-<h4 id="projets-d-innovation-sans-partenaire-de-mise-en-uvre" tabindex="-1"><a class="observablehq-header-anchor" href="#projets-d-innovation-sans-partenaire-de-mise-en-uvre"><a href="./projets-chercheurs">Projets d'innovation sans partenaire de mise en œuvre</a></a></h4>
-<p>Les projets d'innovation sans partenaire de mise en œuvre visent à développer des connaissances scientifiques pour des projets à haut risque et à fort potentiel d'innovation en vue d'une application pratique et à faire les premiers pas vers la mise en œuvre.</p>
+<h4 id="projets-d-innovation-sans-partenaire-charge-de-la-mise-en-valeur" tabindex="-1"><a class="observablehq-header-anchor" href="#projets-d-innovation-sans-partenaire-charge-de-la-mise-en-valeur"><a href="./projets-chercheurs">Projets d'innovation sans partenaire chargé de la mise en valeur</a></a></h4>
+<p>Les projets d'innovation sans partenaire chargé de la mise en valeur visent à développer des connaissances scientifiques pour des projets à haut risque et à fort potentiel d'innovation en vue d'une application pratique et à faire les premiers pas vers la mise en œuvre.</p>
 <ul>
 <li><strong>Orientation vers l'application</strong> : un projet sur deux fournit des résultats concluants pour les étapes de mise en œuvre ultérieures et la moitié des projets ont de fortes chances de pouvoir être commercialisés à long terme.</li>
-<li><strong>Collaboration avec des partenaires de mise en œuvre</strong> : dans plus des deux tiers des projets, une collaboration a déjà été mise en place avec des partenaires de mise en œuvre potentiels. Les start-ups et les spin-offs issues de la recherche jouent un rôle important dans le transfert de savoir et de technologie. 38 % des projets ont déjà donné lieu à une telle création d'entreprise ou prévoient de le faire.</li>
+<li><strong>Collaboration avec des partenaires chargés de la mise en valeur</strong> : dans plus des deux tiers des projets, une collaboration a déjà été mise en place avec des partenaires chargés de la mise en valeur potentiels. Les start-up et les spin-off issues de la recherche jouent un rôle important dans le transfert de savoir et de technologie. 38 % des projets ont déjà donné lieu à une telle création d'entreprise ou prévoient de le faire.</li>
 </ul>
 <p><a href="./projets-chercheurs">→ Vers les résultats et les graphiques détaillés</a></p>
 <h4 id="bridge-proof-of-concept" tabindex="-1"><a class="observablehq-header-anchor" href="#bridge-proof-of-concept"><a href="./projets-chercheurs#bridge-proof-of-concept">BRIDGE Proof of Concept</a></a></h4>
-<p>L'offre d'encouragement du Fonds national suisse (FNS) et d'Innosuisse offre aux chercheurs un soutien d'un an pour mener les résultats de leurs recherches à maturité commerciale en les orientant vers des applications pratiques et pour préparer une carrière en dehors de la recherche et des universités.</p>
+<p>L'offre de soutien du Fonds national suisse (FNS) et d’Innosuisse permet aux chercheurs de me-ner leurs résultats de recherche à maturité commerciale, en les orientant vers des applications pratiques, tout en préparant une carrière en dehors du monde académique.</p>
 <ul>
-<li><strong>Création de start-ups issues de la recherche</strong> : environ 70 % des chercheurs soutenus créent une start-up ou une spin-off (start-up avec licence de propriété intellectuelle formelle) après avoir bénéficié de l'aide.</li>
+<li><strong>Création de start-up issues de la recherche</strong> : environ 70 % des chercheurs soutenus créent une start-up ou une spin-off (start-up avec licence de propriété intellectuelle formelle) après avoir bénéficié de l'encouragement.</li>
 </ul>
 <p><a href="./projets-chercheurs#bridge-proof-of-concept">→ Vers les résultats et les graphiques détaillés</a></p>
 </div>
@@ -186,25 +186,25 @@ return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subclus
 <h4 id="innovation-booster" tabindex="-1"><a class="observablehq-header-anchor" href="#innovation-booster"><a href="./aide-au-demarrage-projets-mise-en-reseau">Innovation Booster</a></a></h4>
 <p>Dans le cadre des Innovation Booster thématiques, des idées d'innovation nouvelles et radicales sont développées dans le cadre d'un processus d'innovation ouvert et basé sur le travail en réseau. L'accent est mis sur la phase initiale de la recherche expérimentale d'idées et sur le test des idées. Les idées d'innovation prometteuses doivent être poursuivies dans le cadre de projets.</p>
 <ul>
-<li><strong>Aptitudes et compétences des participants</strong> : La grande majorité des personnes interrogées (82 %) confirment que leur participation à un Innovation Booster leur a permis d'améliorer leurs capacités et leurs compétences en matière de développement et de test d'idées radicales.</li>
+<li><strong>Aptitudes et compétences des participants</strong> : la grande majorité des personnes interrogées (82 %) confirment que leur participation à un Innovation Booster leur a permis d'améliorer leurs capacités et leurs compétences en matière de développement et de test d'idées radicales.</li>
 <li><strong>Poursuite des idées d'innovation</strong> : une idée d'innovation sur deux fait l'objet d'un suivi, souvent avec de nouvelles approches. Cela se traduit par une moyenne de 26 projets d'innovation par an chez Innosuisse.</li>
 </ul>
 <p><a href="./aide-au-demarrage-projets-mise-en-reseau">→ Vers les résultats et les graphiques détaillés</a></p>
 </div>
 <div class="card" style="max-width: 600px; --underline-color: #FF8674;">
-<h3 id="accompagnement-de-start-up" tabindex="-1"><a class="observablehq-header-anchor" href="#accompagnement-de-start-up"><a href="./accompagnement-de-start-ups">Accompagnement de start-up</a></a></h3>
-<h4 id="start-up-coaching" tabindex="-1"><a class="observablehq-header-anchor" href="#start-up-coaching"><a href="./accompagnement-de-start-ups">Start-up Coaching</a></a></h4>
-<p>Le coaching soutient les start-ups ayant une idée commerciale innovante et basée sur la science en leur offrant un accompagnement sur mesure à différentes étapes de la création de l'entreprise. L'offre d'encouragement se compose de trois offres coordonnées : Initial, Core et Scale-up Coaching. Les start-ups ont la possibilité de participer à des camps internationaux et à des salons internationaux importants. Les résultats du suivi de l'impact concernent le Start-up Core Coaching.</p>
+<h3 id="accompagnement-de-start-up" tabindex="-1"><a class="observablehq-header-anchor" href="#accompagnement-de-start-up"><a href="./accompagnement-de-start-up">Accompagnement de start-up</a></a></h3>
+<h4 id="start-up-coaching" tabindex="-1"><a class="observablehq-header-anchor" href="#start-up-coaching"><a href="./accompagnement-de-start-up">Start-up Coaching</a></a></h4>
+<p>Le coaching soutient les start-up ayant une idée commerciale innovante et basée sur la science en leur offrant un accompagnement sur mesure à différentes étapes de la création de l'entreprise. L'offre d'encouragement se compose de trois offres coordonnées : Initial, Core et Scale-up Coaching. Les start-up ont la possibilité de participer à des camps internationaux et à des salons internationaux importants. Les résultats du suivi de l'impact concernent le Start-up Core Coaching.</p>
 <ul>
-<li><strong>Soutien des start-ups dans le cadre du Core Coaching</strong> : environ quatre start-ups sur cinq ayant bénéficié d'un coaching confirment que le Core Coaching a contribué de manière significative au développement de la start-up dans au moins un domaine thématique central pour la start-up (78 %). La proportion de start-ups dont les attentes ont été majoritairement satisfaites tout au long du processus de coaching est encore plus élevée, avec 84 %.</li>
-<li><strong>Acquisition de capitaux</strong> : à la fin du Core Coaching, 21 % des start-ups avaient levé plus de 5 millions de francs suisses. Deux tiers d'entre elles ont bénéficié d'un soutien direct et utile pour lever des capitaux dans le cadre du Core Coaching.</li>
+<li><strong>Soutien des start-up dans le cadre du Core Coaching</strong> : environ quatre start-up sur cinq ayant bénéficié d'un coaching confirment que le Core Coaching a contribué de manière significative au développement de la start-up dans au moins un domaine thématique central pour la start-up (78 %). La proportion de start-up dont les attentes ont été majoritairement satisfaites tout au long du processus de coaching est encore plus élevée, avec 84 %.</li>
+<li><strong>Acquisition de capitaux</strong> : à la fin du Core Coaching, 21 % des start-up avaient levé plus de 5 millions de francs suisses. Deux tiers d'entre elles ont bénéficié d'un soutien direct et utile pour lever des capitaux dans le cadre du Core Coaching.</li>
 </ul>
-<p><a href="./accompagnement-de-start-ups">→ Vers les résultats et les graphiques détaillés</a></p>
+<p><a href="./accompagnement-de-start-up">→ Vers les résultats et les graphiques détaillés</a></p>
 </div>
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="next" href="./editorial"><span>Éditorial</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:51:27">Feb 26, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-03-05T08:07:58">Mar 5, 2025</a>.</div>
 </footer>
 </div>
 </body>

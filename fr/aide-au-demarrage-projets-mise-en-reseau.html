@@ -14,9 +14,9 @@
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.a12b38f2.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.68ffb941.js">
-<link rel="modulepreload" href="./_import/functions.862989b8.js">
-<link rel="modulepreload" href="./_import/data.a113fdac.js">
+<link rel="modulepreload" href="./_import/colors.c81f78a8.js">
+<link rel="modulepreload" href="./_import/functions.c8273e5a.js">
+<link rel="modulepreload" href="./_import/data.fcd42f81.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@8.0.0/a9fa94cf.js">
@@ -58,7 +58,7 @@
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
-<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
 <script type="module">
 
 import {define} from "./_observablehq/client.f9f802b7.js";
@@ -69,12 +69,12 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.500e2762.txt","lastModified":1740043972638,"size":28107});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1739458387196,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.4470f889.txt","lastModified":1739895367243,"size":2873});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.c3c13d0e.txt","lastModified":1740152995443,"size":19179});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.128aef0c.txt","lastModified":1741103895466,"size":19175});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.89502fea.txt","lastModified":1739996271440,"size":17883});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.7afa5a80.txt","lastModified":1739889394226,"size":1202});
 
 define({id: "7feea599", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","ib_toipis"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, ib_toipis}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.68ffb941.js"), import("./_import/functions.862989b8.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, ib_toipis}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.c81f78a8.js"), import("./_import/functions.c8273e5a.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,ib_toipis};
 }});
@@ -129,12 +129,12 @@ ib_toipis
     <ol>
     <li class="observablehq-link"><a href="./offres-dencouragement-et-contenus">Offres d&#x27;encouragement et contenus</a></li>
     <li class="observablehq-link"><a href="./resultats-comparatifs">Résultats comparatifs</a></li>
-    <li class="observablehq-link"><a href="./projets-entreprises-chercheurs#projets-dentreprises-avec-des-chercheurs">Projets d&#x27;innovation avec partenaire de mise on oeuvre</a></li>
+    <li class="observablehq-link"><a href="./projets-entreprises-chercheurs#projets-dentreprises-avec-des-chercheurs">Projets d&#x27;innovation avec partenaire chargé de la mise en valeur</a></li>
     <li class="observablehq-link"><a href="./projets-entreprises-chercheurs#cheque-d-innovation">Chèque innovation</a></li>
-    <li class="observablehq-link"><a href="./projets-chercheurs">Projets d&#x27;innovation sans partenaire de mise on oeuvre</a></li>
+    <li class="observablehq-link"><a href="./projets-chercheurs">Projets d&#x27;innovation sans partenaire chargé de la mise en valeur</a></li>
     <li class="observablehq-link"><a href="./projets-chercheurs#bridge-proof-of-concept">BRIDGE Proof of Concept</a></li>
     <li class="observablehq-link observablehq-link-active"><a href="./aide-au-demarrage-projets-mise-en-reseau">Innovation Booster</a></li>
-    <li class="observablehq-link"><a href="./accompagnement-de-start-ups">Start-up Core Coaching</a></li>
+    <li class="observablehq-link"><a href="./accompagnement-de-start-up">Start-up Core Coaching</a></li>
     </ol>
   </section>
 </nav>
@@ -155,7 +155,7 @@ ib_toipis
 <p>Les Innovation Booster soutenus par Innosuisse se concentrent chacun sur un thème d'innovation spécifique. Ils couvrent un large éventail de thèmes, allant de l'intelligence artificielle au tourisme en passant par la technologie alimentaire.</p>
 <p>En 2023, Innosuisse a soutenu 17 Innovation Booster actifs dans différents domaines thématiques. À l'automne 2023, 8 autres Innovation Booster ont été approuvés pour les années 2024-2027. Ils ont démarré en janvier 2024. L'encouragement des Innovation Booster soutenus en 2021 s'achèvera fin 2024. Les résultats présentés ici sont basés sur des données de suivi existantes dans un horizon d'impact plus court.</p>
 <p>Les Innovation Booster développent des idées d'innovation nouvelles et radicales et les testent dans le cadre d'un processus d'innovation ouvert et basé sur un réseau, avec une culture d'innovation ouverte. Les partenaires des réseaux soutenus sont issus du monde de la recherche, de l'économie et de la société. L'accent est mis sur la phase initiale de génération et de test d'idées, en utilisant des méthodes expérimentales telles que le « design thinking » et la « co-création ».</p>
-<p>Le développement d'idées d'innovation testées avec succès, y compris dans le cadre de projets d'innovation subventionnés, est un objectif central de l'Innovation Booster. Cela permet de promouvoir des innovations durables et basées sur la science, et d'apporter une valeur ajoutée concrète et des avantages concurrentiels aux partenaires de mise en œuvre et au système d'innovation suisse.</p>
+<p>Le développement d'idées d'innovation testées avec succès, y compris dans le cadre de projets d'innovation encouragés, est un objectif central de l'Innovation Booster. Cela permet de promouvoir des innovations durables et basées sur la science, et d'apporter une valeur ajoutée concrète et des avantages concurrentiels aux partenaires chargés de la mise en valeur et au système d'innovation suisse.</p>
 <p>Une évaluation de l'impact réalisée en 2025 permettra d'approfondir les résultats présentés ici et de tirer des conclusions sur les effets à long terme pour le développement des idées d'innovation testées.</p>
 <h3 id="les-innovation-booster-renforcent-les-competences-des-participants-en-matiere-d-innovation" tabindex="-1"><a class="observablehq-header-anchor" href="#les-innovation-booster-renforcent-les-competences-des-participants-en-matiere-d-innovation">Les Innovation Booster renforcent les compétences des participants en matière d'innovation</a></h3>
 <p>Les Innovation Booster ont pour objectif de développer des idées d'innovation nouvelles et radicales pendant la phase de défi, afin de tester leur faisabilité et leur potentiel en termes de demande et d'orientation utilisateur lors d'une phase ultérieure d'examen des idées.</p>
@@ -167,8 +167,8 @@ ib_toipis
 <div> <observablehq-loading></observablehq-loading><!--:b24937d4:--></div>
 <div><observablehq-loading></observablehq-loading><!--:9c1396f6:--></div></div></main>
 <footer id="observablehq-footer">
-<nav><a rel="prev" href="./projets-chercheurs"><span>Projets d&#x27;innovation sans partenaire de mise on oeuvre</span></a><a rel="next" href="./accompagnement-de-start-ups"><span>Start-up Core Coaching</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:51:27">Feb 26, 2025</a>.</div>
+<nav><a rel="prev" href="./projets-chercheurs"><span>Projets d&#x27;innovation sans partenaire chargé de la mise en valeur</span></a><a rel="next" href="./accompagnement-de-start-up"><span>Start-up Core Coaching</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-03-05T08:07:58">Mar 5, 2025</a>.</div>
 </footer>
 </div>
 </body>

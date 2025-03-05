@@ -14,9 +14,9 @@
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.a12b38f2.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.68ffb941.js">
-<link rel="modulepreload" href="./_import/functions.862989b8.js">
-<link rel="modulepreload" href="./_import/data.a113fdac.js">
+<link rel="modulepreload" href="./_import/colors.c81f78a8.js">
+<link rel="modulepreload" href="./_import/functions.c8273e5a.js">
+<link rel="modulepreload" href="./_import/data.fcd42f81.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@8.0.0/a9fa94cf.js">
@@ -58,7 +58,7 @@
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
-<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
 <script type="module">
 
 import {define} from "./_observablehq/client.f9f802b7.js";
@@ -69,12 +69,12 @@ registerFile("./data/daten_ergebnisse.txt", {"name":"./data/daten_ergebnisse.txt
 registerFile("./data/daten_innovationsart.txt", {"name":"./data/daten_innovationsart.txt","mimeType":"text/plain","path":"./_file/data/daten_innovationsart.500e2762.txt","lastModified":1740043972638,"size":28107});
 registerFile("./data/daten_kof_did.txt", {"name":"./data/daten_kof_did.txt","mimeType":"text/plain","path":"./_file/data/daten_kof_did.8a69cf01.txt","lastModified":1739458387196,"size":931});
 registerFile("./data/daten_subcluster.txt", {"name":"./data/daten_subcluster.txt","mimeType":"text/plain","path":"./_file/data/daten_subcluster.4470f889.txt","lastModified":1739895367243,"size":2873});
-registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.c3c13d0e.txt","lastModified":1740152995443,"size":19179});
+registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeType":"text/plain","path":"./_file/data/daten_waffle.128aef0c.txt","lastModified":1741103895466,"size":19175});
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.89502fea.txt","lastModified":1739996271440,"size":17883});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.7afa5a80.txt","lastModified":1739889394226,"size":1202});
 
 define({id: "39893348", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","leverage","kof_did_plot"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.68ffb941.js"), import("./_import/functions.862989b8.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.c81f78a8.js"), import("./_import/functions.c8273e5a.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,leverage,kof_did_plot};
 }});
@@ -165,12 +165,12 @@ draw_waffle("br_spinoffs", -115)
     <ol>
     <li class="observablehq-link"><a href="./offres-dencouragement-et-contenus">Offres d&#x27;encouragement et contenus</a></li>
     <li class="observablehq-link"><a href="./resultats-comparatifs">Résultats comparatifs</a></li>
-    <li class="observablehq-link"><a href="./projets-entreprises-chercheurs#projets-dentreprises-avec-des-chercheurs">Projets d&#x27;innovation avec partenaire de mise on oeuvre</a></li>
+    <li class="observablehq-link"><a href="./projets-entreprises-chercheurs#projets-dentreprises-avec-des-chercheurs">Projets d&#x27;innovation avec partenaire chargé de la mise en valeur</a></li>
     <li class="observablehq-link"><a href="./projets-entreprises-chercheurs#cheque-d-innovation">Chèque innovation</a></li>
-    <li class="observablehq-link observablehq-link-active"><a href="./projets-chercheurs">Projets d&#x27;innovation sans partenaire de mise on oeuvre</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./projets-chercheurs">Projets d&#x27;innovation sans partenaire chargé de la mise en valeur</a></li>
     <li class="observablehq-link observablehq-link-active"><a href="./projets-chercheurs#bridge-proof-of-concept">BRIDGE Proof of Concept</a></li>
     <li class="observablehq-link"><a href="./aide-au-demarrage-projets-mise-en-reseau">Innovation Booster</a></li>
-    <li class="observablehq-link"><a href="./accompagnement-de-start-ups">Start-up Core Coaching</a></li>
+    <li class="observablehq-link"><a href="./accompagnement-de-start-up">Start-up Core Coaching</a></li>
     </ol>
   </section>
 </nav>
@@ -182,25 +182,25 @@ draw_waffle("br_spinoffs", -115)
 <main id="observablehq-main" class="observablehq">
 <div class="observablehq observablehq--block"><!--:39893348:--></div>
 <h1 id="projets-de-chercheurs" tabindex="-1"><a class="observablehq-header-anchor" href="#projets-de-chercheurs">Projets de chercheurs</a></h1>
-<h2 id="projets-d-innovation-sans-partenaire-de-mise-en-uvre" tabindex="-1"><a class="observablehq-header-anchor" href="#projets-d-innovation-sans-partenaire-de-mise-en-uvre">Projets d'innovation sans partenaire de mise en œuvre</a></h2>
+<h2 id="projets-d-innovation-sans-partenaire-charge-de-la-mise-en-valeur" tabindex="-1"><a class="observablehq-header-anchor" href="#projets-d-innovation-sans-partenaire-charge-de-la-mise-en-valeur">Projets d'innovation sans partenaire chargé de la mise en valeur</a></h2>
 <div style="display: flex;">
   <div><observablehq-loading></observablehq-loading><!--:26d78559:--></div>
   <div><observablehq-loading></observablehq-loading><!--:2401ef32:--></div>
 </div>
-<p>Les projets d'innovation sans partenaire de mise en œuvre visent à transformer les découvertes scientifiques en solutions pratiques. Ils permettent aux chercheurs de développer des projets à haut risque et à fort potentiel d'innovation en vue de leur application et de faire les premiers pas vers leur mise en œuvre. La condition préalable à l'encouragement est un bénéfice potentiel clair pour l'économie ou la société ainsi que des possibilités de mise en œuvre pour une application ultérieure.</p>
-<p>Les projets d'innovation sans partenaire de mise en œuvre soutiennent ainsi des projets de recherche et d'innovation axés sur l'application et visent à long terme une mise en œuvre économique.</p>
+<p>Les projets d'innovation sans partenaire chargé de la mise en valeur visent à transformer les découvertes scientifiques en solutions pratiques. Ils permettent aux chercheurs de développer des projets à haut risque et à fort potentiel d'innovation en vue de leur application et de faire les premiers pas vers leur mise en œuvre. La condition préalable à l'encouragement est un bénéfice potentiel clair pour l'économie ou la société ainsi que des possibilités de mise en œuvre pour une application ultérieure.</p>
+<p>Les projets d'innovation sans partenaire chargé de la mise en valeur soutiennent ainsi des projets de recherche et d'innovation axés sur l'application et visent à long terme une mise en œuvre économique.</p>
 <h3 id="des-etapes-reussies-vers-la-mise-en-uvre" tabindex="-1"><a class="observablehq-header-anchor" href="#des-etapes-reussies-vers-la-mise-en-uvre">Des étapes réussies vers la mise en œuvre</a></h3>
 <p>Quatre projets d'innovation sur cinq sont parvenus à prouver leur faisabilité. Un projet sur deux fournit des résultats concluants pour les étapes de mise en œuvre ultérieures et a de fortes chances d'être commercialisé à long terme.</p>
 <div><observablehq-loading></observablehq-loading><!--:fa1b40d8:--></div>
-<h3 id="l-output-scientifique-est-plus-eleve-que-pour-les-projets-avec-des-partenaires-de-mise-en-uvre" tabindex="-1"><a class="observablehq-header-anchor" href="#l-output-scientifique-est-plus-eleve-que-pour-les-projets-avec-des-partenaires-de-mise-en-uvre">L'output scientifique est plus élevé que pour les projets avec des partenaires de mise en œuvre</a></h3>
+<h3 id="l-output-scientifique-est-plus-eleve-que-pour-les-projets-avec-des-partenaires-charges-de-la-mise-en-valeur" tabindex="-1"><a class="observablehq-header-anchor" href="#l-output-scientifique-est-plus-eleve-que-pour-les-projets-avec-des-partenaires-charges-de-la-mise-en-valeur">L'output scientifique est plus élevé que pour les projets avec des partenaires chargés de la mise en valeur</a></h3>
 <p>Les résultats scientifiques publiés sont des formes importantes de transfert de savoir et de technologie (TST). Ils servent à diffuser les résultats du projet dans la recherche et l'application et renforcent le TST. Les thèses sont une indication de la nouveauté et de la qualité de la recherche et du risque associé à la recherche de solutions (technologiques) pour la mise en œuvre.</p>
-<p>Par rapport aux projets d'innovation avec partenaire de mise en œuvre, la part des résultats scientifiques publiés dans des revues spécialisées et la part des thèses de doctorat sont, comme on pouvait s'y attendre, nettement plus élevées. La part des projets interdisciplinaires est similaire, la part des projets transdisciplinaires est légèrement inférieure, car moins d'acteurs sont impliqués.</p>
+<p>Par rapport aux projets d'innovation avec partenaire chargé de la mise en valeur, la part des résultats scientifiques publiés dans des revues spécialisées et la part des thèses de doctorat sont, comme on pouvait s'y attendre, nettement plus élevées. La part des projets interdisciplinaires est similaire, la part des projets transdisciplinaires est légèrement inférieure, car moins d'acteurs sont impliqués.</p>
   <div style="display: flex; gap: 15px;">
 <observablehq-loading></observablehq-loading><!--:8b1fdd6b:-->
 <observablehq-loading></observablehq-loading><!--:d93e2613:-->
 </div>
-<h4 id="les-projets-d-innovation-sans-partenaire-de-mise-en-uvre-sont-axes-sur-la-recherche-et-la-mise-en-uvre" tabindex="-1"><a class="observablehq-header-anchor" href="#les-projets-d-innovation-sans-partenaire-de-mise-en-uvre-sont-axes-sur-la-recherche-et-la-mise-en-uvre">Les projets d'innovation sans partenaire de mise en œuvre sont axés sur la recherche et la mise en œuvre.</a></h4>
-<p>Dans plus des deux tiers des projets, une collaboration a déjà été mise en place avec des partenaires de mise en œuvre potentiels. Outre le transfert de savoir et de technologie vers des entreprises établies, les start-ups et les spin-offs issues de la recherche jouent un rôle important dans le TST. Dans 38 % des projets, un tel essaimage a déjà été réalisé ou est prévu.</p>
+<h4 id="les-projets-d-innovation-sans-partenaire-charge-de-la-mise-en-valeur-sont-axes-sur-la-recherche-et-la-mise-en-uvre" tabindex="-1"><a class="observablehq-header-anchor" href="#les-projets-d-innovation-sans-partenaire-charge-de-la-mise-en-valeur-sont-axes-sur-la-recherche-et-la-mise-en-uvre">Les projets d'innovation sans partenaire chargé de la mise en valeur sont axés sur la recherche et la mise en œuvre.</a></h4>
+<p>Dans plus des deux tiers des projets, une collaboration a déjà été mise en place avec des partenaires chargés de la mise en valeur potentiels. Outre le transfert de savoir et de technologie vers des entreprises établies, les start-up et les spin-off issues de la recherche jouent un rôle important dans le TST. Dans 38 % des projets, un tel essaimage a déjà été réalisé ou est prévu.</p>
 <div><observablehq-loading></observablehq-loading><!--:f7661527:--></div>
 <h3 id="l-atteinte-des-objectifs-est-elevee-dans-le-domaine-de-la-recherche-mais-plus-faible-dans-le-domaine-de-l-application-et-de-la-mise-en-uvre" tabindex="-1"><a class="observablehq-header-anchor" href="#l-atteinte-des-objectifs-est-elevee-dans-le-domaine-de-la-recherche-mais-plus-faible-dans-le-domaine-de-l-application-et-de-la-mise-en-uvre">L'atteinte des objectifs est élevée dans le domaine de la recherche, mais plus faible dans le domaine de l'application et de la mise en œuvre.</a></h3>
 <p>Les objectifs de recherche sont entièrement atteints, voire dépassés, dans la grande majorité des projets financés. L'atteinte des objectifs en matière d'application est nettement plus faible. Cela peut indiquer des risques élevés pour la mise sur le marché, ou peut-être que davantage de temps et de ressources sont nécessaires pour développer des solutions, ou encore que les porteurs de projets soient moins expérimentés pour mener un développement technologique ou une solution plus loin dans la mise en œuvre sur le marché.</p>
@@ -214,13 +214,13 @@ draw_waffle("br_spinoffs", -115)
   <div><observablehq-loading></observablehq-loading><!--:f4854c3e:--></div>
   </div>
 <p>BRIDGE est le programme de financement commun d'Innosuisse et du Fonds national suisse (FNS). Il associe la recherche fondamentale et la recherche appliquée à la mise en œuvre. L'offre d'encouragement BRIDGE Proof of Concept s'adresse aux jeunes chercheurs qui travaillent à l'interface entre la recherche fondamentale et l'innovation basée sur la science. Le programme offre un soutien d'un an pour développer les résultats de la recherche en vue d'une application pratique, dans le but de les commercialiser et de préparer une carrière en dehors du monde universitaire.</p>
-<h3 id="bridge-proof-of-concept-mene-a-la-creation-de-start-ups-et-de-spin-offs" tabindex="-1"><a class="observablehq-header-anchor" href="#bridge-proof-of-concept-mene-a-la-creation-de-start-ups-et-de-spin-offs">BRIDGE Proof of Concept mène à la création de start-ups et de spin-offs</a></h3>
-<p>BRIDGE Proof of Concept montre son efficacité à travers la part des soutiens qui aboutissent à une création d'entreprise. Plus de deux chercheurs sur trois ayant bénéficié d'un soutien créent par la suite une start-up ou un spin-off (start-up avec octroi de licence de propriété intellectuelle formelle). Ce chiffre est presque deux fois plus élevé que pour les projets d'innovation sans partenaire de mise en œuvre. Il convient toutefois de noter que l'enquête est différente. Pour les projets d'innovation sans partenaire de mise en œuvre, l'enquête a lieu à la fin du projet, tandis que pour BRIDGE Proof of Concept, une enquête distincte a été réalisée, qui est très actuelle (2024) et couvre donc une période plus longue.</p>
+<h3 id="bridge-proof-of-concept-mene-a-la-creation-de-start-up-et-de-spin-off" tabindex="-1"><a class="observablehq-header-anchor" href="#bridge-proof-of-concept-mene-a-la-creation-de-start-up-et-de-spin-off">BRIDGE Proof of Concept mène à la création de start-up et de spin-off</a></h3>
+<p>BRIDGE Proof of Concept montre son efficacité à travers la part des soutiens qui aboutissent à une création d'entreprise. Plus de deux chercheurs sur trois ayant bénéficié d'un soutien créent par la suite une start-up ou un spin-off (start-up avec octroi de licence de propriété intellectuelle formelle). Ce chiffre est presque deux fois plus élevé que pour les projets d'innovation sans partenaire chargé de la mise en valeur. Il convient toutefois de noter que l'enquête est différente. Pour les projets d'innovation sans partenaire chargé de la mise en valeur, l'enquête a lieu à la fin du projet, tandis que pour BRIDGE Proof of Concept, une enquête distincte a été réalisée, qui est très actuelle (2024) et couvre donc une période plus longue.</p>
 <p><observablehq-loading></observablehq-loading><!--:66ea492b:--></p>
 </main>
 <footer id="observablehq-footer">
-<nav><a rel="prev" href="./projets-entreprises-chercheurs#projets-dentreprises-avec-des-chercheurs"><span>Projets d&#x27;innovation avec partenaire de mise on oeuvre</span></a><a rel="next" href="./aide-au-demarrage-projets-mise-en-reseau"><span>Innovation Booster</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:51:27">Feb 26, 2025</a>.</div>
+<nav><a rel="prev" href="./projets-entreprises-chercheurs#projets-dentreprises-avec-des-chercheurs"><span>Projets d&#x27;innovation avec partenaire chargé de la mise en valeur</span></a><a rel="next" href="./aide-au-demarrage-projets-mise-en-reseau"><span>Innovation Booster</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-03-05T08:07:58">Mar 5, 2025</a>.</div>
 </footer>
 </div>
 </body>
