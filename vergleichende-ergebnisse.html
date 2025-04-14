@@ -14,15 +14,17 @@
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.d690918f.js">
-<link rel="modulepreload" href="./_import/functions.c45e3843.js">
+<link rel="modulepreload" href="./_import/functions.81c922fb.js">
 <link rel="modulepreload" href="./_import/data.3d5bb675.js">
+<link rel="modulepreload" href="./_import/colors.6e42c185.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
-<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
 <link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
 <link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
 <link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
@@ -52,8 +54,6 @@
 <link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
 <link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
 <link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
-<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
-<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
@@ -73,10 +73,10 @@ registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeT
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
-define({id: "9cf2776e", outputs: ["html","color_inst","color_zufrieden","grey_innosuisse","black_innosuisse","coloredUnderline","draw_result","draw_innoart","draw_dn","df_zufrieden"], body: async () => {
-const [{html}, {color_inst, color_zufrieden, grey_innosuisse, black_innosuisse}, {coloredUnderline, draw_result, draw_innoart, draw_dn}, {df_zufrieden}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.c45e3843.js"), import("./_import/data.3d5bb675.js")]);
+define({id: "2caee14f", outputs: ["html","coloredUnderline","draw_result","draw_innoart","draw_dn","draw_result_zf_legend","df_zufrieden"], body: async () => {
+const [{html}, {coloredUnderline, draw_result, draw_innoart, draw_dn, draw_result_zf_legend}, {df_zufrieden}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/functions.81c922fb.js"), import("./_import/data.3d5bb675.js")]);
 
-return {html,color_inst,color_zufrieden,grey_innosuisse,black_innosuisse,coloredUnderline,draw_result,draw_innoart,draw_dn,df_zufrieden};
+return {html,coloredUnderline,draw_result,draw_innoart,draw_dn,draw_result_zf_legend,df_zufrieden};
 }});
 
 define({id: "12f8bff4", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
@@ -85,9 +85,9 @@ coloredUnderline("Start-up Core Coaching","Start-up Core Coaching")
 ))
 }});
 
-define({id: "32a4b4ec", mode: "inline", inputs: ["Plot","color_zufrieden","black_innosuisse","display"], body: async (Plot,color_zufrieden,black_innosuisse,display) => {
+define({id: "25f01a80", mode: "inline", inputs: ["draw_result_zf_legend","display"], body: async (draw_result_zf_legend,display) => {
 display(await(
-Plot.legend({color: color_zufrieden,swatchSize: 12, style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse}})
+draw_result_zf_legend()
 ))
 }});
 
@@ -324,12 +324,12 @@ draw_dn("nachhaltig", "Start-up Core Coaching", false, -8)
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Schweizerische Agentur für Innovationsförderung</a>
 </header>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:9cf2776e:--></div>
+<div class="observablehq observablehq--block"><!--:2caee14f:--></div>
 <h2 id="vergleichende-ergebnisse-zu-foerderangeboten" tabindex="-1"><a class="observablehq-header-anchor" href="#vergleichende-ergebnisse-zu-foerderangeboten">Vergleichende Ergebnisse zu Förderangeboten</a></h2>
 <h3 id="zufriedenheit-mit-den-foerderangeboten-von-innosuisse-ist-durchwegs-hoch" tabindex="-1"><a class="observablehq-header-anchor" href="#zufriedenheit-mit-den-foerderangeboten-von-innosuisse-ist-durchwegs-hoch">Zufriedenheit mit den Förderangeboten von Innosuisse ist durchwegs hoch</a></h3>
 <p>Die Fördernehmer von Innosuisse sind mit der Innovationsförderung von Innosuisse und deren Umsetzung zufrieden bis sehr zufrieden. Die Anteile der hier dargestellten Instrumente liegen über 80&nbsp;%, beim <observablehq-loading></observablehq-loading><!--:12f8bff4:--> sind es mehr als zwei Drittel. Nur sehr geringe Anteile (≤ 1 %) sind mit den Instrumenten von Innosuisse unzufrieden.</p>
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 0px;">
-<p><observablehq-loading></observablehq-loading><!--:32a4b4ec:-->
+<p><observablehq-loading></observablehq-loading><!--:25f01a80:-->
 <observablehq-loading></observablehq-loading><!--:087b8d6e:-->
 <observablehq-loading></observablehq-loading><!--:35397444:-->
 <observablehq-loading></observablehq-loading><!--:69c2c469:-->
@@ -380,7 +380,7 @@ Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit
 <p class="comment">Gestellte Frage: Kann das von Innosuisse geförderte Projekt oder die Projektidee einen Beitrag zur ökologischen und/oder sozialen Nachhaltigkeit&nbsp;leisten? Einschätzungen der Fördernehmer anhand einer sechsstufigen Bewertungsskala mit vorgegebenen Definitionen: (4) eher hoher Beitrag, (5) hoher Beitrag, (6) sehr hoher Beitrag.</p></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./foerderangebote-und-inhalte"><span>Förderangebote und Inhalte</span></a><a rel="next" href="./projekte-unternehmen-forschende#projekte-von-unternehmen-mit-forschenden"><span>Innovationsprojekte mit Umsetzungspartner</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T11:22:47">Apr 14, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T12:38:11">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>
