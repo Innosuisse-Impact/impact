@@ -14,15 +14,17 @@
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.83ab9eb5.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.79c45eba.js">
-<link rel="modulepreload" href="./_import/functions.2563eddd.js">
+<link rel="modulepreload" href="./_import/functions.8fe8f28f.js">
+<link rel="modulepreload" href="./_import/colors.f6a0149b.js">
 <link rel="modulepreload" href="./_import/data.cfb39f11.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.17/ddfe0eea.js">
-<link rel="modulepreload" href="./_npm/d3@7.9.0/27911eeb.js">
 <link rel="modulepreload" href="./_npm/arquero@8.0.1/40fb4c55.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/27911eeb.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
 <link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
 <link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
 <link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
@@ -52,8 +54,6 @@
 <link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
 <link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
 <link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
-<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
-<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
@@ -73,10 +73,10 @@ registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeT
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.559abc30.txt","lastModified":1740560035325,"size":17882});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.3e5dec9c.txt","lastModified":1740564491964,"size":1188});
 
-define({id: "39893348", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","leverage","kof_did_plot"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.79c45eba.js"), import("./_import/functions.2563eddd.js")]);
+define({id: "bbb921fa", outputs: ["html","coloredUnderline","drawMiniPlot","draw_waffle","draw_results","leverage","kof_did_plot"], body: async () => {
+const [{html}, {coloredUnderline, drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/functions.8fe8f28f.js")]);
 
-return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,leverage,kof_did_plot};
+return {html,coloredUnderline,drawMiniPlot,draw_waffle,draw_results,leverage,kof_did_plot};
 }});
 
 define({id: "f86ebaa3", mode: "inline", inputs: ["drawMiniPlot","display"], body: async (drawMiniPlot,display) => {
@@ -103,15 +103,21 @@ draw_results("Innovationsprojekte mit UP", false)
 ))
 }});
 
-define({id: "3d192e12", mode: "inline", inputs: ["leverage","display"], body: async (leverage,display) => {
+define({id: "25341f25", mode: "inline", inputs: ["leverage","display"], body: async (leverage,display) => {
 display(await(
-leverage
+leverage()
 ))
 }});
 
-define({id: "f1360ef9", mode: "inline", inputs: ["kof_did_plot","display"], body: async (kof_did_plot,display) => {
+define({id: "39a032e7", mode: "inline", inputs: ["kof_did_plot","display"], body: async (kof_did_plot,display) => {
 display(await(
-kof_did_plot
+kof_did_plot(0)
+))
+}});
+
+define({id: "0d2d2037", mode: "inline", inputs: ["kof_did_plot","display"], body: async (kof_did_plot,display) => {
+display(await(
+kof_did_plot(1)
 ))
 }});
 
@@ -264,7 +270,7 @@ draw_waffle("is_mitnahme", -85, 10)
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Swiss Innovation Agency</a>
 </header>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:39893348:--></div>
+<div class="observablehq observablehq--block"><!--:bbb921fa:--></div>
 <h1 id="projects-by-companies-with-researchers" tabindex="-1"><a class="observablehq-header-anchor" href="#projects-by-companies-with-researchers">Projects by companies with researchers</a></h1>
 <h2 id="innovation-projects-with-implementation-partners" tabindex="-1"><a class="observablehq-header-anchor" href="#innovation-projects-with-implementation-partners">Innovation projects with implementation partners</a></h2>
 <div style="display: flex;">
@@ -286,7 +292,7 @@ draw_waffle("is_mitnahme", -85, 10)
 <p>On average, an innovation project leads to almost 2.5 additional full-time positions in the reporting years 2021-2023. Extrapolated to the 350 projects completed on average during this period, between 800 and 900 new full-time positions will be created at companies in Switzerland.</p>
 <div style="font-size: 20px; font-weight: 700; max-width: 500px; padding-top: 10px; padding-bottom: 20px; text-align: center">+ 800 – 900 full-time positions per year</div>
 <p>The additional jobs created lead directly to value creation in the companies. The leverage effect of the funding is considerable: each franc of funding brings the economy around four francs of value creation, measured three years after the funding and aggregated for three further years. Further indirect multiplier effects in the companies, for example through additional spending on inputs by the companies, are not included here. When the indirect effects are included, the multiplier is estimated to be around CHF 11. The results presented in this report also show that the impact of innovation promotion extends far beyond the immediate economic effects <a href="./_file/data/methodik-volkswirtschaft-innosuisse-ebp.pdf" target="_blank">(EBP, 2025)</a>.</p>
-<div><observablehq-loading></observablehq-loading><!--:3d192e12:--></div>
+<div><observablehq-loading></observablehq-loading><!--:25341f25:--></div>
 <div class="card" style="max-width: 640px">
 <h4>Scientific study proves direct impact of innovation promotion on sales and employment</h4>
 <p>Results from the KOF Swiss Economic Institute at ETH Zurich show that funding for innovation projects increases the <strong>sales</strong> of the participating companies by an average of <strong>21%</strong> over the following five years. The comparison is based on Swiss companies that have not received or applied for funding from Innosuisse, but which otherwise have similar characteristics, such as spending on research and development, the level of education of the workforce or the competitive environment.</p>
@@ -313,7 +319,8 @@ Source:
     </li>
 </ul>
 </div>
-<div class="card" style="background-color: white"><observablehq-loading></observablehq-loading><!--:f1360ef9:--></div></div>
+<div class="card" style="background-color: white"><observablehq-loading></observablehq-loading><!--:39a032e7:--></div>
+<div class="card" style="background-color: white"><observablehq-loading></observablehq-loading><!--:0d2d2037:--></div></div>
 <h3 id="innosuisse-supports-world-market-firsts-and-disruptive-innovations" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-supports-world-market-firsts-and-disruptive-innovations">Innosuisse supports world market firsts and disruptive innovations</a></h3>
 <p>33% of the funded innovation projects aim to develop innovations for the international and global market. This provides Swiss companies with increased support to help them become or remain internationally competitive. As shown in the chart above, at the same time, around 29% of funded projects have the potential to strongly influence or redefine markets with disruptive innovations.</p>
   <div style="display: flex; gap: 40px;">
@@ -379,7 +386,7 @@ Source:
 </div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./comparative-results"><span>Comparative results</span></a><a rel="next" href="./projects-researchers"><span>Innovation projects without implementation partner</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T11:49:11">Feb 26, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T17:29:39">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>
