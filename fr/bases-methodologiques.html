@@ -14,15 +14,17 @@
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.a12b38f2.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.c81f78a8.js">
-<link rel="modulepreload" href="./_import/functions.c8273e5a.js">
+<link rel="modulepreload" href="./_import/functions.fc29eff4.js">
+<link rel="modulepreload" href="./_import/colors.ef670fbf.js">
 <link rel="modulepreload" href="./_import/data.fcd42f81.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
-<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@8.0.0/a9fa94cf.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
 <link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
 <link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
 <link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
@@ -52,8 +54,6 @@
 <link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
 <link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
 <link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
-<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
-<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
@@ -73,10 +73,10 @@ registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeT
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.89502fea.txt","lastModified":1739996271440,"size":17883});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.7afa5a80.txt","lastModified":1739889394226,"size":1202});
 
-define({id: "4a952f2c", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","plot_erhebung"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, plot_erhebung}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.c81f78a8.js"), import("./_import/functions.c8273e5a.js")]);
+define({id: "2a6a6312", outputs: ["html","coloredUnderline","plot_erhebung"], body: async () => {
+const [{html}, {coloredUnderline, plot_erhebung}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/functions.fc29eff4.js")]);
 
-return {html,color_inst,grey_innosuisse,coloredUnderline,plot_erhebung};
+return {html,coloredUnderline,plot_erhebung};
 }});
 
 define({id: "d8efc761", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
@@ -109,9 +109,9 @@ coloredUnderline("BRIDGE Proof of Concept","BRIDGE: Proof of Concept")
 ))
 }});
 
-define({id: "bd934341", mode: "inline", inputs: ["plot_erhebung","display"], body: async (plot_erhebung,display) => {
+define({id: "289d75c1", mode: "inline", inputs: ["plot_erhebung","display"], body: async (plot_erhebung,display) => {
 display(await(
-plot_erhebung
+plot_erhebung()
 ))
 }});
 
@@ -204,12 +204,12 @@ coloredUnderline("programme BRIDGE","Förderung für Schweizer Innovationsprojek
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Agence suisse pour l’encouragement de l’innovation</a>
 </header>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:4a952f2c:--></div>
+<div class="observablehq observablehq--block"><!--:2a6a6312:--></div>
 <h2 id="bases-methodologiques" tabindex="-1"><a class="observablehq-header-anchor" href="#bases-methodologiques">Bases méthodologiques</a></h2>
 <h3 id="conception-du-suivi-de-l-impact" tabindex="-1"><a class="observablehq-header-anchor" href="#conception-du-suivi-de-l-impact">Conception du suivi de l'impact</a></h3>
 <p>Après l'élaboration des bases conceptuelles, le suivi de l'impact a été introduit en 2021 auprès des partenaires chargés de la mise en valeur des projets d'innovation par le biais d'enquêtes systématiques, et a depuis été continuellement étendu à d'autres instruments. Les objectifs de mesure de l'impact définis dans les bases ont été atteints et un grand nombre de données significatives sont désormais disponibles. Ils permettent de formuler des déclarations fondées sur les multiples impacts de l'encouragement de l'innovation.</p>
 <p>Le suivi de l'impact d'Innosuisse repose sur des enquêtes obligatoires et exhaustifs auprès de tous les partenaires chargés de la mise en valeur et de recherche des <observablehq-loading></observablehq-loading><!--:d8efc761:-->, des PME bénéficiant des <observablehq-loading></observablehq-loading><!--:a53cc5c3:--> ainsi que de toutes les start-ups participant au <observablehq-loading></observablehq-loading><!--:39ad5b65:-->. Les enquêtes sont menées auprès des partenaires chargés de la mise en valeur des projets d'innovation et des start-ups en coaching, à la fin de la période d'encouragement et trois ans après. Pour les <observablehq-loading></observablehq-loading><!--:d3c4b8e3:--> et les projets <observablehq-loading></observablehq-loading><!--:3e02200f:-->, les résultats sont basés sur les données de suivi de toutes les initiatives en cours.</p>
-<div><observablehq-loading></observablehq-loading><!--:bd934341:--></div>
+<div><observablehq-loading></observablehq-loading><!--:289d75c1:--></div>
 <h3 id="details-des-enquetes" tabindex="-1"><a class="observablehq-header-anchor" href="#details-des-enquetes">Détails des enquêtes</a></h3>
 <p>Dans les enquêtes et les auto-évaluations des bénéficiaires de l'encouragement, on utilise généralement des échelles de 6 points (par exemple (1) aucune importance, (2) importance faible, (3) importance plutôt faible, (4) importance plutôt élevée, (5) importance élevée, (6) importance très élevée). Lorsque cela s'avère pertinent, des questions fermées sont posées et certains indicateurs sont relevés pour obtenir des indicateurs économiques.</p>
 <p>Les enquêtes sont conçues de manière à ce que l'auto-évaluation des bénéficiaires de l'encouragement se concentre sur la caractérisation détaillée des projets innovants et sur l'impact direct de l'encouragement.</p>
@@ -273,7 +273,7 @@ coloredUnderline("programme BRIDGE","Förderung für Schweizer Innovationsprojek
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./editorial"><span>Éditorial</span></a><a rel="next" href="./offres-dencouragement-et-contenus"><span>Offres d&#x27;encouragement et contenus</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-03-05T08:07:58">Mar 5, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T17:30:16">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>

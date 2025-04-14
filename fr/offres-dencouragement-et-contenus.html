@@ -14,15 +14,17 @@
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.a12b38f2.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.c81f78a8.js">
-<link rel="modulepreload" href="./_import/functions.c8273e5a.js">
-<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
+<link rel="modulepreload" href="./_import/functions.fc29eff4.js">
+<link rel="modulepreload" href="./_import/colors.ef670fbf.js">
 <link rel="modulepreload" href="./_import/data.fcd42f81.js">
-<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/arquero@8.0.0/a9fa94cf.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
 <link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
 <link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
 <link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
@@ -52,8 +54,6 @@
 <link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
 <link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
 <link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
-<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
-<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
@@ -73,15 +73,15 @@ registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeT
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.89502fea.txt","lastModified":1739996271440,"size":17883});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.7afa5a80.txt","lastModified":1739889394226,"size":1202});
 
-define({id: "92cf8c60", outputs: ["html","color_inst","color_inst_fr","grey_innosuisse","black_innosuisse","grey_comment","coloredUnderline","draw_fin_plot","n_subcluster"], body: async () => {
-const [{html}, {color_inst, color_inst_fr, grey_innosuisse, black_innosuisse, grey_comment}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.c81f78a8.js"), import("./_import/functions.c8273e5a.js")]);
+define({id: "8238e8bc", outputs: ["html","coloredUnderline","draw_fin_plot","draw_fin_plot_legend","n_subcluster"], body: async () => {
+const [{html}, {coloredUnderline, draw_fin_plot, draw_fin_plot_legend, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/functions.fc29eff4.js")]);
 
-return {html,color_inst,color_inst_fr,grey_innosuisse,black_innosuisse,grey_comment,coloredUnderline,draw_fin_plot,n_subcluster};
+return {html,coloredUnderline,draw_fin_plot,draw_fin_plot_legend,n_subcluster};
 }});
 
-define({id: "d3576d2b", inputs: ["Plot","color_inst_fr","black_innosuisse","display"], body: async (Plot,color_inst_fr,black_innosuisse,display) => {
+define({id: "132bc34d", inputs: ["draw_fin_plot_legend","display"], body: async (draw_fin_plot_legend,display) => {
 display(await(
-Plot.legend({ color: color_inst_fr, columns: 1, swatchSize: 12, style: {fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse}})
+draw_fin_plot_legend()
 ))
 }});
 
@@ -229,9 +229,9 @@ coloredUnderline("Chèques d'innovation","Innovationsscheck")
 ))
 }});
 
-define({id: "0219af3d", mode: "inline", inputs: ["n_subcluster","display"], body: async (n_subcluster,display) => {
+define({id: "21f23d6f", mode: "inline", inputs: ["n_subcluster","display"], body: async (n_subcluster,display) => {
 display(await(
-n_subcluster
+n_subcluster()
 ))
 }});
 
@@ -270,11 +270,11 @@ n_subcluster
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Agence suisse pour l’encouragement de l’innovation</a>
 </header>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:92cf8c60:--></div>
+<div class="observablehq observablehq--block"><!--:8238e8bc:--></div>
 <h2 id="apercu-des-offres-d-encouragement-et-du-contenu-du-suivi-de-l-impact" tabindex="-1"><a class="observablehq-header-anchor" href="#apercu-des-offres-d-encouragement-et-du-contenu-du-suivi-de-l-impact">Aperçu des offres d'encouragement et du contenu du suivi de l'impact</a></h2>
 <p>L'état actuel du suivi de l'impact est tel que, pour toutes les catégories d'offres d'encouragement, il est possible de faire des déclarations sur l'efficacité et sur des comparaisons choisies, au moins pour l'offre d'encouragement la plus importante sur le plan financier. Pour les projets d'innovation pour start-up, il n'y a pas encore de projets achevés. Les lacunes actuelles (en couleur plus claire) seront progressivement comblées.</p>
 <h3 id="offres-d-encouragement-innosuisse" tabindex="-1"><a class="observablehq-header-anchor" href="#offres-d-encouragement-innosuisse">Offres d'encouragement Innosuisse</a></h3>
-<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:d3576d2b:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:132bc34d:--></div>
 <div style="display: grid; grid-template-columns: 1fr; column-gap: 20px; row-gap: 5px;">
   <h5 style="margin-bottom: 0;">Projets d'entreprises avec des chercheurs</h5>
   <observablehq-loading></observablehq-loading><!--:1a4ee608:-->
@@ -303,10 +303,10 @@ n_subcluster
 <li>Les différences dans le domaine « Energy &amp; environment » sont plus faibles et varient entre 9 % pour les <observablehq-loading></observablehq-loading><!--:7bcc2768-1:--> et 17 % pour les <observablehq-loading></observablehq-loading><!--:10312d47:-->.</li>
 <li>Les « Social sciences &amp; business management » sont les plus représentées dans les <observablehq-loading></observablehq-loading><!--:a53cc5c3-1:--> (21 %), sinon les pourcentages sont comparativement plus faibles.</li>
 </ul>
-<div><observablehq-loading></observablehq-loading><!--:0219af3d:--></div></main>
+<div><observablehq-loading></observablehq-loading><!--:21f23d6f:--></div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./bases-methodologiques"><span>Bases méthodologiques</span></a><a rel="next" href="./resultats-comparatifs"><span>Résultats comparatifs</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-03-05T08:07:58">Mar 5, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T17:30:16">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>

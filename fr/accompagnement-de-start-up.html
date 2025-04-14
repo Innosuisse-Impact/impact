@@ -14,15 +14,17 @@
 <link rel="modulepreload" href="./_observablehq/runtime.e080113b.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.a12b38f2.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/colors.c81f78a8.js">
-<link rel="modulepreload" href="./_import/functions.c8273e5a.js">
-<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
+<link rel="modulepreload" href="./_import/functions.fc29eff4.js">
+<link rel="modulepreload" href="./_import/colors.ef670fbf.js">
 <link rel="modulepreload" href="./_import/data.fcd42f81.js">
-<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/arquero@8.0.0/a9fa94cf.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
 <link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
 <link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
 <link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
@@ -52,8 +54,6 @@
 <link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
 <link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
 <link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
-<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
-<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
@@ -73,10 +73,10 @@ registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeT
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.89502fea.txt","lastModified":1739996271440,"size":17883});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.7afa5a80.txt","lastModified":1739889394226,"size":1202});
 
-define({id: "464ae37e", outputs: ["html","color_inst","grey_innosuisse","color_su","black_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","drawMiniPlot1","su_vza"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse, color_su, black_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, drawMiniPlot1, su_vza}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.c81f78a8.js"), import("./_import/functions.c8273e5a.js")]);
+define({id: "ca9619aa", outputs: ["html","coloredUnderline","drawMiniPlot","draw_waffle","draw_results","drawMiniPlot1","su_vza","su_vza_legend"], body: async () => {
+const [{html}, {coloredUnderline, drawMiniPlot, draw_waffle, draw_results, drawMiniPlot1, su_vza, su_vza_legend}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/functions.fc29eff4.js")]);
 
-return {html,color_inst,grey_innosuisse,color_su,black_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,drawMiniPlot1,su_vza};
+return {html,coloredUnderline,drawMiniPlot,draw_waffle,draw_results,drawMiniPlot1,su_vza,su_vza_legend};
 }});
 
 define({id: "d14d9121", mode: "inline", inputs: ["drawMiniPlot","display"], body: async (drawMiniPlot,display) => {
@@ -145,15 +145,15 @@ draw_waffle("scc_capital", -55)
 ))
 }});
 
-define({id: "3b93d978", mode: "inline", inputs: ["su_vza","display"], body: async (su_vza,display) => {
+define({id: "54ebf1df", mode: "inline", inputs: ["su_vza","display"], body: async (su_vza,display) => {
 display(await(
-su_vza
+su_vza()
 ))
 }});
 
-define({id: "af9dfec8", mode: "inline", inputs: ["Plot","color_su","black_innosuisse","display"], body: async (Plot,color_su,black_innosuisse,display) => {
+define({id: "88dc48c0", mode: "inline", inputs: ["su_vza_legend","display"], body: async (su_vza_legend,display) => {
 display(await(
-Plot.legend({ color: color_su, style:{fontSize: "12px", fontFamily: "sans-serif", fontWeight: 200, color: black_innosuisse}})
+su_vza_legend()
 ))
 }});
 
@@ -216,7 +216,7 @@ draw_waffle("scc_patent", -85)
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Agence suisse pour l’encouragement de l’innovation</a>
 </header>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:464ae37e:--></div>
+<div class="observablehq observablehq--block"><!--:ca9619aa:--></div>
 <h1 id="accompagnement-de-start-up" tabindex="-1"><a class="observablehq-header-anchor" href="#accompagnement-de-start-up">Accompagnement de start-up</a></h1>
 <h2 id="start-up-coaching" tabindex="-1"><a class="observablehq-header-anchor" href="#start-up-coaching">Start-up Coaching</a></h2>
 <div style="display: flex;">
@@ -266,8 +266,8 @@ draw_waffle("scc_patent", -85)
 <h3 id="trois-ans-apres-le-coaching-les-start-up-ont-cree-plus-de-onze-emplois-a-temps-plein" tabindex="-1"><a class="observablehq-header-anchor" href="#trois-ans-apres-le-coaching-les-start-up-ont-cree-plus-de-onze-emplois-a-temps-plein">Trois ans après le coaching, les start-up ont créé plus de onze emplois à temps plein</a></h3>
 <p>Pour les start-up, la croissance est un indicateur clé de succès. Trois ans après la fin du programme de coaching, les start-up ont créé en moyenne plus de onze emplois à temps plein supplémentaires. Environ la moitié d'entre elles se trouvent en Suisse. Il apparaît que l'entrée sur le marché et une croissance durable ne se produisent souvent que plus tard, en particulier pour les start-up dans le domaine des « Life Sciences » et celles qui proposent des innovations à haut risque.</p>
 <div>
-<observablehq-loading></observablehq-loading><!--:3b93d978:-->
-<observablehq-loading></observablehq-loading><!--:af9dfec8:-->
+<observablehq-loading></observablehq-loading><!--:54ebf1df:-->
+<observablehq-loading></observablehq-loading><!--:88dc48c0:-->
 </div>
 <h3 id="le-coaching-reflete-et-renforce-la-diversite-de-l-ecosysteme" tabindex="-1"><a class="observablehq-header-anchor" href="#le-coaching-reflete-et-renforce-la-diversite-de-l-ecosysteme">Le coaching reflète et renforce la diversité de l'écosystème</a></h3>
 <p>La proportion de fondatrices dans les start-up ayant bénéficié d'un coaching est de 17 %. Les équipes de fondateurs comptent 35 % de femmes, et cette tendance est à la hausse. En outre, les équipes de fondateurs sont très cosmopolites : 67 % des start-up ont au moins un fondateur de nationalité étrangère, et au total, 43 % des équipes de fondateurs sont composées de membres étrangers en moyenne. Cela souligne le caractère international de la scène des start-up suisses.</p>
@@ -284,7 +284,7 @@ draw_waffle("scc_patent", -85)
 <observablehq-loading></observablehq-loading><!--:fde6325b:--></div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./aide-au-demarrage-projets-mise-en-reseau"><span>Innovation Booster</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-03-05T08:07:58">Mar 5, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T17:30:16">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>
