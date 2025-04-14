@@ -15,7 +15,7 @@
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="./_import/colors.d690918f.js">
-<link rel="modulepreload" href="./_import/functions.1116e96d.js">
+<link rel="modulepreload" href="./_import/functions.c45e3843.js">
 <link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
@@ -58,7 +58,7 @@
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
-<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
 <script type="module">
 
 import {define} from "./_observablehq/client.6c3b6f8d.js";
@@ -74,7 +74,7 @@ registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreic
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "7feea599", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","ib_toipis"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, ib_toipis}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.1116e96d.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, ib_toipis}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.c45e3843.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,ib_toipis};
 }});
@@ -103,9 +103,9 @@ draw_waffle("ib_continued", -100)
 ))
 }});
 
-define({id: "9c1396f6", mode: "inline", inputs: ["ib_toipis","display"], body: async (ib_toipis,display) => {
+define({id: "07e715f3", mode: "inline", inputs: ["ib_toipis","display"], body: async (ib_toipis,display) => {
 display(await(
-ib_toipis
+ib_toipis()
 ))
 }});
 
@@ -166,10 +166,10 @@ ein zentrales Wirkungsziel der Innovation Booster. Damit werden wissenschaftsbas
 <p>Jede zweite geförderte Innovationsidee wird nach Abschluss der Förderung weiterverfolgt, oft mit neuen Lösungsansätzen und auch radikalen Innovationsideen. Die Innovation Booster haben 2021–2023 durchschnittlich zu 36 bewilligten Innovationschecks und 26 bewilligten Innovationsprojekten pro Jahr geführt. Mit einem Innovationsscheck wird die Idee nochmals vertieft mit einem Forschungspartner hinsichtlich Machbarkeit geprüft, bei den Innovationsprojekten werden die Innovationsideen, wissenschaftlich verankert, weiterverfolgt um sie langfristig in die Umsetzung zu führen.</p>
 <div style="display: flex; column-gap: 20px;">
 <div> <observablehq-loading></observablehq-loading><!--:26c5448d:--></div>
-<div><observablehq-loading></observablehq-loading><!--:9c1396f6:--></div></div></main>
+<div><observablehq-loading></observablehq-loading><!--:07e715f3:--></div></div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./projekte-forschende"><span>Innovationsprojekte ohne Umsetzungspartner</span></a><a rel="next" href="./begleitung-start-ups"><span>Start-up Core Coaching</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:55:03">Feb 26, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T11:22:47">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>

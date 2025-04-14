@@ -15,7 +15,7 @@
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="./_import/colors.d690918f.js">
-<link rel="modulepreload" href="./_import/functions.1116e96d.js">
+<link rel="modulepreload" href="./_import/functions.c45e3843.js">
 <link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
@@ -58,7 +58,7 @@
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
-<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
 <script type="module">
 
 import {define} from "./_observablehq/client.6c3b6f8d.js";
@@ -74,7 +74,7 @@ registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreic
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "4a952f2c", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","plot_erhebung"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, plot_erhebung}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.1116e96d.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, plot_erhebung}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.c45e3843.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,plot_erhebung};
 }});
@@ -109,9 +109,9 @@ coloredUnderline("BRIDGE Proof of Concept-Projekten","BRIDGE: Proof of Concept")
 ))
 }});
 
-define({id: "bd934341", mode: "inline", inputs: ["plot_erhebung","display"], body: async (plot_erhebung,display) => {
+define({id: "289d75c1", mode: "inline", inputs: ["plot_erhebung","display"], body: async (plot_erhebung,display) => {
 display(await(
-plot_erhebung
+plot_erhebung()
 ))
 }});
 
@@ -209,7 +209,7 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 <h3 id="konzeption-des-wirkungsmonitorings" tabindex="-1"><a class="observablehq-header-anchor" href="#konzeption-des-wirkungsmonitorings">Konzeption des Wirkungsmonitorings</a></h3>
 <p>Nach einer Erarbeitung von konzeptionellen Grundlagen wurde 2021 das Wirkungsmonitoring bei den Umsetzungspartnern der Innovationsprojekte mit systematischen Befragungen eingeführt und seither kontinuierlich auf weitere Instrumente ausgedehnt. Die in den Grundlagen festgelegten Ziele der Wirkungsmessung sind erreicht worden und mittlerweile liegen eine Vielzahl aussagekräftiger Daten vor. Sie erlauben fundierte Aussagen zu den vielfältigen Wirkungen der Innovationsförderung zu formulieren.</p>
 <p>Das Wirkungsmonitoring von Innosuisse basiert auf obligatorischen Befragungen und Vollerhebungen bei allen Umsetzungs- und Forschungspartnern der <observablehq-loading></observablehq-loading><!--:61683793:-->, der KMU bei den <observablehq-loading></observablehq-loading><!--:b73c2f05:--> sowie bei allen am <observablehq-loading></observablehq-loading><!--:39ad5b65:--> teilnehmenden Start-ups. Die Erhebungen erfolgen bei den Umsetzungspartnern der Innovationsprojekte und den Start-ups im Coaching jeweils beim Abschluss der Förderung und zusätzlich drei Jahre nach Abschluss. Bei den <observablehq-loading></observablehq-loading><!--:d3c4b8e3:--> und den <observablehq-loading></observablehq-loading><!--:25cb720d:--> beruhen die Ergebnisse auf Monitoring-Daten aller laufenden Initiativen.</p>
-<div><observablehq-loading></observablehq-loading><!--:bd934341:--></div>
+<div><observablehq-loading></observablehq-loading><!--:289d75c1:--></div>
 <h3 id="details-der-befragungen-und-vollerhebungen" tabindex="-1"><a class="observablehq-header-anchor" href="#details-der-befragungen-und-vollerhebungen">Details der Befragungen und Vollerhebungen</a></h3>
 <p>Bei den Befragungen und Selbsteinschätzungen der Fördernehmerinnen und Fördernehmer werden in der Regel Skalenbewertungen auf einer 6er-Skala (z.B. (1) keine Bedeutung, (2) geringe Bedeutung, (3) eher geringe Bedeutung, (4) eher hohe Bedeutung, (5) hohe Bedeutung, (6) sehr hohe Bedeutung verwendet). Dort wo sinnvoll, werden Ja-Nein-Fragen gestellt und ausgewählte Kennzahlen zu ökonomischen Kennzahlen erhoben.</p>
 <p>Die Erhebungen sind so konzipiert, dass die Selbsteinschätzung der Fördernehmerinnen und Fördernehmer fokussiert ist auf die detaillierte Charakterisierung der Innovationsvorhaben und auf die direkte Wirkung der Förderung.</p>
@@ -273,7 +273,7 @@ coloredUnderline("BRIDGE Programmes","Förderung für Schweizer Innovationsproje
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./editorial"><span>Editorial</span></a><a rel="next" href="./foerderangebote-und-inhalte"><span>Förderangebote und Inhalte</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:55:03">Feb 26, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T11:22:47">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>

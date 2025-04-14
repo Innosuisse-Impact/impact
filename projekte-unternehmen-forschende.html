@@ -15,7 +15,7 @@
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="./_import/colors.d690918f.js">
-<link rel="modulepreload" href="./_import/functions.1116e96d.js">
+<link rel="modulepreload" href="./_import/functions.c45e3843.js">
 <link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
 <link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
@@ -58,7 +58,7 @@
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
-<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
 <script type="module">
 
 import {define} from "./_observablehq/client.6c3b6f8d.js";
@@ -74,7 +74,7 @@ registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreic
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
 define({id: "39893348", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","cUh3","drawMiniPlot","draw_waffle","getLastDigit","draw_results","leverage","kof_did_plot"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.1116e96d.js")]);
+const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, cUh3, drawMiniPlot, draw_waffle, getLastDigit, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.c45e3843.js")]);
 
 return {html,color_inst,grey_innosuisse,coloredUnderline,cUh3,drawMiniPlot,draw_waffle,getLastDigit,draw_results,leverage,kof_did_plot};
 }});
@@ -103,15 +103,15 @@ draw_results("Innovationsprojekte mit UP", false)
 ))
 }});
 
-define({id: "3d192e12", mode: "inline", inputs: ["leverage","display"], body: async (leverage,display) => {
+define({id: "25341f25", mode: "inline", inputs: ["leverage","display"], body: async (leverage,display) => {
 display(await(
-leverage
+leverage()
 ))
 }});
 
-define({id: "f1360ef9", mode: "inline", inputs: ["kof_did_plot","display"], body: async (kof_did_plot,display) => {
+define({id: "ab8d56de", mode: "inline", inputs: ["kof_did_plot","display"], body: async (kof_did_plot,display) => {
 display(await(
-kof_did_plot
+kof_did_plot()
 ))
 }});
 
@@ -286,7 +286,7 @@ draw_waffle("is_mitnahme", -85, 5)
 <p>Ein Innovationsprojekt führt im Durchschnitt der Berichtsjahre 2021-2023 zu knapp 2.5 zusätzlichen Vollzeitstellen. Hochgerechnet auf die in diesem Zeitraum durchschnittlich 350 abgeschlossenen Projekte, werden somit bei den Unternehmen in der Schweiz zwischen 800 und 900 neue Vollzeitstellen geschaffen.</p>
 <div style="font-size: 20px; font-weight: 700; max-width: 500px; padding-top: 10px; padding-bottom: 20px; text-align: center">+ 800 – 900 Vollzeitstellen pro Jahr</div>
 <p>DDie zusätzlich geschaffenen Arbeitsstellen führen direkt zu Wertschöpfung bei den Unternehmen. Die Hebelwirkung der Förderung ist beachtlich: Jeder Förderfranken bringt der Wirtschaft rund vier Wertschöpfungsfranken, gemessen drei Jahre nach der Förderung und summiert für drei weitere Jahre. Weitere indirekte Multiplikatoreffekte bei den Unternehmen, zum Beispiel über zusätzliche Ausgaben für Vorleistungen der Unternehmen, sind hier nicht eingerechnet. Mit den indirekten Effekten wird der Multiplikator auf rund 11 Franken geschätzt. Zudem verdeutlichen die in diesem Bericht präsentierten Ergebnisse, dass die Auswirkungen der Innovationsförderung weit über die unmittelbaren wirtschaftlichen Effekte hinausgehen <a href="./_file/data/methodik-volkswirtschaft-innosuisse-ebp.pdf" target="_blank">(EBP, 2025)</a>.</p>
-<div><observablehq-loading></observablehq-loading><!--:3d192e12:--></div>
+<div><observablehq-loading></observablehq-loading><!--:25341f25:--></div>
 <div class="card" style="max-width: 640px">
 <h4>Wissenschaftliche Studie belegt direkte Wirkung von Innovationsförderung auf Umsatz und Beschäftigung</h4>
 <p>Ergebnisse der Konjunkturforschungsstelle (KOF) der ETH Zürich zeigen, dass die Förderung von Innovationsprojekten den <strong>Umsatz</strong> der beteiligten Unternehmen in den darauffolgenden fünf Jahren um durchschnittlich <strong>21&nbsp;%</strong> steigert. Der Vergleich bezieht sich auf Schweizer Unternehmen, die keine Förderung von Innosuisse erhalten oder beantragt haben, aber ansonsten ähnliche Merkmale aufweisen, wie zum Beispiel Ausgaben für Forschung und Entwicklung, Bildungsstand der Belegschaft oder Wettbewerbsumfeld.</p>
@@ -314,7 +314,7 @@ Quelle:
     </li>
 </ul>
 </div>
-<div class="card" style="background-color: white"><observablehq-loading></observablehq-loading><!--:f1360ef9:--></div></div>
+<div class="card" style="background-color: white"><observablehq-loading></observablehq-loading><!--:ab8d56de:--></div></div>
 <h3 id="innosuisse-unterstuetzt-weltmarktneuheiten-und-disruptive-innovationen" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-unterstuetzt-weltmarktneuheiten-und-disruptive-innovationen">Innosuisse unterstützt Weltmarktneuheiten und disruptive Innovationen</a></h3>
 <p>33&nbsp;% der geförderten Innovationsprojekte zielen darauf ab, Neuheiten für den internationalen und globalen Markt zu entwickeln. Damit werden Schweizer Unternehmen verstärkt unterstützt international wettbewerbsfähig zu sein oder zu bleiben. Wie bereits dargestellt, haben gleichzeitig rund 29&nbsp;% der geförderten Projekte das Potenzial mit disruptiven Innovationen die Märkte stark zu beeinflussen oder neu zu definieren.</p>
   <div style="display: flex; gap: 40px;">
@@ -380,7 +380,7 @@ Quelle:
 </div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./vergleichende-ergebnisse"><span>Vergleichende Ergebnisse</span></a><a rel="next" href="./projekte-forschende"><span>Innovationsprojekte ohne Umsetzungspartner</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T13:55:03">Feb 26, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T11:22:47">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>

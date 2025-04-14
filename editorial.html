@@ -14,15 +14,17 @@
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="./_import/functions.c45e3843.js">
 <link rel="modulepreload" href="./_import/colors.d690918f.js">
-<link rel="modulepreload" href="./_import/functions.1116e96d.js">
 <link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
-<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/arquero@7.2.0/1de27a6a.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
 <link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
+<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
 <link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
 <link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
@@ -52,13 +54,11 @@
 <link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
 <link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
 <link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
-<link rel="modulepreload" href="./_npm/acorn@8.14.0/6d258ba8.js">
-<link rel="modulepreload" href="./_npm/@uwdata/flechette@1.1.2/619ee86d.js">
 <link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
 <link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
 <link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
-<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<link rel="icon" href="./_file/images/swiss-logo-flag.bf25413a.svg" type="image/png" sizes="32x32">
 <script type="module">
 
 import {define} from "./_observablehq/client.6c3b6f8d.js";
@@ -73,10 +73,10 @@ registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeT
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
-define({id: "68e5ce68", outputs: ["html","color_inst","grey_innosuisse","coloredUnderline","draw_fin_plot","n_subcluster"], body: async () => {
-const [{html}, {color_inst, grey_innosuisse}, {coloredUnderline, draw_fin_plot, n_subcluster}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/colors.d690918f.js"), import("./_import/functions.1116e96d.js")]);
+define({id: "4df01c13", outputs: ["html","coloredUnderline"], body: async () => {
+const [{html}, {coloredUnderline}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/functions.c45e3843.js")]);
 
-return {html,color_inst,grey_innosuisse,coloredUnderline,draw_fin_plot,n_subcluster};
+return {html,coloredUnderline};
 }});
 
 define({id: "cedbd51b", mode: "inline", inputs: ["coloredUnderline","display"], body: async (coloredUnderline,display) => {
@@ -138,7 +138,7 @@ coloredUnderline("thematischen Innovation Booster","Starthilfe für Projekte und
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Schweizerische Agentur für Innovationsförderung</a>
 </header>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:68e5ce68:--></div>
+<div class="observablehq observablehq--block"><!--:4df01c13:--></div>
 <h2 id="innosuisse-foerderung-treibt-unternehmenserfolge-und-beschaeftigung-nachhaltig-an" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-foerderung-treibt-unternehmenserfolge-und-beschaeftigung-nachhaltig-an">Innosuisse-Förderung treibt Unternehmenserfolge und Beschäftigung nachhaltig an</a></h2>
 <div style="display: flex; flex-direction: column; align-items: left; width: 640px; padding: 20px;">
 <img src="https://isg-2023.prolog.work/images/discover/general/2023/Wirkung/thema_wirkung_Walti.jpg" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; object-position: -25px center;">
@@ -150,7 +150,7 @@ coloredUnderline("thematischen Innovation Booster","Starthilfe für Projekte und
 <p>Innovation ist der Schlüssel zur Bewältigung des rasanten wirtschaftlichen Strukturwandels und zur Stärkung der Wettbewerbsfähigkeit der Schweiz. Sie schafft hochqualifizierte Arbeitsstellen für die Zukunft und hilft den Wohlstand zu erhalten. Die Schweiz ist heute eines der innovationsstärksten Länder der Welt. Sie verdankt dies ihrer politischen, regulatorischen und wirtschaftlichen Stabilität, einem ausgezeichneten Bildungssystem und herausragenden Hochschulen, und nicht zuletzt starken Kooperationen zwischen Forschung und Wirtschaft.</p>
 <p>Innosuisse will mit ihrer Förderung zu einer beständigen und starken wirtschaftlichen Entwicklung beitragen sowie einen Beitrag zu den weiteren sozialen und ökologischen Pfeilern der nachhaltigen Entwicklung leisten.</p>
 <p>Die Schweiz belegt weltweit einen Spitzenplatz beim Wissens- und Technologietransfer (WTT) zwischen Forschung und Wirtschaft. Die Innovationsförderung der Innosuisse setzt bei der Stär-kung dieses Austausches an. Zeigt sie keine oder nur eine geringe Wirksamkeit beim WTT und bei den Ergebnissen bei den Unternehmen, so wirkt sich dies nachteilig auf die Innovationskraft und Wettbewerbsfähigkeit der Schweiz aus.</p>
-<h3 id="ergebnisse-belegen-die-breiten-nutzen-der-innovationsfoerderung" tabindex="-1"><a class="observablehq-header-anchor" href="#ergebnisse-belegen-die-breiten-nutzen-der-innovationsfoerderung">Ergebnisse belegen die breiten Nutzen der Innovationsförderung</a></h3>
+<h3 id="ergebnisse-belegen-den-breiten-nutzen-der-innovationsfoerderung" tabindex="-1"><a class="observablehq-header-anchor" href="#ergebnisse-belegen-den-breiten-nutzen-der-innovationsfoerderung">Ergebnisse belegen den breiten Nutzen der Innovationsförderung</a></h3>
 <p>Die Ergebnisse sind erfreulich. Sie bestätigen den ökonomischen «Impact» der Förderung bei den <observablehq-loading></observablehq-loading><!--:cedbd51b:-->, insbesondere bei den beteiligten Klein- und Mittelunternehmen (KMU). Drei Jahre nach Projektabschluss sind knapp 60 % der Innovationsprojekte auf dem Markt oder stehen vor dem Markteintritt. Über 60 % der als Hauptumsetzungspartner beteiligten KMU berichten über direkte ökonomische Wirkungen aus den geförderten Projekten in ihrem Unternehmen. Insbesondere werden eine Vielzahl von Arbeitsplätzen geschaffen, die Wertschöpfung generieren und welche ohne die Förderung nicht entstanden wären.</p>
 <p>Der Fokus der Innosuisse-Förderung liegt auf der Stärkung des WTT zwischen Forschungsinstitutionen (Hochschulen und Forschungsinstitute) und den Unternehmen und Organisationen in der wirtschaftlichen Praxis. Die Ergebnisse seitens der Forschung zeigen zudem die wissenschaftliche Verankerung der geförderten Projekte, beispielsweise durch beachtliche Anteile von Dissertationen, die durch die Förderung an den Hochschulen initiiert und durchgeführt werden.</p>
 <p>Innosuisse unterstützt im Coaching insbesondere Start-ups mit hohem Risiko in der Umsetzung und gleichzeitig hohem Wirkungspotenzial auf den Märkten. Die Ergebnisse beim <observablehq-loading></observablehq-loading><!--:8111285e:--> sind insbesondere in Bezug auf die erfolgreiche Kapitalbeschaffung und auf die Unternehmensentwicklung nach drei Jahren erfreulich. Zudem zeigen die, dass die Start-ups im Coaching zur Marktreife geführt werden, in den internationalen Märkten Fuss fassen und das Wachstum gestärkt wird. <observablehq-loading></observablehq-loading><!--:c11fb10c:--> fördern gezielt den persönlichen WTT, in dem über 70 % der Projekte der Forschenden in die Gründung innovativer und wissenschaftsbasierter Start-ups münden.</p>
@@ -161,7 +161,7 @@ coloredUnderline("thematischen Innovation Booster","Starthilfe für Projekte und
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./"><span>Wirkungsmonitor</span></a><a rel="next" href="./methodische-grundlagen"><span>Methodische Grundlagen</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-02-26T15:39:18">Feb 26, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T11:22:47">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>
