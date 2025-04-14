@@ -14,7 +14,7 @@
 <link rel="modulepreload" href="./_observablehq/runtime.f168f711.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.86572394.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_import/functions.81c922fb.js">
+<link rel="modulepreload" href="./_import/functions.cc76a8eb.js">
 <link rel="modulepreload" href="./_import/colors.6e42c185.js">
 <link rel="modulepreload" href="./_import/data.3d5bb675.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/239523e7.js">
@@ -73,8 +73,8 @@ registerFile("./data/daten_waffle.txt", {"name":"./data/daten_waffle.txt","mimeT
 registerFile("./data/daten_zielerreichung.txt", {"name":"./data/daten_zielerreichung.txt","mimeType":"text/plain","path":"./_file/data/daten_zielerreichung.73342cb5.txt","lastModified":1737039863017,"size":8066});
 registerFile("./data/instrument_link_hex.txt", {"name":"./data/instrument_link_hex.txt","mimeType":"text/plain","path":"./_file/data/instrument_link_hex.a8077908.txt","lastModified":1738267188854,"size":1166});
 
-define({id: "fb161720", outputs: ["html","coloredUnderline","drawMiniPlot","draw_waffle","draw_results","leverage","kof_did_plot"], body: async () => {
-const [{html}, {coloredUnderline, drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/functions.81c922fb.js")]);
+define({id: "bbb921fa", outputs: ["html","coloredUnderline","drawMiniPlot","draw_waffle","draw_results","leverage","kof_did_plot"], body: async () => {
+const [{html}, {coloredUnderline, drawMiniPlot, draw_waffle, draw_results, leverage, kof_did_plot}] = await Promise.all([import("./_npm/htl@0.3.1/063eb405.js"), import("./_import/functions.cc76a8eb.js")]);
 
 return {html,coloredUnderline,drawMiniPlot,draw_waffle,draw_results,leverage,kof_did_plot};
 }});
@@ -109,9 +109,15 @@ leverage()
 ))
 }});
 
-define({id: "ab8d56de", mode: "inline", inputs: ["kof_did_plot","display"], body: async (kof_did_plot,display) => {
+define({id: "39a032e7", mode: "inline", inputs: ["kof_did_plot","display"], body: async (kof_did_plot,display) => {
 display(await(
-kof_did_plot()
+kof_did_plot(0)
+))
+}});
+
+define({id: "0d2d2037", mode: "inline", inputs: ["kof_did_plot","display"], body: async (kof_did_plot,display) => {
+display(await(
+kof_did_plot(1)
 ))
 }});
 
@@ -264,7 +270,7 @@ draw_waffle("is_mitnahme", -85, 5)
 <a href="https://www.innosuisse.admin.ch/en" class="logo" id="header-logo-container" aria-label="Open Homepage" target="_blank" rel="noopener noreferrer"><img src="./_file/images/swiss-logo.74de6a85.svg" class="logo_flag" tabindex="0" alt="Logo with Swiss flag" "=""></a><a href="https://www.innosuisse.admin.ch/en" class="no-underline" target="_blank" rel="noopener noreferrer">Innosuisse<br>Schweizerische Agentur für Innovationsförderung</a>
 </header>
 <main id="observablehq-main" class="observablehq">
-<div class="observablehq observablehq--block"><!--:fb161720:--></div>
+<div class="observablehq observablehq--block"><!--:bbb921fa:--></div>
 <h1 id="projekte-von-unternehmen-mit-forschenden" tabindex="-1"><a class="observablehq-header-anchor" href="#projekte-von-unternehmen-mit-forschenden">Projekte von Unternehmen mit Forschenden</a></h1>
 <h2 id="innovationsprojekte-mit-umsetzungspartner" tabindex="-1"><a class="observablehq-header-anchor" href="#innovationsprojekte-mit-umsetzungspartner">Innovationsprojekte mit Umsetzungspartner</a></h2>
 <div style="display: flex;">
@@ -314,7 +320,9 @@ Quelle:
     </li>
 </ul>
 </div>
-<div class="card" style="background-color: white"><observablehq-loading></observablehq-loading><!--:ab8d56de:--></div></div>
+<div class="card" style="background-color: white"><observablehq-loading></observablehq-loading><!--:39a032e7:--></div>
+<div class="card" style="background-color: white"><observablehq-loading></observablehq-loading><!--:0d2d2037:--></div>
+</div>
 <h3 id="innosuisse-unterstuetzt-weltmarktneuheiten-und-disruptive-innovationen" tabindex="-1"><a class="observablehq-header-anchor" href="#innosuisse-unterstuetzt-weltmarktneuheiten-und-disruptive-innovationen">Innosuisse unterstützt Weltmarktneuheiten und disruptive Innovationen</a></h3>
 <p>33&nbsp;% der geförderten Innovationsprojekte zielen darauf ab, Neuheiten für den internationalen und globalen Markt zu entwickeln. Damit werden Schweizer Unternehmen verstärkt unterstützt international wettbewerbsfähig zu sein oder zu bleiben. Wie bereits dargestellt, haben gleichzeitig rund 29&nbsp;% der geförderten Projekte das Potenzial mit disruptiven Innovationen die Märkte stark zu beeinflussen oder neu zu definieren.</p>
   <div style="display: flex; gap: 40px;">
@@ -380,7 +388,7 @@ Quelle:
 </div></main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./vergleichende-ergebnisse"><span>Vergleichende Ergebnisse</span></a><a rel="next" href="./projekte-forschende"><span>Innovationsprojekte ohne Umsetzungspartner</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T12:38:11">Apr 14, 2025</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2025-04-14T17:36:27">Apr 14, 2025</a>.</div>
 </footer>
 </div>
 </body>
